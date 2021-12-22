@@ -222,16 +222,18 @@ SWIFT_CLASS("_TtC11AdBrixRmKit18AbxRemotePushModel")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class UNNotificationRequest;
+@class UNNotificationContent;
 
 SWIFT_CLASS("_TtC11AdBrixRmKit33AdBrixMultiPushProviderController") SWIFT_AVAILABILITY(ios,introduced=10.0)
 @interface AdBrixMultiPushProviderController : NSObject
++ (AdBrixMultiPushProviderController * _Nonnull)getInstanceObjc SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)didReceiveAbxPush:(UNNotificationRequest * _Nonnull)request withContentHandler:(void (^ _Nonnull)(UNNotificationContent * _Nonnull))contentHandler;
 - (void)abxPushServiceExtensionTimeWillExpire;
 @end
 
-@class UNNotificationRequest;
-@class UNNotificationContent;
 
 SWIFT_CLASS("_TtC11AdBrixRmKit17AdBrixPushService") SWIFT_AVAILABILITY(ios,introduced=10.0)
 @interface AdBrixPushService : UNNotificationServiceExtension
@@ -796,16 +798,18 @@ SWIFT_CLASS("_TtC11AdBrixRmKit18AbxRemotePushModel")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class UNNotificationRequest;
+@class UNNotificationContent;
 
 SWIFT_CLASS("_TtC11AdBrixRmKit33AdBrixMultiPushProviderController") SWIFT_AVAILABILITY(ios,introduced=10.0)
 @interface AdBrixMultiPushProviderController : NSObject
++ (AdBrixMultiPushProviderController * _Nonnull)getInstanceObjc SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)didReceiveAbxPush:(UNNotificationRequest * _Nonnull)request withContentHandler:(void (^ _Nonnull)(UNNotificationContent * _Nonnull))contentHandler;
 - (void)abxPushServiceExtensionTimeWillExpire;
 @end
 
-@class UNNotificationRequest;
-@class UNNotificationContent;
 
 SWIFT_CLASS("_TtC11AdBrixRmKit17AdBrixPushService") SWIFT_AVAILABILITY(ios,introduced=10.0)
 @interface AdBrixPushService : UNNotificationServiceExtension

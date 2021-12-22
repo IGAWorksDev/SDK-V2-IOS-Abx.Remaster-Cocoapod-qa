@@ -35,8 +35,11 @@ import os
   @objc public func toString() -> Swift.String
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 10.0, *)
-open class AdBrixMultiPushProviderController : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 10.0, *)
+@objc public class AdBrixMultiPushProviderController : ObjectiveC.NSObject {
+  public static let getInstance: AdBrixRmKit.AdBrixMultiPushProviderController
+  @objc public class func getInstanceObjc() -> AdBrixRmKit.AdBrixMultiPushProviderController
+  @objc public func didReceiveAbxPush(_ request: UserNotifications.UNNotificationRequest, withContentHandler contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void)
   @objc public func abxPushServiceExtensionTimeWillExpire()
   @objc deinit
 }

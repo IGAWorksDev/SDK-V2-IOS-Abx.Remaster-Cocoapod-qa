@@ -4,13 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		4Utz1heSpcr2hDtlkwF3R6brdp0=
+		</data>
+		<key>Headers/AdBrixPushServiceObjC.h</key>
+		<data>
+		S9OVQ3TmxWv6ufAiLbjvHMxWU2s=
+		</data>
 		<key>Headers/AdBrixRmKit-Swift.h</key>
 		<data>
-		tBnG19Srh5UMCgbyT6THHxmRZew=
+		+zYbSNd2IDLwmRbppYCjH9NsGVI=
 		</data>
 		<key>Headers/AdBrixRmKit.h</key>
 		<data>
-		cd5RIqm++NLWehwlONi1lvdZx1I=
+		d9lcu7fB9vH9ZqpKBtPDKS54piU=
 		</data>
 		<key>Headers/ObjcUtil.h</key>
 		<data>
@@ -18,67 +26,67 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		04mHjdR8l0DxOBoQkJD80mm8as4=
+		SJ+J07mzL+z71iyoEuywHtwHN7A=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm.swiftdoc</key>
 		<data>
-		k0EtzHAhzRImDyDIUhW/awtCsIU=
+		nSjBwlPgj9rt5lZR4sdjC1gW748=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm.swiftinterface</key>
 		<data>
-		IIJUq35fbMjRCrubaZEo1z+yZto=
+		lqoUTB60ifhc1QrzETcrlo9Ygjg=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm.swiftmodule</key>
 		<data>
-		InU5wAHI2xrc3fPMppNwtd9bmh0=
+		6crIc9XF+40aX+ryY0k+m7BJ6rc=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		/T9/UTnGC0HyXEL6uFS6SOONM90=
+		S7uNiMwAUdqDp9oivTjTVR+Y4t4=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		vqf/J8d3k4xVbC3lJY8aTEeLjlU=
+		8E4amSioZpx2CDhRUXJtpWy4tSg=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		YfZyCvoAD3qblAZNe8tPmqlLupw=
+		1MPCzbHAml7uIKT2xDde2zGXhG8=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		/T9/UTnGC0HyXEL6uFS6SOONM90=
+		S7uNiMwAUdqDp9oivTjTVR+Y4t4=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		vqf/J8d3k4xVbC3lJY8aTEeLjlU=
+		8E4amSioZpx2CDhRUXJtpWy4tSg=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		YfZyCvoAD3qblAZNe8tPmqlLupw=
+		1MPCzbHAml7uIKT2xDde2zGXhG8=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
-		k0EtzHAhzRImDyDIUhW/awtCsIU=
+		nSjBwlPgj9rt5lZR4sdjC1gW748=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/armv7-apple-ios.swiftinterface</key>
 		<data>
-		IIJUq35fbMjRCrubaZEo1z+yZto=
+		lqoUTB60ifhc1QrzETcrlo9Ygjg=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		InU5wAHI2xrc3fPMppNwtd9bmh0=
+		6crIc9XF+40aX+ryY0k+m7BJ6rc=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/armv7.swiftdoc</key>
 		<data>
-		k0EtzHAhzRImDyDIUhW/awtCsIU=
+		nSjBwlPgj9rt5lZR4sdjC1gW748=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/armv7.swiftinterface</key>
 		<data>
-		IIJUq35fbMjRCrubaZEo1z+yZto=
+		lqoUTB60ifhc1QrzETcrlo9Ygjg=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		InU5wAHI2xrc3fPMppNwtd9bmh0=
+		6crIc9XF+40aX+ryY0k+m7BJ6rc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -87,26 +95,48 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4Utz1heSpcr2hDtlkwF3R6brdp0=
+			</data>
+			<key>hash2</key>
+			<data>
+			9bnjUnt2osgNXAMP2Tu3VlHG+dlT88Jmy97p1DO4I98=
+			</data>
+		</dict>
+		<key>Headers/AdBrixPushServiceObjC.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S9OVQ3TmxWv6ufAiLbjvHMxWU2s=
+			</data>
+			<key>hash2</key>
+			<data>
+			XHZ2hNRdmQ7GFJEvghOoi9Wtt0m34cDY4WAFtVG0UY4=
+			</data>
+		</dict>
 		<key>Headers/AdBrixRmKit-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tBnG19Srh5UMCgbyT6THHxmRZew=
+			+zYbSNd2IDLwmRbppYCjH9NsGVI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Wn4Adu7mESjFZzaAkKpVAp7LWA2bzCZ/FmvZBp+hNjk=
+			K4wNgHbhtDl0mN8ZNbdyWtsCBf8fIdpAxWXyMFzRQGM=
 			</data>
 		</dict>
 		<key>Headers/AdBrixRmKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cd5RIqm++NLWehwlONi1lvdZx1I=
+			d9lcu7fB9vH9ZqpKBtPDKS54piU=
 			</data>
 			<key>hash2</key>
 			<data>
-			akgO9R+iAlczJsVD6UoVk9P4GFymJIu2Kj9lQ+oOEXM=
+			IfXm7JFy3DIx4dKEzTahfi80LmB0yC/iFgSUrdNjUdg=
 			</data>
 		</dict>
 		<key>Headers/ObjcUtil.h</key>
@@ -124,165 +154,165 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			k0EtzHAhzRImDyDIUhW/awtCsIU=
+			nSjBwlPgj9rt5lZR4sdjC1gW748=
 			</data>
 			<key>hash2</key>
 			<data>
-			5mneFpIvxUDrq5IqZRiNyQt31FPxXg1k0Ei6o22aWUg=
+			Y52X2sCBXPZ7P5P3mv511lCXEWAgfNEw5llcTduaIPE=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IIJUq35fbMjRCrubaZEo1z+yZto=
+			lqoUTB60ifhc1QrzETcrlo9Ygjg=
 			</data>
 			<key>hash2</key>
 			<data>
-			GJap8uAi70qevpCTUgR70YiAu2e/J6/74x52EeDl40s=
+			zE6zcXWl9eEx7K/N5QHx3pQ9eDABIRgEgYnSGVHLhs8=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			InU5wAHI2xrc3fPMppNwtd9bmh0=
+			6crIc9XF+40aX+ryY0k+m7BJ6rc=
 			</data>
 			<key>hash2</key>
 			<data>
-			V7+Ynt6C4uo4xgo2n5SRooc34Mh33oQax07mKw+R0s8=
+			A+8SD1r8szZ/AbsjIFE6/Wh1Vox8LY0+l6GG8O7yYlo=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/T9/UTnGC0HyXEL6uFS6SOONM90=
+			S7uNiMwAUdqDp9oivTjTVR+Y4t4=
 			</data>
 			<key>hash2</key>
 			<data>
-			TIh4xrtK5TYbyIU37l0QsLfh2GIQ4SK9QmhVC5/3viM=
+			VLlnV8LFy7Zvf7baH+7J2y3c5Xb+YzxE4xA/dtFIP14=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vqf/J8d3k4xVbC3lJY8aTEeLjlU=
+			8E4amSioZpx2CDhRUXJtpWy4tSg=
 			</data>
 			<key>hash2</key>
 			<data>
-			LXwkmiACKXEeEqbMNR7NHUiPtxblx03GiNs6NnKRJXo=
+			5Xda7madvJESFFHP3RJSAP5PPqcYlwq3KyKR3lJrj4Q=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YfZyCvoAD3qblAZNe8tPmqlLupw=
+			1MPCzbHAml7uIKT2xDde2zGXhG8=
 			</data>
 			<key>hash2</key>
 			<data>
-			7ZpAAVStQL5vUTdbaHoN0eVmWqmzVMhCQrNf2iqrFnw=
+			Ct6KFzdk6i+W1CvoWKD70xIXgWRXv9z0CNZ8laA9Zxg=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/T9/UTnGC0HyXEL6uFS6SOONM90=
+			S7uNiMwAUdqDp9oivTjTVR+Y4t4=
 			</data>
 			<key>hash2</key>
 			<data>
-			TIh4xrtK5TYbyIU37l0QsLfh2GIQ4SK9QmhVC5/3viM=
+			VLlnV8LFy7Zvf7baH+7J2y3c5Xb+YzxE4xA/dtFIP14=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vqf/J8d3k4xVbC3lJY8aTEeLjlU=
+			8E4amSioZpx2CDhRUXJtpWy4tSg=
 			</data>
 			<key>hash2</key>
 			<data>
-			LXwkmiACKXEeEqbMNR7NHUiPtxblx03GiNs6NnKRJXo=
+			5Xda7madvJESFFHP3RJSAP5PPqcYlwq3KyKR3lJrj4Q=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YfZyCvoAD3qblAZNe8tPmqlLupw=
+			1MPCzbHAml7uIKT2xDde2zGXhG8=
 			</data>
 			<key>hash2</key>
 			<data>
-			7ZpAAVStQL5vUTdbaHoN0eVmWqmzVMhCQrNf2iqrFnw=
+			Ct6KFzdk6i+W1CvoWKD70xIXgWRXv9z0CNZ8laA9Zxg=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			k0EtzHAhzRImDyDIUhW/awtCsIU=
+			nSjBwlPgj9rt5lZR4sdjC1gW748=
 			</data>
 			<key>hash2</key>
 			<data>
-			5mneFpIvxUDrq5IqZRiNyQt31FPxXg1k0Ei6o22aWUg=
+			Y52X2sCBXPZ7P5P3mv511lCXEWAgfNEw5llcTduaIPE=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/armv7-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IIJUq35fbMjRCrubaZEo1z+yZto=
+			lqoUTB60ifhc1QrzETcrlo9Ygjg=
 			</data>
 			<key>hash2</key>
 			<data>
-			GJap8uAi70qevpCTUgR70YiAu2e/J6/74x52EeDl40s=
+			zE6zcXWl9eEx7K/N5QHx3pQ9eDABIRgEgYnSGVHLhs8=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			InU5wAHI2xrc3fPMppNwtd9bmh0=
+			6crIc9XF+40aX+ryY0k+m7BJ6rc=
 			</data>
 			<key>hash2</key>
 			<data>
-			V7+Ynt6C4uo4xgo2n5SRooc34Mh33oQax07mKw+R0s8=
+			A+8SD1r8szZ/AbsjIFE6/Wh1Vox8LY0+l6GG8O7yYlo=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/armv7.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			k0EtzHAhzRImDyDIUhW/awtCsIU=
+			nSjBwlPgj9rt5lZR4sdjC1gW748=
 			</data>
 			<key>hash2</key>
 			<data>
-			5mneFpIvxUDrq5IqZRiNyQt31FPxXg1k0Ei6o22aWUg=
+			Y52X2sCBXPZ7P5P3mv511lCXEWAgfNEw5llcTduaIPE=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/armv7.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IIJUq35fbMjRCrubaZEo1z+yZto=
+			lqoUTB60ifhc1QrzETcrlo9Ygjg=
 			</data>
 			<key>hash2</key>
 			<data>
-			GJap8uAi70qevpCTUgR70YiAu2e/J6/74x52EeDl40s=
+			zE6zcXWl9eEx7K/N5QHx3pQ9eDABIRgEgYnSGVHLhs8=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/armv7.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			InU5wAHI2xrc3fPMppNwtd9bmh0=
+			6crIc9XF+40aX+ryY0k+m7BJ6rc=
 			</data>
 			<key>hash2</key>
 			<data>
-			V7+Ynt6C4uo4xgo2n5SRooc34Mh33oQax07mKw+R0s8=
+			A+8SD1r8szZ/AbsjIFE6/Wh1Vox8LY0+l6GG8O7yYlo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

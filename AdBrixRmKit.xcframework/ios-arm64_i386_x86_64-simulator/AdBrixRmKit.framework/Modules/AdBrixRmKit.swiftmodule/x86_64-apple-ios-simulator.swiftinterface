@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
 // swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name AdBrixRmKit
 @_exported import AdBrixRmKit
 import AdServices
@@ -7,12 +7,13 @@ import AdSupport
 import AppTrackingTransparency
 import CommonCrypto
 import CoreTelephony
-import CryptoKit
 import Foundation
+import SQLite3
 import Swift
 import SystemConfiguration
 import UIKit
 import UserNotifications
+import _Concurrency
 import iAd
 import os.log
 import os
@@ -33,7 +34,6 @@ import os
   @objc public init(campaignId: Swift.String, campaignRevisionNo: Swift.Int, stepId: Swift.String, cycleTime: Swift.String) throws
   @objc public func toString() -> Swift.String
   @objc deinit
-  @objc override dynamic public init()
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 10.0, *)
 open class AdBrixMultiPushProviderController : ObjectiveC.NSObject {
@@ -63,65 +63,109 @@ open class AdBrixMultiPushProviderController : ObjectiveC.NSObject {
 }
 @_inheritsConvenienceInitializers @objc public class Util : ObjectiveC.NSObject {
   @objc public static func getLanguage() -> Swift.String
-  @objc deinit
+  @objc public static func getPushEnable() -> Swift.Bool
+  @objc public static func getOsPushEnable() -> Swift.Bool
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc public enum Completion : Swift.Int {
   case success = 0, fail
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AdBrixRM : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers @objc public class AdBrixRM : ObjectiveC.NSObject {
   public static let getInstance: AdBrixRmKit.AdBrixRM
+  @objc public class func sharedInstance() -> AdBrixRmKit.AdBrixRM
   public var delegateDeferredDeeplink: AdBrixRmKit.AdBrixRMDeferredDeeplinkDelegate?
   public var delegateDeeplink: AdBrixRmKit.AdBrixRMDeeplinkDelegate?
   public var delegateLocalPush: AdBrixRmKit.AdBrixRmPushLocalDelegate?
   public var delegateRemotePush: AdBrixRmKit.AdBrixRmPushRemoteDelegate?
   public var delegateLog: AdBrixRmKit.AdBrixRMLogDelegate?
+  public var delegateInAppMessageClick: AdBrixRmKit.AdBrixRMInAppMessageClickDelegate?
   @objc public func stopGettingIDFA()
   @objc public func startGettingIDFA()
   @objc public func initAdBrix(appKey: Swift.String, secretKey: Swift.String)
   @objc public func setEventUploadCountInterval(_ countInterval: AdBrixRmKit.AdBrixRM.AdBrixEventUploadCountInterval)
+  @objc public func convertCountInterval(_ code: Swift.Int) -> AdBrixRmKit.AdBrixRM.AdBrixEventUploadCountInterval
   @objc public func setEventUploadTimeInterval(_ timeInterval: AdBrixRmKit.AdBrixRM.AdBrixEventUploadTimeInterval)
+  @objc public func convertTimeInterval(_ code: Swift.Int) -> AdBrixRmKit.AdBrixRM.AdBrixEventUploadTimeInterval
   @objc public func gdprForgetMe()
+  @objc public func isGdprForgetMe() -> Swift.Bool
+  @objc public func deepLinkOpen(urlStr: Swift.String)
   @objc public func deepLinkOpen(url: Foundation.URL)
   @objc public func login(userId: Swift.String)
   @objc public func logout()
   @objc public func setAge(int: Swift.Int)
   @objc public func setGender(adBrixGenderType: AdBrixRmKit.AdBrixRM.AdBrixGenderType)
+  @objc public func convertGender(_ code: Swift.Int) -> AdBrixRmKit.AdBrixRM.AdBrixGenderType
   @objc public func setUserPropertiesWithAttr(attrModel: AdBrixRmKit.AdBrixRmAttrModel)
+  @objc public func clearUserProperties()
   @objc public func setKakaoId(kakaoId: Swift.String)
   @objc public func setUserCiWithAttr(attrModel: AdBrixRmKit.AdBrixRmAttrModel)
   @objc public func setLocation(latitude: Swift.Double, longitude: Swift.Double)
   @objc public func event(eventName: Swift.String)
   @objc public func eventWithAttr(eventName: Swift.String, value: AdBrixRmKit.AdBrixRmAttrModel)
+  @objc public func eventForUnityWithAttr(eventName: Swift.String, value: AdBrixRmKit.AdBrixRmAttrModel)
+  @objc public func commonSignUp(channel: AdBrixRmKit.AdBrixRM.AdBrixRmSignUpChannel)
   @objc public func commonSignUpWithAttr(channel: AdBrixRmKit.AdBrixRM.AdBrixRmSignUpChannel, commonAttr: AdBrixRmKit.AdBrixRmAttrModel?)
+  @objc public func getSignUpChannelByAdBrixRmSignUpChannel(_ channel: AdBrixRmKit.AdBrixRM.AdBrixRmSignUpChannel) -> Swift.String
+  @objc public func getSignUpChannel(_ channel: Swift.Int) -> Swift.String
+  @objc public func convertSignUpChannel(_ code: Swift.Int) -> AdBrixRmKit.AdBrixRM.AdBrixRmSignUpChannel
+  @objc public func commonAppUpdate(prev_ver: Swift.String, curr_ver: Swift.String)
   @objc public func commonAppUpdateWithAttr(prev_ver: Swift.String, curr_ver: Swift.String, commonAttr: AdBrixRmKit.AdBrixRmAttrModel?)
+  @objc public func commonInvite(channel: AdBrixRmKit.AdBrixRM.AdBrixRmInviteChannel)
   @objc public func commonInviteWithAttr(channel: AdBrixRmKit.AdBrixRM.AdBrixRmInviteChannel, commonAttr: AdBrixRmKit.AdBrixRmAttrModel?)
+  @objc public func getInviteChannelByAdBrixRmSignUpChannel(_ channel: AdBrixRmKit.AdBrixRM.AdBrixRmInviteChannel) -> Swift.String
+  @objc public func getInviteChannel(_ channel: Swift.Int) -> Swift.String
+  @objc public func convertInviteChannel(_ code: Swift.Int) -> AdBrixRmKit.AdBrixRM.AdBrixRmInviteChannel
+  @objc public func commonUseCredit()
   @objc public func commonUseCreditWithAttr(commonAttr: AdBrixRmKit.AdBrixRmAttrModel?)
+  @objc public func commonPurchase(orderId: Swift.String, productInfo: Swift.Array<AdBrixRmKit.AdBrixRmCommerceProductModel>, orderSales: Swift.Double = 0, discount: Swift.Double, deliveryCharge: Swift.Double, paymentMethod: AdBrixRmKit.AdBrixRM.AdbrixRmPaymentMethod)
   @objc public func commonPurchaseWithAttr(orderId: Swift.String, productInfo: Swift.Array<AdBrixRmKit.AdBrixRmCommerceProductModel>, orderSales: Swift.Double = 0, discount: Swift.Double, deliveryCharge: Swift.Double, paymentMethod: AdBrixRmKit.AdBrixRM.AdbrixRmPaymentMethod, orderAttr: AdBrixRmKit.AdBrixRmAttrModel?)
+  @objc public func getPaymentMethodByAdbrixRmPaymentMethod(_ method: AdBrixRmKit.AdBrixRM.AdbrixRmPaymentMethod) -> Swift.String
+  @objc public func getPaymentMethod(_ method: Swift.Int) -> Swift.String
+  @objc public func convertPayment(_ code: Swift.Int) -> AdBrixRmKit.AdBrixRM.AdbrixRmPaymentMethod
   @objc public func createCommerceProductDataWithAttr(productId: Swift.String, productName: Swift.String, price: Swift.Double, quantity: Swift.Int, discount: Swift.Double, currencyString: Swift.String?, category: AdBrixRmKit.AdBrixRmCommerceProductCategoryModel?, productAttrsMap: AdBrixRmKit.AdBrixRmAttrModel?) -> AdBrixRmKit.AdBrixRmCommerceProductModel
   @objc public func createCommerceProductCategoryData(category: Swift.String, category2: Swift.String = "", category3: Swift.String = "", category4: Swift.String = "", category5: Swift.String = "") -> AdBrixRmKit.AdBrixRmCommerceProductCategoryModel
   @objc public func getCurrencyStringByAdBrixCurrencyType(_ currency: AdBrixRmKit.AdBrixRM.AdBrixRmCurrencyType) -> Swift.String
   @objc public func getCurrencyString(_ currency: Swift.Int) -> Swift.String
   @objc public func commerceViewHome()
+  @objc public func commerceViewHomeWithAttr(orderAttr: AdBrixRmKit.AdBrixRmAttrModel?)
+  @objc public func commerceCategoryView(category: AdBrixRmKit.AdBrixRmCommerceProductCategoryModel, productInfo: [AdBrixRmKit.AdBrixRmCommerceProductModel])
   @objc public func commerceCategoryViewWithAttr(category: AdBrixRmKit.AdBrixRmCommerceProductCategoryModel, productInfo: [AdBrixRmKit.AdBrixRmCommerceProductModel], orderAttr: AdBrixRmKit.AdBrixRmAttrModel?)
+  @objc public func commerceProductView(productInfo: AdBrixRmKit.AdBrixRmCommerceProductModel)
   @objc public func commerceProductViewWithAttr(productInfo: AdBrixRmKit.AdBrixRmCommerceProductModel, orderAttr: AdBrixRmKit.AdBrixRmAttrModel? = nil)
+  @objc public func commerceAddToCart(productInfo: [AdBrixRmKit.AdBrixRmCommerceProductModel])
   @objc public func commerceAddToCartWithAttr(productInfo: [AdBrixRmKit.AdBrixRmCommerceProductModel], orderAttr: AdBrixRmKit.AdBrixRmAttrModel? = nil)
+  @objc public func commerceAddToWishList(productInfo: AdBrixRmKit.AdBrixRmCommerceProductModel)
   @objc public func commerceAddToWishListWithAttr(productInfo: AdBrixRmKit.AdBrixRmCommerceProductModel, orderAttr: AdBrixRmKit.AdBrixRmAttrModel? = nil)
+  @objc public func commerceReviewOrder(orderId: Swift.String, productInfo: Swift.Array<AdBrixRmKit.AdBrixRmCommerceProductModel>, discount: Swift.Double, deliveryCharge: Swift.Double)
   @objc public func commerceReviewOrderWithAttr(orderId: Swift.String, productInfo: [AdBrixRmKit.AdBrixRmCommerceProductModel], discount: Swift.Double, deliveryCharge: Swift.Double, orderAttr: AdBrixRmKit.AdBrixRmAttrModel? = nil)
+  @objc public func commerceRefund(orderId: Swift.String, productInfo: Swift.Array<AdBrixRmKit.AdBrixRmCommerceProductModel>, penaltyCharge: Swift.Double)
   @objc public func commerceRefundWithAttr(orderId: Swift.String, productInfo: [AdBrixRmKit.AdBrixRmCommerceProductModel], penaltyCharge: Swift.Double, orderAttr: AdBrixRmKit.AdBrixRmAttrModel? = nil)
+  @objc public func commerceSearch(productInfo: Swift.Array<AdBrixRmKit.AdBrixRmCommerceProductModel>, keyword: Swift.String)
   @objc public func commerceSearchWithAttr(productInfo: [AdBrixRmKit.AdBrixRmCommerceProductModel], keyword: Swift.String, orderAttr: AdBrixRmKit.AdBrixRmAttrModel? = nil)
+  @objc public func commerceShare(channel: AdBrixRmKit.AdBrixRM.AdBrixRmSharingChannel, productInfo: AdBrixRmKit.AdBrixRmCommerceProductModel)
   @objc public func commerceShareWithAttr(channel: AdBrixRmKit.AdBrixRM.AdBrixRmSharingChannel, productInfo: AdBrixRmKit.AdBrixRmCommerceProductModel, orderAttr: AdBrixRmKit.AdBrixRmAttrModel? = nil)
+  @objc public func getSharingChannelByAdBrixRmSharingChannel(_ channel: AdBrixRmKit.AdBrixRM.AdBrixRmSharingChannel) -> Swift.String
+  @objc public func getSharingChannel(_ channel: Swift.Int) -> Swift.String
+  @objc public func convertChannel(_ code: Swift.Int) -> AdBrixRmKit.AdBrixRM.AdBrixRmSharingChannel
+  @objc public func commerceListView(productInfo: Swift.Array<AdBrixRmKit.AdBrixRmCommerceProductModel>)
   @objc public func commerceListViewWithAttr(productInfo: [AdBrixRmKit.AdBrixRmCommerceProductModel], orderAttr: AdBrixRmKit.AdBrixRmAttrModel? = nil)
+  @objc public func commerceCartView(productInfo: Swift.Array<AdBrixRmKit.AdBrixRmCommerceProductModel>)
   @objc public func commerceCartViewWithAttr(productInfo: [AdBrixRmKit.AdBrixRmCommerceProductModel], orderAttr: AdBrixRmKit.AdBrixRmAttrModel? = nil)
+  @objc public func commercePaymentInfoAdded()
   @objc public func commercePaymentInfoAddedWithAttr(paymentInfoAttr: AdBrixRmKit.AdBrixRmAttrModel?)
+  @objc public func gameTutorialCompleted(isSkip: Swift.Bool)
   @objc public func gameTutorialCompletedWithAttr(isSkip: Swift.Bool, gameInfoAttr: AdBrixRmKit.AdBrixRmAttrModel? = nil)
+  @objc public func gameCharacterCreated()
   @objc public func gameCharacterCreatedWithAttr(gameInfoAttr: AdBrixRmKit.AdBrixRmAttrModel?)
+  @objc public func gameStageCleared(stageName: Swift.String)
   @objc public func gameStageClearedWithAttr(stageName: Swift.String, gameInfoAttr: AdBrixRmKit.AdBrixRmAttrModel?)
+  @objc public func gameLevelAchieved(level: Swift.Int)
   @objc public func gameLevelAchievedWithAttr(level: Swift.Int, gameInfoAttr: AdBrixRmKit.AdBrixRmAttrModel? = nil)
   @objc public func deleteUserDataAndStopSDK(_ userId: Swift.String, _ completion: @escaping (AdBrixRmKit.Completion) -> ())
   @objc public func restartSDK(_ userId: Swift.String, _ completion: @escaping (AdBrixRmKit.Completion) -> ())
@@ -136,9 +180,9 @@ open class AdBrixMultiPushProviderController : ObjectiveC.NSObject {
   @available(iOS 10.0, *)
   @objc public func setAdBrixRmPushRemoteDelegate(delegate: AdBrixRmKit.AdBrixRmPushRemoteDelegate)
   @available(iOS 10.0, *)
-  @objc public func registerLocalPushNotification(date: Foundation.Date, title: Swift.String, subtitle: Swift.String?, body: Swift.String, sound: UserNotifications.UNNotificationSound?, categoryId: Swift.String?, threadId: Swift.String?, badgeNumber: Foundation.NSNumber?, image: Foundation.URL?, attrDic: [Swift.String : Any]?, completionHandler: @escaping (Swift.Bool, Swift.Error?, Swift.String) -> Swift.Void)
+  @objc public func registerLocalPushNotification(date: Foundation.Date, title: Swift.String, subtitle: Swift.String?, body: Swift.String, sound: UserNotifications.UNNotificationSound?, categoryId: Swift.String?, threadId: Swift.String?, badgeNumber: Foundation.NSNumber?, image: Foundation.URL?, attrDic: [Swift.String : Any]?, completionHandler: @escaping (_ isRegSucc: Swift.Bool, _ error: Swift.Error?, _ pushId: Swift.String) -> Swift.Void)
   @available(iOS 10.0, *)
-  @objc public func registerLocalPushNotification(id: Swift.String, date: Foundation.Date, title: Swift.String, subtitle: Swift.String?, body: Swift.String, sound: UserNotifications.UNNotificationSound?, categoryId: Swift.String?, threadId: Swift.String?, badgeNumber: Foundation.NSNumber?, image: Foundation.URL?, attrDic: [Swift.String : Any]?, completionHandler: @escaping (Swift.Bool, Swift.Error?, Swift.String) -> Swift.Void)
+  @objc public func registerLocalPushNotification(id: Swift.String, date: Foundation.Date, title: Swift.String, subtitle: Swift.String?, body: Swift.String, sound: UserNotifications.UNNotificationSound?, categoryId: Swift.String?, threadId: Swift.String?, badgeNumber: Foundation.NSNumber?, image: Foundation.URL?, attrDic: [Swift.String : Any]?, completionHandler: @escaping (_ isRegSucc: Swift.Bool, _ error: Swift.Error?, _ pushId: Swift.String) -> Swift.Void)
   @available(iOS 10.0, *)
   @objc public func getRegisteredLocalPushNotification(completeHandler: @escaping ([Swift.String]) -> ())
   @available(iOS 10.0, *)
@@ -150,80 +194,90 @@ open class AdBrixMultiPushProviderController : ObjectiveC.NSObject {
   @objc public func parsePushData(_ pushDict: [Swift.AnyHashable : Any]) throws -> AdBrixRmKit.AbxRemotePushModel
   @available(iOS 10.0, *)
   @objc public func openPush(_ abxRemotePushModel: AdBrixRmKit.AbxRemotePushModel)
+  @available(iOS 10.0, *)
+  @objc public func didReceiveAbxPush(_ request: UserNotifications.UNNotificationRequest, withContentHandler contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void)
+  @available(iOS 10.0, *)
+  @objc public func abxPushServiceExtensionTimeWillExpire()
   @objc public func setLogDelegate(delegate: AdBrixRmKit.AdBrixRMLogDelegate)
+  @objc public func setInAppMessageClickDelegate(delegate: AdBrixRmKit.AdBrixRMInAppMessageClickDelegate)
   @objc public func printSdkState()
+  @objc public func setDeeplinkDelegate(delegate: AdBrixRmKit.AdBrixRMDeeplinkDelegate)
+  @objc public func setDeferredDeeplinkDelegate(delegate: AdBrixRmKit.AdBrixRMDeferredDeeplinkDelegate)
+  @objc public func setDeviceId(_ device_id: Swift.String)
   @objc public enum AdBrixEventUploadCountInterval : Swift.Int {
     case MIN = 10, NORMAL = 30, MAX = 60
-    public typealias RawValue = Swift.Int
     public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
     }
   }
   @objc public enum AdBrixEventUploadTimeInterval : Swift.Int {
     case MIN = 30, NORMAL = 60, MAX = 120
-    public typealias RawValue = Swift.Int
     public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
     }
   }
   @objc public enum AdBrixLogLevel : Swift.Int {
     case NONE = 0, TRACE = 1, DEBUG = 2, INFO = 3, WARNING = 4, ERROR = 5
-    public typealias RawValue = Swift.Int
     public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
     }
   }
   @objc public enum AdBrixGenderType : Swift.Int {
     case Male = 2, Female = 1, Unknown = 0
-    public typealias RawValue = Swift.Int
     public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
     }
   }
   @objc public enum AdBrixRmSignUpChannel : Swift.Int {
     case AdBrixRmSignUpKakaoChannel = 1, AdBrixRmSignUpNaverChannel = 2, AdBrixRmSignUpLineChannel = 3, AdBrixRmSignUpGoogleChannel = 4, AdBrixRmSignUpFacebookChannel = 5, AdBrixRmSignUpTwitterChannel = 6, AdBrixRmSignUpWhatsAppChannel = 7, AdBrixRmSignUpQQChannel = 8, AdBrixRmSignUpWeChatChannel = 9, AdBrixRmSignUpUserIdChannel = 10, AdBrixRmSignUpETCChannel = 11, AdBrixRmSignUpSkTidChannel = 12, AdBrixRmSignUpAppleIdChannel = 13
-    public typealias RawValue = Swift.Int
     public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
     }
   }
   @objc public enum AdBrixRmInviteChannel : Swift.Int {
     case AdBrixRmInviteKakaoChannel = 1, AdBrixRmInviteNaverChannel = 2, AdBrixRmInviteLineChannel = 3, AdBrixRmInviteGoogleChannel = 4, AdBrixRmInviteFacebookChannel = 5, AdBrixRmInviteTwitterChannel = 6, AdBrixRmInviteWhatsAppChannel = 7, AdBrixRmInviteQQChannel = 8, AdBrixRmInviteWeChatChannel = 9, AdBrixRmInviteETCChannel = 10
-    public typealias RawValue = Swift.Int
     public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
     }
   }
   @objc public enum AdBrixRmCurrencyType : Swift.Int {
     case KRW = 1, USD = 2, JPY = 3, EUR = 4, GBP = 5, CNY = 6, TWD = 7, HKD = 8, IDR = 9, INR = 10, RUB = 11, THB = 12, VND = 13, MYR = 14
-    public typealias RawValue = Swift.Int
     public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
     }
   }
   @objc public enum AdbrixRmPaymentMethod : Swift.Int {
     case CreditCard = 1, BankTransfer = 2, MobilePayment = 3, ETC = 4
-    public typealias RawValue = Swift.Int
     public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
     }
   }
   @objc public enum AdBrixRmSharingChannel : Swift.Int {
     case AdBrixRmSharingFacebook = 1, AdBrixRmSharingKakaoTalk = 2, AdBrixRmSharingKakaoStory = 3, AdBrixRmSharingLine = 4, AdBrixRmSharingWhatsApp = 5, AdBrixRmSharingQQ = 6, AdBrixRmSharingWeChat = 7, AdBrixRmSharingSMS = 8, AdBrixRmSharingEmail = 9, AdBrixRmSharingCopyUrl = 10, AdBrixRmSharingETC = 11
-    public typealias RawValue = Swift.Int
     public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
     }
   }
+  @objc public func didBecomeActive()
+  @objc public func willResignActive()
   @objc deinit
 }
 @objc public protocol AdBrixRMDeeplinkDelegate {
@@ -246,6 +300,9 @@ open class AdBrixMultiPushProviderController : ObjectiveC.NSObject {
 }
 @objc public protocol AdBrixRMLogDelegate {
   @objc func didPrintLog(level: AdBrixRmKit.AdBrixRM.AdBrixLogLevel, log: Swift.String)
+}
+@objc public protocol AdBrixRMInAppMessageClickDelegate {
+  @objc func onReceiveInAppMessageClick(actionId: Swift.String, actionType: Swift.String, actionArg: Swift.String, isClosed: Swift.Bool)
 }
 @_inheritsConvenienceInitializers @objc public class AdBrixRmCommerceProductCategoryModel : ObjectiveC.NSObject {
   @objc override dynamic public init()

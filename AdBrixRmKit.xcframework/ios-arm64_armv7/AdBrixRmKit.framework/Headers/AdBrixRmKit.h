@@ -6,7 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ObjcUtil.h"
+#import <AdBrixRmKit/AdBrixPushServiceObjC.h>
+#import <AdBrixRmKit/ObjcUtil.h>
 
 //! Project version number for Core.
 FOUNDATION_EXPORT double CoreVersionNumber;

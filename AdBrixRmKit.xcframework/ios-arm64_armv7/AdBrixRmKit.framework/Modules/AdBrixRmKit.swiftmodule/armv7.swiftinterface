@@ -35,15 +35,65 @@ import os
   @objc public func toString() -> Swift.String
   @objc deinit
 }
+@_hasMissingDesignatedInitializers @objc public class ActionHistory : ObjectiveC.NSObject {
+  final public let historyId: Swift.String
+  final public let actionType: Swift.String
+  final public let timeStamp: Swift.Int64
+  final public let content: AdBrixRmKit.ActionContent
+  final public let isRead: Swift.Bool
+  final public let group: Swift.String
+  final public let isServerSynced: Swift.Bool
+  public func toJsonString() -> Swift.String
+  public static func fromDictionary(historyJsonDic: [Swift.String : Any], isServerSynced: Swift.Bool) -> AdBrixRmKit.ActionHistory?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class ActionContent : ObjectiveC.NSObject {
+  final public let notificationId: Swift.String?
+  final public let title: Swift.String?
+  final public let subtitle: Swift.String?
+  final public let body: Swift.String?
+  final public let bigTextTitle: Swift.String?
+  final public let bigTextBody: Swift.String?
+  final public let summaryText: Swift.String?
+  final public let imgUrl: Swift.String?
+  final public let largeIconUrl: Swift.String?
+  final public let deeplinkJson: [Swift.String : Swift.String]?
+  final public let deeplinkUrl: Swift.String?
+  final public let isWideImage: Swift.Bool?
+  final public let imageClickLink: Swift.String?
+  final public let kakaoButtons: [AdBrixRmKit.KakaoButton]?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class KakaoButton : ObjectiveC.NSObject {
+  final public let name: Swift.String?
+  final public let type: Swift.String?
+  final public let urlPc: Swift.String?
+  final public let urlMobile: Swift.String?
+  final public let scheme: Swift.String?
+  final public let chatExtra: Swift.String?
+  final public let chatEvent: Swift.String?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class ActionHistoryResult : ObjectiveC.NSObject {
+  final public let isSucceeded: Swift.Bool
+  public func getData() -> [AdBrixRmKit.ActionHistory]?
+  public func getError() -> Swift.Error?
+  @objc deinit
+}
+@objc public enum ActionHistoryIdType : Swift.Int {
+  case USER_ID = 0, ADID
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 10.0, *)
 @objc public class AdBrixMultiPushProviderController : ObjectiveC.NSObject {
   public static let getInstance: AdBrixRmKit.AdBrixMultiPushProviderController
   @objc public class func getInstanceObjc() -> AdBrixRmKit.AdBrixMultiPushProviderController
   @objc public func didReceiveAbxPush(_ request: UserNotifications.UNNotificationRequest, withContentHandler contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void)
   @objc public func abxPushServiceExtensionTimeWillExpire()
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class DefaultABXContextController {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @available(iOS 10.0, *)
@@ -317,6 +367,9 @@ import os
   @objc public func setModel(productId: Swift.String, productName: Swift.String, price: Swift.Double, quantity: Swift.Int, discount: Swift.Double, currencyString: Swift.String?, categories: AdBrixRmKit.AdBrixRmCommerceProductCategoryModel?, productAttrsMap: AdBrixRmKit.AdBrixRmAttrModel?) -> AdBrixRmKit.AdBrixRmCommerceProductModel
   @objc deinit
 }
+extension AdBrixRmKit.ActionHistoryIdType : Swift.Equatable {}
+extension AdBrixRmKit.ActionHistoryIdType : Swift.Hashable {}
+extension AdBrixRmKit.ActionHistoryIdType : Swift.RawRepresentable {}
 extension AdBrixRmKit.Completion : Swift.Equatable {}
 extension AdBrixRmKit.Completion : Swift.Hashable {}
 extension AdBrixRmKit.Completion : Swift.RawRepresentable {}

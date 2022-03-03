@@ -48,7 +48,7 @@ import os
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class ActionContent : ObjectiveC.NSObject {
-  final public let notificationId: Swift.String?
+  final public let notificationId: Swift.Int64?
   final public let title: Swift.String?
   final public let subtitle: Swift.String?
   final public let body: Swift.String?

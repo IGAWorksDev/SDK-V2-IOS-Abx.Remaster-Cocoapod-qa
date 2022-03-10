@@ -391,7 +391,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)deleteAllActionHistoryByUserIdWithToken:(NSString * _Nullable)token completion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
 - (void)deleteAllActionHistoryByAdidWithToken:(NSString * _Nullable)token completion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
 - (void)deleteActionHistoryWithToken:(NSString * _Nullable)token historyId:(NSString * _Nonnull)historyId timeStamp:(int64_t)timeStamp completion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
-- (void)clearActionHistoryInLocalDBWithCompletion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
+- (void)clearSyncedActionHistoryInLocalDBWithCompletion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
 - (void)setAdBrixRmPushLocalDelegateWithDelegate:(id <AdBrixRmPushLocalDelegate> _Nonnull)delegate SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)setAdBrixRmPushRemoteDelegateWithDelegate:(id <AdBrixRmPushRemoteDelegate> _Nonnull)delegate SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)registerLocalPushNotificationWithDate:(NSDate * _Nonnull)date title:(NSString * _Nonnull)title subtitle:(NSString * _Nullable)subtitle body:(NSString * _Nonnull)body sound:(UNNotificationSound * _Nullable)sound categoryId:(NSString * _Nullable)categoryId threadId:(NSString * _Nullable)threadId badgeNumber:(NSNumber * _Nullable)badgeNumber image:(NSURL * _Nullable)image attrDic:(NSDictionary<NSString *, id> * _Nullable)attrDic completionHandler:(void (^ _Nonnull)(BOOL, NSError * _Nullable, NSString * _Nonnull))completionHandler SWIFT_AVAILABILITY(ios,introduced=10.0);
@@ -1009,7 +1009,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)deleteAllActionHistoryByUserIdWithToken:(NSString * _Nullable)token completion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
 - (void)deleteAllActionHistoryByAdidWithToken:(NSString * _Nullable)token completion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
 - (void)deleteActionHistoryWithToken:(NSString * _Nullable)token historyId:(NSString * _Nonnull)historyId timeStamp:(int64_t)timeStamp completion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
-- (void)clearActionHistoryInLocalDBWithCompletion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
+- (void)clearSyncedActionHistoryInLocalDBWithCompletion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
 - (void)setAdBrixRmPushLocalDelegateWithDelegate:(id <AdBrixRmPushLocalDelegate> _Nonnull)delegate SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)setAdBrixRmPushRemoteDelegateWithDelegate:(id <AdBrixRmPushRemoteDelegate> _Nonnull)delegate SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)registerLocalPushNotificationWithDate:(NSDate * _Nonnull)date title:(NSString * _Nonnull)title subtitle:(NSString * _Nullable)subtitle body:(NSString * _Nonnull)body sound:(UNNotificationSound * _Nullable)sound categoryId:(NSString * _Nullable)categoryId threadId:(NSString * _Nullable)threadId badgeNumber:(NSNumber * _Nullable)badgeNumber image:(NSURL * _Nullable)image attrDic:(NSDictionary<NSString *, id> * _Nullable)attrDic completionHandler:(void (^ _Nonnull)(BOOL, NSError * _Nullable, NSString * _Nonnull))completionHandler SWIFT_AVAILABILITY(ios,introduced=10.0);
@@ -1627,7 +1627,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)deleteAllActionHistoryByUserIdWithToken:(NSString * _Nullable)token completion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
 - (void)deleteAllActionHistoryByAdidWithToken:(NSString * _Nullable)token completion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
 - (void)deleteActionHistoryWithToken:(NSString * _Nullable)token historyId:(NSString * _Nonnull)historyId timeStamp:(int64_t)timeStamp completion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
-- (void)clearActionHistoryInLocalDBWithCompletion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
+- (void)clearSyncedActionHistoryInLocalDBWithCompletion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
 - (void)setAdBrixRmPushLocalDelegateWithDelegate:(id <AdBrixRmPushLocalDelegate> _Nonnull)delegate SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)setAdBrixRmPushRemoteDelegateWithDelegate:(id <AdBrixRmPushRemoteDelegate> _Nonnull)delegate SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)registerLocalPushNotificationWithDate:(NSDate * _Nonnull)date title:(NSString * _Nonnull)title subtitle:(NSString * _Nullable)subtitle body:(NSString * _Nonnull)body sound:(UNNotificationSound * _Nullable)sound categoryId:(NSString * _Nullable)categoryId threadId:(NSString * _Nullable)threadId badgeNumber:(NSNumber * _Nullable)badgeNumber image:(NSURL * _Nullable)image attrDic:(NSDictionary<NSString *, id> * _Nullable)attrDic completionHandler:(void (^ _Nonnull)(BOOL, NSError * _Nullable, NSString * _Nonnull))completionHandler SWIFT_AVAILABILITY(ios,introduced=10.0);

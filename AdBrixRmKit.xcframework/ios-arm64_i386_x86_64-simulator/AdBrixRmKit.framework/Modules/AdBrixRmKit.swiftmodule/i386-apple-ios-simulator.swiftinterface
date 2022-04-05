@@ -48,7 +48,7 @@ import os
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class ActionContent : ObjectiveC.NSObject {
-  final public let notificationId: Swift.Int64?
+  final public let notificationId: Swift.String?
   final public let title: Swift.String?
   final public let subtitle: Swift.String?
   final public let body: Swift.String?
@@ -114,7 +114,7 @@ import os
   @objc public func setAttrDataBool(_ key: Swift.String, _ value: Swift.Bool)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class Util : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc public class DfnUtil : ObjectiveC.NSObject {
   @objc public static func getLanguage() -> Swift.String
   @objc public static func getPushEnable() -> Swift.Bool
   @objc public static func getOsPushEnable() -> Swift.Bool

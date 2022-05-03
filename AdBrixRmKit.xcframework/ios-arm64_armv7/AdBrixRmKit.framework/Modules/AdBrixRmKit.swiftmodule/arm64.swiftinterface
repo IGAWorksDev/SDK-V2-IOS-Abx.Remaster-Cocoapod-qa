@@ -35,49 +35,49 @@ import os
   @objc public func toString() -> Swift.String
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc public class ActionHistory : ObjectiveC.NSObject {
-  final public let historyId: Swift.String
-  final public let actionType: Swift.String
-  final public let timeStamp: Swift.Int64
-  final public let content: AdBrixRmKit.ActionContent
-  final public let isRead: Swift.Bool
-  final public let group: Swift.String
-  final public let isServerSynced: Swift.Bool
-  public func toJsonString() -> Swift.String
-  public static func fromDictionary(historyJsonDic: [Swift.String : Any], isServerSynced: Swift.Bool) -> AdBrixRmKit.ActionHistory?
+@objc @_hasMissingDesignatedInitializers @objcMembers public class ActionHistory : ObjectiveC.NSObject {
+  @objc final public let historyId: Swift.String
+  @objc final public let actionType: Swift.String
+  @objc final public let timeStamp: Swift.Int64
+  @objc final public let content: AdBrixRmKit.ActionContent
+  @objc final public let isRead: Swift.Bool
+  @objc final public let group: Swift.String
+  @objc final public let isServerSynced: Swift.Bool
+  @objc public func toJsonString() -> Swift.String
+  @objc public static func fromDictionary(historyJsonDic: [Swift.String : Any], isServerSynced: Swift.Bool) -> AdBrixRmKit.ActionHistory?
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc public class ActionContent : ObjectiveC.NSObject {
-  final public let notificationId: Swift.String?
-  final public let title: Swift.String?
-  final public let subtitle: Swift.String?
-  final public let body: Swift.String?
-  final public let bigTextTitle: Swift.String?
-  final public let bigTextBody: Swift.String?
-  final public let summaryText: Swift.String?
-  final public let imgUrl: Swift.String?
-  final public let largeIconUrl: Swift.String?
-  final public let deeplinkJson: [Swift.String : Swift.String]?
-  final public let deeplinkUrl: Swift.String?
+@objc @_hasMissingDesignatedInitializers @objcMembers public class ActionContent : ObjectiveC.NSObject {
+  @objc final public let notificationId: Swift.String?
+  @objc final public let title: Swift.String?
+  @objc final public let subtitle: Swift.String?
+  @objc final public let body: Swift.String?
+  @objc final public let bigTextTitle: Swift.String?
+  @objc final public let bigTextBody: Swift.String?
+  @objc final public let summaryText: Swift.String?
+  @objc final public let imgUrl: Swift.String?
+  @objc final public let largeIconUrl: Swift.String?
+  @objc final public let deeplinkJson: [Swift.String : Swift.String]?
+  @objc final public let deeplinkUrl: Swift.String?
   final public let isWideImage: Swift.Bool?
-  final public let imageClickLink: Swift.String?
-  final public let kakaoButtons: [AdBrixRmKit.KakaoButton]?
+  @objc final public let imageClickLink: Swift.String?
+  @objc final public let kakaoButtons: [AdBrixRmKit.KakaoButton]?
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc public class KakaoButton : ObjectiveC.NSObject {
-  final public let name: Swift.String?
-  final public let type: Swift.String?
-  final public let urlPc: Swift.String?
-  final public let urlMobile: Swift.String?
-  final public let scheme: Swift.String?
-  final public let chatExtra: Swift.String?
-  final public let chatEvent: Swift.String?
+@objc @_hasMissingDesignatedInitializers @objcMembers public class KakaoButton : ObjectiveC.NSObject {
+  @objc final public let name: Swift.String?
+  @objc final public let type: Swift.String?
+  @objc final public let urlPc: Swift.String?
+  @objc final public let urlMobile: Swift.String?
+  @objc final public let scheme: Swift.String?
+  @objc final public let chatExtra: Swift.String?
+  @objc final public let chatEvent: Swift.String?
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc public class ActionHistoryResult : ObjectiveC.NSObject {
-  final public let isSucceeded: Swift.Bool
-  public func getData() -> [AdBrixRmKit.ActionHistory]?
-  public func getError() -> Swift.Error?
+@objc @_hasMissingDesignatedInitializers @objcMembers public class ActionHistoryResult : ObjectiveC.NSObject {
+  @objc final public let isSucceeded: Swift.Bool
+  @objc public func getData() -> [AdBrixRmKit.ActionHistory]?
+  @objc public func getError() -> Swift.Error?
   @objc deinit
 }
 @objc public enum ActionHistoryIdType : Swift.Int {
@@ -138,6 +138,7 @@ import os
   public var delegateRemotePush: AdBrixRmKit.AdBrixRmPushRemoteDelegate?
   public var delegateLog: AdBrixRmKit.AdBrixRMLogDelegate?
   public var delegateInAppMessageClick: AdBrixRmKit.AdBrixRMInAppMessageClickDelegate?
+  public var delegateInAppMessageAutoFetch: AdBrixRmKit.DfnInAppMessageAutoFetchDelegate?
   @objc public func stopGettingIDFA()
   @objc public func startGettingIDFA()
   @objc public func initAdBrix(appKey: Swift.String, secretKey: Swift.String)
@@ -260,8 +261,14 @@ import os
   @objc public func didReceiveAbxPush(_ request: UserNotifications.UNNotificationRequest, withContentHandler contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void)
   @available(iOS 10.0, *)
   @objc public func abxPushServiceExtensionTimeWillExpire()
+  @objc public func getAllInAppMessage(completion: @escaping (AdBrixRmKit.DfnInAppMessageResult) -> ())
+  @objc public func openInAppMessage(campaignId: Swift.String, completion: @escaping (AdBrixRmKit.Completion) -> ())
+  @objc public func fetchInAppMessage(completion: @escaping (AdBrixRmKit.DfnInAppMessageResult) -> ())
+  @objc public func setInAppMessageFetchMode(mode: AdBrixRmKit.DfnInAppMessageFetchMode)
+  @objc public func setInAppMessageToken(token: Swift.String)
   @objc public func setLogDelegate(delegate: AdBrixRmKit.AdBrixRMLogDelegate)
   @objc public func setInAppMessageClickDelegate(delegate: AdBrixRmKit.AdBrixRMInAppMessageClickDelegate)
+  @objc public func setInAppMessageAutoFetchDelegate(delegate: AdBrixRmKit.DfnInAppMessageAutoFetchDelegate)
   @objc public func printSdkState()
   @objc public func setDeeplinkDelegate(delegate: AdBrixRmKit.AdBrixRMDeeplinkDelegate)
   @objc public func setDeferredDeeplinkDelegate(delegate: AdBrixRmKit.AdBrixRMDeferredDeeplinkDelegate)
@@ -366,6 +373,9 @@ import os
 @objc public protocol AdBrixRMInAppMessageClickDelegate {
   @objc func onReceiveInAppMessageClick(actionId: Swift.String, actionType: Swift.String, actionArg: Swift.String, isClosed: Swift.Bool)
 }
+@objc public protocol DfnInAppMessageAutoFetchDelegate {
+  @objc func didFetchInAppMessage(result: AdBrixRmKit.DfnInAppMessageResult)
+}
 @_inheritsConvenienceInitializers @objc public class AdBrixRmCommerceProductCategoryModel : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc public func setModel(categoryArr: [Swift.String]) -> AdBrixRmKit.AdBrixRmCommerceProductCategoryModel
@@ -374,6 +384,73 @@ import os
 @_inheritsConvenienceInitializers @objc public class AdBrixRmCommerceProductModel : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc public func setModel(productId: Swift.String, productName: Swift.String, price: Swift.Double, quantity: Swift.Int, discount: Swift.Double, currencyString: Swift.String?, categories: AdBrixRmKit.AdBrixRmCommerceProductCategoryModel?, productAttrsMap: AdBrixRmKit.AdBrixRmAttrModel?) -> AdBrixRmKit.AdBrixRmCommerceProductModel
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class DfnInAppMessage : ObjectiveC.NSObject {
+  @objc final public let campaignId: Swift.String
+  final public let extAttr: [Swift.String : Any?]?
+  @objc final public let type: Swift.String
+  @objc final public let layout: Swift.String
+  @objc final public let bgColor: Swift.String
+  @objc final public let overlayColor: Swift.String
+  @objc final public let titleText: Swift.String?
+  @objc final public let titleTextColor: Swift.String?
+  @objc final public let bodyText: Swift.String?
+  @objc final public let bodyTextColor: Swift.String?
+  @objc final public let textAlign: Swift.String?
+  @objc final public let defaultCloseButtonColor: Swift.String
+  @objc final public let defaultCloseButtonBgColor: Swift.String
+  @objc final public let stickyBannerOption: AdBrixRmKit.DfnStickyBannerOption?
+  @objc final public let scrollableImageOption: AdBrixRmKit.DfnScrollableImageOption?
+  @objc final public let numberOfButtons: Swift.Int
+  @objc final public let buttonArray: [AdBrixRmKit.DfnIAMButtonInfo]
+  @objc final public let portraitImage: UIKit.UIImage?
+  @objc final public let landscapeImage: UIKit.UIImage?
+  @objc final public let portraitImageURL: Swift.String?
+  @objc final public let landscapeImageURL: Swift.String?
+  @objc final public let isPortraitImageDownloaded: Swift.Bool
+  @objc final public let isLandscapeImageDownloaded: Swift.Bool
+  @objc final public let imageClickAction: AdBrixRmKit.DfnIAMClickAction
+  final public let startDateTime: Swift.Int64?
+  final public let endDateTime: Swift.Int64?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class DfnStickyBannerOption : ObjectiveC.NSObject {
+  @objc final public let align: Swift.String?
+  @objc final public let clickAction: AdBrixRmKit.DfnIAMClickAction
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class DfnScrollableImageOption : ObjectiveC.NSObject {
+  @objc final public let align: Swift.String?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class DfnIAMClickAction : ObjectiveC.NSObject {
+  @objc final public let actionId: Swift.String?
+  @objc final public let actionType: Swift.String?
+  @objc final public let actionArg: Swift.String?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class DfnIAMButtonInfo : ObjectiveC.NSObject {
+  @objc final public let buttonId: Swift.String?
+  @objc final public let text: Swift.String?
+  @objc final public let clickAction: AdBrixRmKit.DfnIAMClickAction
+  @objc final public let textColor: Swift.String?
+  @objc final public let bgColor: Swift.String?
+  @objc final public let borderColor: Swift.String?
+  @objc deinit
+}
+@objc public enum DfnInAppMessageFetchMode : Swift.Int {
+  case UserIdMode = 0, AdidMode
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class DfnInAppMessageResult : ObjectiveC.NSObject {
+  @objc final public let isSucceeded: Swift.Bool
+  @objc public func getData() -> [AdBrixRmKit.DfnInAppMessage]?
+  @objc public func getError() -> Swift.Error?
   @objc deinit
 }
 extension AdBrixRmKit.ActionHistoryIdType : Swift.Equatable {}
@@ -409,3 +486,6 @@ extension AdBrixRmKit.AdBrixRM.AdbrixRmPaymentMethod : Swift.RawRepresentable {}
 extension AdBrixRmKit.AdBrixRM.AdBrixRmSharingChannel : Swift.Equatable {}
 extension AdBrixRmKit.AdBrixRM.AdBrixRmSharingChannel : Swift.Hashable {}
 extension AdBrixRmKit.AdBrixRM.AdBrixRmSharingChannel : Swift.RawRepresentable {}
+extension AdBrixRmKit.DfnInAppMessageFetchMode : Swift.Equatable {}
+extension AdBrixRmKit.DfnInAppMessageFetchMode : Swift.Hashable {}
+extension AdBrixRmKit.DfnInAppMessageFetchMode : Swift.RawRepresentable {}

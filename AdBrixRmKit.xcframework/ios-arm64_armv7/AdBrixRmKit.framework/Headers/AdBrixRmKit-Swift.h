@@ -222,9 +222,23 @@ SWIFT_CLASS("_TtC11AdBrixRmKit18AbxRemotePushModel")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class KakaoButton;
 
 SWIFT_CLASS("_TtC11AdBrixRmKit13ActionContent")
 @interface ActionContent : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable notificationId;
+@property (nonatomic, readonly, copy) NSString * _Nullable title;
+@property (nonatomic, readonly, copy) NSString * _Nullable subtitle;
+@property (nonatomic, readonly, copy) NSString * _Nullable body;
+@property (nonatomic, readonly, copy) NSString * _Nullable bigTextTitle;
+@property (nonatomic, readonly, copy) NSString * _Nullable bigTextBody;
+@property (nonatomic, readonly, copy) NSString * _Nullable summaryText;
+@property (nonatomic, readonly, copy) NSString * _Nullable imgUrl;
+@property (nonatomic, readonly, copy) NSString * _Nullable largeIconUrl;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nullable deeplinkJson;
+@property (nonatomic, readonly, copy) NSString * _Nullable deeplinkUrl;
+@property (nonatomic, readonly, copy) NSString * _Nullable imageClickLink;
+@property (nonatomic, readonly, copy) NSArray<KakaoButton *> * _Nullable kakaoButtons;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -232,6 +246,15 @@ SWIFT_CLASS("_TtC11AdBrixRmKit13ActionContent")
 
 SWIFT_CLASS("_TtC11AdBrixRmKit13ActionHistory")
 @interface ActionHistory : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull historyId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull actionType;
+@property (nonatomic, readonly) int64_t timeStamp;
+@property (nonatomic, readonly, strong) ActionContent * _Nonnull content;
+@property (nonatomic, readonly) BOOL isRead;
+@property (nonatomic, readonly, copy) NSString * _Nonnull group;
+@property (nonatomic, readonly) BOOL isServerSynced;
+- (NSString * _Nonnull)toJsonString SWIFT_WARN_UNUSED_RESULT;
++ (ActionHistory * _Nullable)fromDictionaryWithHistoryJsonDic:(NSDictionary<NSString *, id> * _Nonnull)historyJsonDic isServerSynced:(BOOL)isServerSynced SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -244,6 +267,9 @@ typedef SWIFT_ENUM(NSInteger, ActionHistoryIdType, open) {
 
 SWIFT_CLASS("_TtC11AdBrixRmKit19ActionHistoryResult")
 @interface ActionHistoryResult : NSObject
+@property (nonatomic, readonly) BOOL isSucceeded;
+- (NSArray<ActionHistory *> * _Nullable)getData SWIFT_WARN_UNUSED_RESULT;
+- (NSError * _Nullable)getError SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -288,8 +314,11 @@ enum Completion : NSInteger;
 @class UNNotificationSound;
 @class UNUserNotificationCenter;
 @class UNNotificationResponse;
+@class DfnInAppMessageResult;
+enum DfnInAppMessageFetchMode : NSInteger;
 @protocol AdBrixRMLogDelegate;
 @protocol AdBrixRMInAppMessageClickDelegate;
+@protocol DfnInAppMessageAutoFetchDelegate;
 @protocol AdBrixRMDeeplinkDelegate;
 @protocol AdBrixRMDeferredDeeplinkDelegate;
 
@@ -404,8 +433,14 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)openPush:(AbxRemotePushModel * _Nonnull)abxRemotePushModel SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)didReceiveAbxPush:(UNNotificationRequest * _Nonnull)request withContentHandler:(void (^ _Nonnull)(UNNotificationContent * _Nonnull))contentHandler SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)abxPushServiceExtensionTimeWillExpire SWIFT_AVAILABILITY(ios,introduced=10.0);
+- (void)getAllInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageResult * _Nonnull))completion;
+- (void)openInAppMessageWithCampaignId:(NSString * _Nonnull)campaignId completion:(void (^ _Nonnull)(enum Completion))completion;
+- (void)fetchInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageResult * _Nonnull))completion;
+- (void)setInAppMessageFetchModeWithMode:(enum DfnInAppMessageFetchMode)mode;
+- (void)setInAppMessageTokenWithToken:(NSString * _Nonnull)token;
 - (void)setLogDelegateWithDelegate:(id <AdBrixRMLogDelegate> _Nonnull)delegate;
 - (void)setInAppMessageClickDelegateWithDelegate:(id <AdBrixRMInAppMessageClickDelegate> _Nonnull)delegate;
+- (void)setInAppMessageAutoFetchDelegateWithDelegate:(id <DfnInAppMessageAutoFetchDelegate> _Nonnull)delegate;
 - (void)printSdkState;
 - (void)setDeeplinkDelegateWithDelegate:(id <AdBrixRMDeeplinkDelegate> _Nonnull)delegate;
 - (void)setDeferredDeeplinkDelegateWithDelegate:(id <AdBrixRMDeferredDeeplinkDelegate> _Nonnull)delegate;
@@ -590,6 +625,101 @@ typedef SWIFT_ENUM(NSInteger, Completion, open) {
   CompletionFail = 1,
 };
 
+@class DfnIAMClickAction;
+
+SWIFT_CLASS("_TtC11AdBrixRmKit16DfnIAMButtonInfo")
+@interface DfnIAMButtonInfo : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable buttonId;
+@property (nonatomic, readonly, copy) NSString * _Nullable text;
+@property (nonatomic, readonly, strong) DfnIAMClickAction * _Nonnull clickAction;
+@property (nonatomic, readonly, copy) NSString * _Nullable textColor;
+@property (nonatomic, readonly, copy) NSString * _Nullable bgColor;
+@property (nonatomic, readonly, copy) NSString * _Nullable borderColor;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit17DfnIAMClickAction")
+@interface DfnIAMClickAction : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable actionId;
+@property (nonatomic, readonly, copy) NSString * _Nullable actionType;
+@property (nonatomic, readonly, copy) NSString * _Nullable actionArg;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class DfnStickyBannerOption;
+@class DfnScrollableImageOption;
+@class UIImage;
+
+SWIFT_CLASS("_TtC11AdBrixRmKit15DfnInAppMessage")
+@interface DfnInAppMessage : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull campaignId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+@property (nonatomic, readonly, copy) NSString * _Nonnull layout;
+@property (nonatomic, readonly, copy) NSString * _Nonnull bgColor;
+@property (nonatomic, readonly, copy) NSString * _Nonnull overlayColor;
+@property (nonatomic, readonly, copy) NSString * _Nullable titleText;
+@property (nonatomic, readonly, copy) NSString * _Nullable titleTextColor;
+@property (nonatomic, readonly, copy) NSString * _Nullable bodyText;
+@property (nonatomic, readonly, copy) NSString * _Nullable bodyTextColor;
+@property (nonatomic, readonly, copy) NSString * _Nullable textAlign;
+@property (nonatomic, readonly, copy) NSString * _Nonnull defaultCloseButtonColor;
+@property (nonatomic, readonly, copy) NSString * _Nonnull defaultCloseButtonBgColor;
+@property (nonatomic, readonly, strong) DfnStickyBannerOption * _Nullable stickyBannerOption;
+@property (nonatomic, readonly, strong) DfnScrollableImageOption * _Nullable scrollableImageOption;
+@property (nonatomic, readonly) NSInteger numberOfButtons;
+@property (nonatomic, readonly, copy) NSArray<DfnIAMButtonInfo *> * _Nonnull buttonArray;
+@property (nonatomic, readonly, strong) UIImage * _Nullable portraitImage;
+@property (nonatomic, readonly, strong) UIImage * _Nullable landscapeImage;
+@property (nonatomic, readonly, copy) NSString * _Nullable portraitImageURL;
+@property (nonatomic, readonly, copy) NSString * _Nullable landscapeImageURL;
+@property (nonatomic, readonly) BOOL isPortraitImageDownloaded;
+@property (nonatomic, readonly) BOOL isLandscapeImageDownloaded;
+@property (nonatomic, readonly, strong) DfnIAMClickAction * _Nonnull imageClickAction;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP11AdBrixRmKit32DfnInAppMessageAutoFetchDelegate_")
+@protocol DfnInAppMessageAutoFetchDelegate
+- (void)didFetchInAppMessageWithResult:(DfnInAppMessageResult * _Nonnull)result;
+@end
+
+typedef SWIFT_ENUM(NSInteger, DfnInAppMessageFetchMode, open) {
+  DfnInAppMessageFetchModeUserIdMode = 0,
+  DfnInAppMessageFetchModeAdidMode = 1,
+};
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit21DfnInAppMessageResult")
+@interface DfnInAppMessageResult : NSObject
+@property (nonatomic, readonly) BOOL isSucceeded;
+- (NSArray<DfnInAppMessage *> * _Nullable)getData SWIFT_WARN_UNUSED_RESULT;
+- (NSError * _Nullable)getError SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit24DfnScrollableImageOption")
+@interface DfnScrollableImageOption : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable align;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit21DfnStickyBannerOption")
+@interface DfnStickyBannerOption : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable align;
+@property (nonatomic, readonly, strong) DfnIAMClickAction * _Nonnull clickAction;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 SWIFT_CLASS("_TtC11AdBrixRmKit7DfnUtil")
 @interface DfnUtil : NSObject
@@ -602,6 +732,13 @@ SWIFT_CLASS("_TtC11AdBrixRmKit7DfnUtil")
 
 SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 @interface KakaoButton : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable name;
+@property (nonatomic, readonly, copy) NSString * _Nullable type;
+@property (nonatomic, readonly, copy) NSString * _Nullable urlPc;
+@property (nonatomic, readonly, copy) NSString * _Nullable urlMobile;
+@property (nonatomic, readonly, copy) NSString * _Nullable scheme;
+@property (nonatomic, readonly, copy) NSString * _Nullable chatExtra;
+@property (nonatomic, readonly, copy) NSString * _Nullable chatEvent;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -840,9 +977,23 @@ SWIFT_CLASS("_TtC11AdBrixRmKit18AbxRemotePushModel")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class KakaoButton;
 
 SWIFT_CLASS("_TtC11AdBrixRmKit13ActionContent")
 @interface ActionContent : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable notificationId;
+@property (nonatomic, readonly, copy) NSString * _Nullable title;
+@property (nonatomic, readonly, copy) NSString * _Nullable subtitle;
+@property (nonatomic, readonly, copy) NSString * _Nullable body;
+@property (nonatomic, readonly, copy) NSString * _Nullable bigTextTitle;
+@property (nonatomic, readonly, copy) NSString * _Nullable bigTextBody;
+@property (nonatomic, readonly, copy) NSString * _Nullable summaryText;
+@property (nonatomic, readonly, copy) NSString * _Nullable imgUrl;
+@property (nonatomic, readonly, copy) NSString * _Nullable largeIconUrl;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nullable deeplinkJson;
+@property (nonatomic, readonly, copy) NSString * _Nullable deeplinkUrl;
+@property (nonatomic, readonly, copy) NSString * _Nullable imageClickLink;
+@property (nonatomic, readonly, copy) NSArray<KakaoButton *> * _Nullable kakaoButtons;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -850,6 +1001,15 @@ SWIFT_CLASS("_TtC11AdBrixRmKit13ActionContent")
 
 SWIFT_CLASS("_TtC11AdBrixRmKit13ActionHistory")
 @interface ActionHistory : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull historyId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull actionType;
+@property (nonatomic, readonly) int64_t timeStamp;
+@property (nonatomic, readonly, strong) ActionContent * _Nonnull content;
+@property (nonatomic, readonly) BOOL isRead;
+@property (nonatomic, readonly, copy) NSString * _Nonnull group;
+@property (nonatomic, readonly) BOOL isServerSynced;
+- (NSString * _Nonnull)toJsonString SWIFT_WARN_UNUSED_RESULT;
++ (ActionHistory * _Nullable)fromDictionaryWithHistoryJsonDic:(NSDictionary<NSString *, id> * _Nonnull)historyJsonDic isServerSynced:(BOOL)isServerSynced SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -862,6 +1022,9 @@ typedef SWIFT_ENUM(NSInteger, ActionHistoryIdType, open) {
 
 SWIFT_CLASS("_TtC11AdBrixRmKit19ActionHistoryResult")
 @interface ActionHistoryResult : NSObject
+@property (nonatomic, readonly) BOOL isSucceeded;
+- (NSArray<ActionHistory *> * _Nullable)getData SWIFT_WARN_UNUSED_RESULT;
+- (NSError * _Nullable)getError SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -906,8 +1069,11 @@ enum Completion : NSInteger;
 @class UNNotificationSound;
 @class UNUserNotificationCenter;
 @class UNNotificationResponse;
+@class DfnInAppMessageResult;
+enum DfnInAppMessageFetchMode : NSInteger;
 @protocol AdBrixRMLogDelegate;
 @protocol AdBrixRMInAppMessageClickDelegate;
+@protocol DfnInAppMessageAutoFetchDelegate;
 @protocol AdBrixRMDeeplinkDelegate;
 @protocol AdBrixRMDeferredDeeplinkDelegate;
 
@@ -1022,8 +1188,14 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)openPush:(AbxRemotePushModel * _Nonnull)abxRemotePushModel SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)didReceiveAbxPush:(UNNotificationRequest * _Nonnull)request withContentHandler:(void (^ _Nonnull)(UNNotificationContent * _Nonnull))contentHandler SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)abxPushServiceExtensionTimeWillExpire SWIFT_AVAILABILITY(ios,introduced=10.0);
+- (void)getAllInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageResult * _Nonnull))completion;
+- (void)openInAppMessageWithCampaignId:(NSString * _Nonnull)campaignId completion:(void (^ _Nonnull)(enum Completion))completion;
+- (void)fetchInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageResult * _Nonnull))completion;
+- (void)setInAppMessageFetchModeWithMode:(enum DfnInAppMessageFetchMode)mode;
+- (void)setInAppMessageTokenWithToken:(NSString * _Nonnull)token;
 - (void)setLogDelegateWithDelegate:(id <AdBrixRMLogDelegate> _Nonnull)delegate;
 - (void)setInAppMessageClickDelegateWithDelegate:(id <AdBrixRMInAppMessageClickDelegate> _Nonnull)delegate;
+- (void)setInAppMessageAutoFetchDelegateWithDelegate:(id <DfnInAppMessageAutoFetchDelegate> _Nonnull)delegate;
 - (void)printSdkState;
 - (void)setDeeplinkDelegateWithDelegate:(id <AdBrixRMDeeplinkDelegate> _Nonnull)delegate;
 - (void)setDeferredDeeplinkDelegateWithDelegate:(id <AdBrixRMDeferredDeeplinkDelegate> _Nonnull)delegate;
@@ -1208,6 +1380,101 @@ typedef SWIFT_ENUM(NSInteger, Completion, open) {
   CompletionFail = 1,
 };
 
+@class DfnIAMClickAction;
+
+SWIFT_CLASS("_TtC11AdBrixRmKit16DfnIAMButtonInfo")
+@interface DfnIAMButtonInfo : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable buttonId;
+@property (nonatomic, readonly, copy) NSString * _Nullable text;
+@property (nonatomic, readonly, strong) DfnIAMClickAction * _Nonnull clickAction;
+@property (nonatomic, readonly, copy) NSString * _Nullable textColor;
+@property (nonatomic, readonly, copy) NSString * _Nullable bgColor;
+@property (nonatomic, readonly, copy) NSString * _Nullable borderColor;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit17DfnIAMClickAction")
+@interface DfnIAMClickAction : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable actionId;
+@property (nonatomic, readonly, copy) NSString * _Nullable actionType;
+@property (nonatomic, readonly, copy) NSString * _Nullable actionArg;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class DfnStickyBannerOption;
+@class DfnScrollableImageOption;
+@class UIImage;
+
+SWIFT_CLASS("_TtC11AdBrixRmKit15DfnInAppMessage")
+@interface DfnInAppMessage : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull campaignId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+@property (nonatomic, readonly, copy) NSString * _Nonnull layout;
+@property (nonatomic, readonly, copy) NSString * _Nonnull bgColor;
+@property (nonatomic, readonly, copy) NSString * _Nonnull overlayColor;
+@property (nonatomic, readonly, copy) NSString * _Nullable titleText;
+@property (nonatomic, readonly, copy) NSString * _Nullable titleTextColor;
+@property (nonatomic, readonly, copy) NSString * _Nullable bodyText;
+@property (nonatomic, readonly, copy) NSString * _Nullable bodyTextColor;
+@property (nonatomic, readonly, copy) NSString * _Nullable textAlign;
+@property (nonatomic, readonly, copy) NSString * _Nonnull defaultCloseButtonColor;
+@property (nonatomic, readonly, copy) NSString * _Nonnull defaultCloseButtonBgColor;
+@property (nonatomic, readonly, strong) DfnStickyBannerOption * _Nullable stickyBannerOption;
+@property (nonatomic, readonly, strong) DfnScrollableImageOption * _Nullable scrollableImageOption;
+@property (nonatomic, readonly) NSInteger numberOfButtons;
+@property (nonatomic, readonly, copy) NSArray<DfnIAMButtonInfo *> * _Nonnull buttonArray;
+@property (nonatomic, readonly, strong) UIImage * _Nullable portraitImage;
+@property (nonatomic, readonly, strong) UIImage * _Nullable landscapeImage;
+@property (nonatomic, readonly, copy) NSString * _Nullable portraitImageURL;
+@property (nonatomic, readonly, copy) NSString * _Nullable landscapeImageURL;
+@property (nonatomic, readonly) BOOL isPortraitImageDownloaded;
+@property (nonatomic, readonly) BOOL isLandscapeImageDownloaded;
+@property (nonatomic, readonly, strong) DfnIAMClickAction * _Nonnull imageClickAction;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP11AdBrixRmKit32DfnInAppMessageAutoFetchDelegate_")
+@protocol DfnInAppMessageAutoFetchDelegate
+- (void)didFetchInAppMessageWithResult:(DfnInAppMessageResult * _Nonnull)result;
+@end
+
+typedef SWIFT_ENUM(NSInteger, DfnInAppMessageFetchMode, open) {
+  DfnInAppMessageFetchModeUserIdMode = 0,
+  DfnInAppMessageFetchModeAdidMode = 1,
+};
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit21DfnInAppMessageResult")
+@interface DfnInAppMessageResult : NSObject
+@property (nonatomic, readonly) BOOL isSucceeded;
+- (NSArray<DfnInAppMessage *> * _Nullable)getData SWIFT_WARN_UNUSED_RESULT;
+- (NSError * _Nullable)getError SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit24DfnScrollableImageOption")
+@interface DfnScrollableImageOption : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable align;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit21DfnStickyBannerOption")
+@interface DfnStickyBannerOption : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable align;
+@property (nonatomic, readonly, strong) DfnIAMClickAction * _Nonnull clickAction;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 SWIFT_CLASS("_TtC11AdBrixRmKit7DfnUtil")
 @interface DfnUtil : NSObject
@@ -1220,6 +1487,13 @@ SWIFT_CLASS("_TtC11AdBrixRmKit7DfnUtil")
 
 SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 @interface KakaoButton : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable name;
+@property (nonatomic, readonly, copy) NSString * _Nullable type;
+@property (nonatomic, readonly, copy) NSString * _Nullable urlPc;
+@property (nonatomic, readonly, copy) NSString * _Nullable urlMobile;
+@property (nonatomic, readonly, copy) NSString * _Nullable scheme;
+@property (nonatomic, readonly, copy) NSString * _Nullable chatExtra;
+@property (nonatomic, readonly, copy) NSString * _Nullable chatEvent;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

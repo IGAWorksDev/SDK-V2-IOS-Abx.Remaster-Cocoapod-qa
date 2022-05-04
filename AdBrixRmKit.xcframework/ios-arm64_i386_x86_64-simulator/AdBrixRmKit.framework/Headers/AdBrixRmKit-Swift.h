@@ -649,6 +649,16 @@ SWIFT_CLASS("_TtC11AdBrixRmKit17DfnIAMClickAction")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC11AdBrixRmKit13DfnIAMTrigger")
+@interface DfnIAMTrigger : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+@property (nonatomic, readonly, copy) NSString * _Nullable eventName;
+@property (nonatomic, readonly) int64_t priority;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class DfnStickyBannerOption;
 @class DfnScrollableImageOption;
 @class UIImage;
@@ -678,6 +688,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit15DfnInAppMessage")
 @property (nonatomic, readonly) BOOL isPortraitImageDownloaded;
 @property (nonatomic, readonly) BOOL isLandscapeImageDownloaded;
 @property (nonatomic, readonly, strong) DfnIAMClickAction * _Nonnull imageClickAction;
+@property (nonatomic, readonly, copy) NSArray<DfnIAMTrigger *> * _Nullable triggers;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1404,6 +1415,16 @@ SWIFT_CLASS("_TtC11AdBrixRmKit17DfnIAMClickAction")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC11AdBrixRmKit13DfnIAMTrigger")
+@interface DfnIAMTrigger : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+@property (nonatomic, readonly, copy) NSString * _Nullable eventName;
+@property (nonatomic, readonly) int64_t priority;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class DfnStickyBannerOption;
 @class DfnScrollableImageOption;
 @class UIImage;
@@ -1433,6 +1454,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit15DfnInAppMessage")
 @property (nonatomic, readonly) BOOL isPortraitImageDownloaded;
 @property (nonatomic, readonly) BOOL isLandscapeImageDownloaded;
 @property (nonatomic, readonly, strong) DfnIAMClickAction * _Nonnull imageClickAction;
+@property (nonatomic, readonly, copy) NSArray<DfnIAMTrigger *> * _Nullable triggers;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2159,6 +2181,16 @@ SWIFT_CLASS("_TtC11AdBrixRmKit17DfnIAMClickAction")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC11AdBrixRmKit13DfnIAMTrigger")
+@interface DfnIAMTrigger : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+@property (nonatomic, readonly, copy) NSString * _Nullable eventName;
+@property (nonatomic, readonly) int64_t priority;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class DfnStickyBannerOption;
 @class DfnScrollableImageOption;
 @class UIImage;
@@ -2188,6 +2220,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit15DfnInAppMessage")
 @property (nonatomic, readonly) BOOL isPortraitImageDownloaded;
 @property (nonatomic, readonly) BOOL isLandscapeImageDownloaded;
 @property (nonatomic, readonly, strong) DfnIAMClickAction * _Nonnull imageClickAction;
+@property (nonatomic, readonly, copy) NSArray<DfnIAMTrigger *> * _Nullable triggers;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

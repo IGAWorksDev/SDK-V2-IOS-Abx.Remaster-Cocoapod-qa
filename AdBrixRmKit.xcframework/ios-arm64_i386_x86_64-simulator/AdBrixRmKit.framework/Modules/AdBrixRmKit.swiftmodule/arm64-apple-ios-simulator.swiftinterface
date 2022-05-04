@@ -413,6 +413,7 @@ import os
   @objc final public let imageClickAction: AdBrixRmKit.DfnIAMClickAction
   final public let startDateTime: Swift.Int64?
   final public let endDateTime: Swift.Int64?
+  @objc final public let triggers: [AdBrixRmKit.DfnIAMTrigger]?
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class DfnStickyBannerOption : ObjectiveC.NSObject {
@@ -437,6 +438,12 @@ import os
   @objc final public let textColor: Swift.String?
   @objc final public let bgColor: Swift.String?
   @objc final public let borderColor: Swift.String?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class DfnIAMTrigger : ObjectiveC.NSObject {
+  @objc final public let type: Swift.String
+  @objc final public let eventName: Swift.String?
+  @objc final public let priority: Swift.Int64
   @objc deinit
 }
 @objc public enum DfnInAppMessageFetchMode : Swift.Int {

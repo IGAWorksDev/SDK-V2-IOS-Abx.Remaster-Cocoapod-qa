@@ -263,7 +263,7 @@ import os
   @objc public func abxPushServiceExtensionTimeWillExpire()
   @objc public func getAllInAppMessage(completion: @escaping (AdBrixRmKit.DfnInAppMessageResult) -> ())
   @objc public func openInAppMessage(campaignId: Swift.String, completion: @escaping (AdBrixRmKit.Completion) -> ())
-  @objc public func fetchInAppMessage(completion: @escaping (AdBrixRmKit.DfnInAppMessageResult) -> ())
+  @objc public func fetchInAppMessage(completion: @escaping (AdBrixRmKit.DfnInAppMessageFetchResult) -> ())
   @objc public func setInAppMessageFetchMode(mode: AdBrixRmKit.DfnInAppMessageFetchMode)
   @objc public func setInAppMessageToken(token: Swift.String)
   @objc public func setLogDelegate(delegate: AdBrixRmKit.AdBrixRMLogDelegate)
@@ -374,7 +374,7 @@ import os
   @objc func onReceiveInAppMessageClick(actionId: Swift.String, actionType: Swift.String, actionArg: Swift.String, isClosed: Swift.Bool)
 }
 @objc public protocol DfnInAppMessageAutoFetchDelegate {
-  @objc func didFetchInAppMessage(result: AdBrixRmKit.DfnInAppMessageResult)
+  @objc func didFetchInAppMessage(result: AdBrixRmKit.DfnInAppMessageFetchResult)
 }
 @_inheritsConvenienceInitializers @objc public class AdBrixRmCommerceProductCategoryModel : ObjectiveC.NSObject {
   @objc override dynamic public init()
@@ -457,6 +457,11 @@ import os
 @objc @_hasMissingDesignatedInitializers @objcMembers public class DfnInAppMessageResult : ObjectiveC.NSObject {
   @objc final public let isSucceeded: Swift.Bool
   @objc public func getData() -> [AdBrixRmKit.DfnInAppMessage]?
+  @objc public func getError() -> Swift.Error?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class DfnInAppMessageFetchResult : ObjectiveC.NSObject {
+  @objc final public let isSucceeded: Swift.Bool
   @objc public func getError() -> Swift.Error?
   @objc deinit
 }

@@ -315,6 +315,7 @@ enum Completion : NSInteger;
 @class UNUserNotificationCenter;
 @class UNNotificationResponse;
 @class DfnInAppMessageResult;
+@class DfnInAppMessageFetchResult;
 enum DfnInAppMessageFetchMode : NSInteger;
 @protocol AdBrixRMLogDelegate;
 @protocol AdBrixRMInAppMessageClickDelegate;
@@ -435,7 +436,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)abxPushServiceExtensionTimeWillExpire SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)getAllInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageResult * _Nonnull))completion;
 - (void)openInAppMessageWithCampaignId:(NSString * _Nonnull)campaignId completion:(void (^ _Nonnull)(enum Completion))completion;
-- (void)fetchInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageResult * _Nonnull))completion;
+- (void)fetchInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageFetchResult * _Nonnull))completion;
 - (void)setInAppMessageFetchModeWithMode:(enum DfnInAppMessageFetchMode)mode;
 - (void)setInAppMessageTokenWithToken:(NSString * _Nonnull)token;
 - (void)setLogDelegateWithDelegate:(id <AdBrixRMLogDelegate> _Nonnull)delegate;
@@ -696,13 +697,22 @@ SWIFT_CLASS("_TtC11AdBrixRmKit15DfnInAppMessage")
 
 SWIFT_PROTOCOL("_TtP11AdBrixRmKit32DfnInAppMessageAutoFetchDelegate_")
 @protocol DfnInAppMessageAutoFetchDelegate
-- (void)didFetchInAppMessageWithResult:(DfnInAppMessageResult * _Nonnull)result;
+- (void)didFetchInAppMessageWithResult:(DfnInAppMessageFetchResult * _Nonnull)result;
 @end
 
 typedef SWIFT_ENUM(NSInteger, DfnInAppMessageFetchMode, open) {
   DfnInAppMessageFetchModeUserIdMode = 0,
   DfnInAppMessageFetchModeAdidMode = 1,
 };
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit26DfnInAppMessageFetchResult")
+@interface DfnInAppMessageFetchResult : NSObject
+@property (nonatomic, readonly) BOOL isSucceeded;
+- (NSError * _Nullable)getError SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit21DfnInAppMessageResult")
@@ -1081,6 +1091,7 @@ enum Completion : NSInteger;
 @class UNUserNotificationCenter;
 @class UNNotificationResponse;
 @class DfnInAppMessageResult;
+@class DfnInAppMessageFetchResult;
 enum DfnInAppMessageFetchMode : NSInteger;
 @protocol AdBrixRMLogDelegate;
 @protocol AdBrixRMInAppMessageClickDelegate;
@@ -1201,7 +1212,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)abxPushServiceExtensionTimeWillExpire SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)getAllInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageResult * _Nonnull))completion;
 - (void)openInAppMessageWithCampaignId:(NSString * _Nonnull)campaignId completion:(void (^ _Nonnull)(enum Completion))completion;
-- (void)fetchInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageResult * _Nonnull))completion;
+- (void)fetchInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageFetchResult * _Nonnull))completion;
 - (void)setInAppMessageFetchModeWithMode:(enum DfnInAppMessageFetchMode)mode;
 - (void)setInAppMessageTokenWithToken:(NSString * _Nonnull)token;
 - (void)setLogDelegateWithDelegate:(id <AdBrixRMLogDelegate> _Nonnull)delegate;
@@ -1462,13 +1473,22 @@ SWIFT_CLASS("_TtC11AdBrixRmKit15DfnInAppMessage")
 
 SWIFT_PROTOCOL("_TtP11AdBrixRmKit32DfnInAppMessageAutoFetchDelegate_")
 @protocol DfnInAppMessageAutoFetchDelegate
-- (void)didFetchInAppMessageWithResult:(DfnInAppMessageResult * _Nonnull)result;
+- (void)didFetchInAppMessageWithResult:(DfnInAppMessageFetchResult * _Nonnull)result;
 @end
 
 typedef SWIFT_ENUM(NSInteger, DfnInAppMessageFetchMode, open) {
   DfnInAppMessageFetchModeUserIdMode = 0,
   DfnInAppMessageFetchModeAdidMode = 1,
 };
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit26DfnInAppMessageFetchResult")
+@interface DfnInAppMessageFetchResult : NSObject
+@property (nonatomic, readonly) BOOL isSucceeded;
+- (NSError * _Nullable)getError SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit21DfnInAppMessageResult")
@@ -1847,6 +1867,7 @@ enum Completion : NSInteger;
 @class UNUserNotificationCenter;
 @class UNNotificationResponse;
 @class DfnInAppMessageResult;
+@class DfnInAppMessageFetchResult;
 enum DfnInAppMessageFetchMode : NSInteger;
 @protocol AdBrixRMLogDelegate;
 @protocol AdBrixRMInAppMessageClickDelegate;
@@ -1967,7 +1988,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)abxPushServiceExtensionTimeWillExpire SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)getAllInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageResult * _Nonnull))completion;
 - (void)openInAppMessageWithCampaignId:(NSString * _Nonnull)campaignId completion:(void (^ _Nonnull)(enum Completion))completion;
-- (void)fetchInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageResult * _Nonnull))completion;
+- (void)fetchInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageFetchResult * _Nonnull))completion;
 - (void)setInAppMessageFetchModeWithMode:(enum DfnInAppMessageFetchMode)mode;
 - (void)setInAppMessageTokenWithToken:(NSString * _Nonnull)token;
 - (void)setLogDelegateWithDelegate:(id <AdBrixRMLogDelegate> _Nonnull)delegate;
@@ -2228,13 +2249,22 @@ SWIFT_CLASS("_TtC11AdBrixRmKit15DfnInAppMessage")
 
 SWIFT_PROTOCOL("_TtP11AdBrixRmKit32DfnInAppMessageAutoFetchDelegate_")
 @protocol DfnInAppMessageAutoFetchDelegate
-- (void)didFetchInAppMessageWithResult:(DfnInAppMessageResult * _Nonnull)result;
+- (void)didFetchInAppMessageWithResult:(DfnInAppMessageFetchResult * _Nonnull)result;
 @end
 
 typedef SWIFT_ENUM(NSInteger, DfnInAppMessageFetchMode, open) {
   DfnInAppMessageFetchModeUserIdMode = 0,
   DfnInAppMessageFetchModeAdidMode = 1,
 };
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit26DfnInAppMessageFetchResult")
+@interface DfnInAppMessageFetchResult : NSObject
+@property (nonatomic, readonly) BOOL isSucceeded;
+- (NSError * _Nullable)getError SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit21DfnInAppMessageResult")

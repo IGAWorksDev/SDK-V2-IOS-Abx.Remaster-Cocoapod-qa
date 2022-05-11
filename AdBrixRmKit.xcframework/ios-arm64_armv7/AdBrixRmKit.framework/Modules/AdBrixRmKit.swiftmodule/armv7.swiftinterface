@@ -9,6 +9,7 @@ import CommonCrypto
 import CoreTelephony
 import Foundation
 import SQLite3
+import StoreKit
 import Swift
 import SystemConfiguration
 import UIKit

@@ -130,6 +130,10 @@ import os
     get
   }
 }
+@objc @objcMembers public class Result : ObjectiveC.NSObject {
+  @objc public init(isSuccess: Swift.Bool, error: Swift.Error?)
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc public class AdBrixRM : ObjectiveC.NSObject {
   public static let getInstance: AdBrixRmKit.AdBrixRM
   @objc public class func sharedInstance() -> AdBrixRmKit.AdBrixRM
@@ -274,6 +278,7 @@ import os
   @objc public func setDeeplinkDelegate(delegate: AdBrixRmKit.AdBrixRMDeeplinkDelegate)
   @objc public func setDeferredDeeplinkDelegate(delegate: AdBrixRmKit.AdBrixRMDeferredDeeplinkDelegate)
   @objc public func setDeviceId(_ device_id: Swift.String)
+  @objc public func flushAllEvents(completion: ((AdBrixRmKit.Result) -> ())? = nil)
   @objc public enum AdBrixEventUploadCountInterval : Swift.Int {
     case MIN = 10, NORMAL = 30, MAX = 60
     public init?(rawValue: Swift.Int)

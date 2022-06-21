@@ -322,7 +322,7 @@ enum DfnInAppMessageFetchMode : NSInteger;
 @protocol DfnInAppMessageAutoFetchDelegate;
 @protocol AdBrixRMDeeplinkDelegate;
 @protocol AdBrixRMDeferredDeeplinkDelegate;
-@class Result;
+@class DfnResult;
 
 SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 @interface AdBrixRM : NSObject
@@ -447,7 +447,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setDeeplinkDelegateWithDelegate:(id <AdBrixRMDeeplinkDelegate> _Nonnull)delegate;
 - (void)setDeferredDeeplinkDelegateWithDelegate:(id <AdBrixRMDeferredDeeplinkDelegate> _Nonnull)delegate;
 - (void)setDeviceId:(NSString * _Nonnull)device_id;
-- (void)flushAllEventsWithCompletion:(void (^ _Nullable)(Result * _Nonnull))completion;
+- (void)flushAllEventsWithCompletion:(void (^ _Nullable)(DfnResult * _Nonnull))completion;
 - (void)didBecomeActive;
 - (void)willResignActive;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -727,6 +727,16 @@ SWIFT_CLASS("_TtC11AdBrixRmKit21DfnInAppMessageResult")
 @end
 
 
+SWIFT_CLASS("_TtC11AdBrixRmKit9DfnResult")
+@interface DfnResult : NSObject
+@property (nonatomic, readonly) BOOL isSuccess;
+@property (nonatomic, readonly) NSError * _Nullable error;
+- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC11AdBrixRmKit24DfnScrollableImageOption")
 @interface DfnScrollableImageOption : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable align;
@@ -762,14 +772,6 @@ SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 @property (nonatomic, readonly, copy) NSString * _Nullable scheme;
 @property (nonatomic, readonly, copy) NSString * _Nullable chatExtra;
 @property (nonatomic, readonly, copy) NSString * _Nullable chatEvent;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC11AdBrixRmKit6Result")
-@interface Result : NSObject
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1108,7 +1110,7 @@ enum DfnInAppMessageFetchMode : NSInteger;
 @protocol DfnInAppMessageAutoFetchDelegate;
 @protocol AdBrixRMDeeplinkDelegate;
 @protocol AdBrixRMDeferredDeeplinkDelegate;
-@class Result;
+@class DfnResult;
 
 SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 @interface AdBrixRM : NSObject
@@ -1233,7 +1235,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setDeeplinkDelegateWithDelegate:(id <AdBrixRMDeeplinkDelegate> _Nonnull)delegate;
 - (void)setDeferredDeeplinkDelegateWithDelegate:(id <AdBrixRMDeferredDeeplinkDelegate> _Nonnull)delegate;
 - (void)setDeviceId:(NSString * _Nonnull)device_id;
-- (void)flushAllEventsWithCompletion:(void (^ _Nullable)(Result * _Nonnull))completion;
+- (void)flushAllEventsWithCompletion:(void (^ _Nullable)(DfnResult * _Nonnull))completion;
 - (void)didBecomeActive;
 - (void)willResignActive;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1513,6 +1515,16 @@ SWIFT_CLASS("_TtC11AdBrixRmKit21DfnInAppMessageResult")
 @end
 
 
+SWIFT_CLASS("_TtC11AdBrixRmKit9DfnResult")
+@interface DfnResult : NSObject
+@property (nonatomic, readonly) BOOL isSuccess;
+@property (nonatomic, readonly) NSError * _Nullable error;
+- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC11AdBrixRmKit24DfnScrollableImageOption")
 @interface DfnScrollableImageOption : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable align;
@@ -1548,14 +1560,6 @@ SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 @property (nonatomic, readonly, copy) NSString * _Nullable scheme;
 @property (nonatomic, readonly, copy) NSString * _Nullable chatExtra;
 @property (nonatomic, readonly, copy) NSString * _Nullable chatEvent;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC11AdBrixRmKit6Result")
-@interface Result : NSObject
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

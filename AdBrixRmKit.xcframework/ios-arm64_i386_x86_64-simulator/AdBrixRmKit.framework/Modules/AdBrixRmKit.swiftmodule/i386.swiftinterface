@@ -281,6 +281,7 @@ import os
   @objc public func setDeferredDeeplinkDelegate(delegate: AdBrixRmKit.AdBrixRMDeferredDeeplinkDelegate)
   @objc public func setDeviceId(_ device_id: Swift.String)
   @objc public func flushAllEvents(completion: ((AdBrixRmKit.DfnResult) -> ())? = nil)
+  @objc public func getSDKVersion() -> Swift.String
   @objc public enum AdBrixEventUploadCountInterval : Swift.Int {
     case MIN = 10, NORMAL = 30, MAX = 60
     public init?(rawValue: Swift.Int)

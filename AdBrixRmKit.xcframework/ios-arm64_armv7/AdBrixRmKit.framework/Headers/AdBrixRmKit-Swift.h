@@ -448,6 +448,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setDeferredDeeplinkDelegateWithDelegate:(id <AdBrixRMDeferredDeeplinkDelegate> _Nonnull)delegate;
 - (void)setDeviceId:(NSString * _Nonnull)device_id;
 - (void)flushAllEventsWithCompletion:(void (^ _Nullable)(DfnResult * _Nonnull))completion;
+- (NSString * _Nonnull)getSDKVersion SWIFT_WARN_UNUSED_RESULT;
 - (void)didBecomeActive;
 - (void)willResignActive;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1236,6 +1237,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setDeferredDeeplinkDelegateWithDelegate:(id <AdBrixRMDeferredDeeplinkDelegate> _Nonnull)delegate;
 - (void)setDeviceId:(NSString * _Nonnull)device_id;
 - (void)flushAllEventsWithCompletion:(void (^ _Nullable)(DfnResult * _Nonnull))completion;
+- (NSString * _Nonnull)getSDKVersion SWIFT_WARN_UNUSED_RESULT;
 - (void)didBecomeActive;
 - (void)willResignActive;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

@@ -350,7 +350,6 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setLocationWithLatitude:(double)latitude longitude:(double)longitude;
 - (void)eventWithEventName:(NSString * _Nonnull)eventName;
 - (void)eventWithAttrWithEventName:(NSString * _Nonnull)eventName value:(AdBrixRmAttrModel * _Nonnull)value;
-- (void)eventForUnityWithAttrWithEventName:(NSString * _Nonnull)eventName value:(AdBrixRmAttrModel * _Nonnull)value;
 - (void)commonSignUpWithChannel:(enum AdBrixRmSignUpChannel)channel;
 - (void)commonSignUpWithAttrWithChannel:(enum AdBrixRmSignUpChannel)channel commonAttr:(AdBrixRmAttrModel * _Nullable)commonAttr;
 - (NSString * _Nonnull)getSignUpChannelByAdBrixRmSignUpChannel:(enum AdBrixRmSignUpChannel)channel SWIFT_WARN_UNUSED_RESULT;
@@ -371,6 +370,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (NSString * _Nonnull)getPaymentMethod:(NSInteger)method SWIFT_WARN_UNUSED_RESULT;
 - (enum AdbrixRmPaymentMethod)convertPayment:(NSInteger)code SWIFT_WARN_UNUSED_RESULT;
 - (AdBrixRmCommerceProductModel * _Nonnull)createCommerceProductDataWithAttrWithProductId:(NSString * _Nonnull)productId productName:(NSString * _Nonnull)productName price:(double)price quantity:(NSInteger)quantity discount:(double)discount currencyString:(NSString * _Nullable)currencyString category:(AdBrixRmCommerceProductCategoryModel * _Nullable)category productAttrsMap:(AdBrixRmAttrModel * _Nullable)productAttrsMap SWIFT_WARN_UNUSED_RESULT;
+- (AdBrixRmAttrModel * _Nonnull)createAttrModelWithDictionary:(NSDictionary<NSString *, NSString *> * _Nonnull)dictionary SWIFT_WARN_UNUSED_RESULT;
 - (AdBrixRmCommerceProductCategoryModel * _Nonnull)createCommerceProductCategoryDataWithCategory:(NSString * _Nonnull)category category2:(NSString * _Nonnull)category2 category3:(NSString * _Nonnull)category3 category4:(NSString * _Nonnull)category4 category5:(NSString * _Nonnull)category5 SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getCurrencyStringByAdBrixCurrencyType:(enum AdBrixRmCurrencyType)currency SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getCurrencyString:(NSInteger)currency SWIFT_WARN_UNUSED_RESULT;
@@ -412,7 +412,6 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)deleteUserDataAndStopSDK:(NSString * _Nonnull)userId :(void (^ _Nonnull)(enum Completion))completion;
 - (void)restartSDK:(NSString * _Nonnull)userId :(void (^ _Nonnull)(enum Completion))completion;
 - (void)setRegistrationIdWithDeviceToken:(NSData * _Nonnull)deviceToken SWIFT_AVAILABILITY(ios,introduced=10.0);
-- (void)setRegistrationIdForUnityWithDeviceToken:(NSString * _Nonnull)deviceToken SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)setPushEnableToPushEnable:(BOOL)toPushEnable SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)fetchActionHistoryByUserIdWithToken:(NSString * _Nullable)token actionType:(NSArray<NSString *> * _Nonnull)actionType completion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
 - (void)fetchActionHistoryByAdidWithToken:(NSString * _Nullable)token actionType:(NSArray<NSString *> * _Nonnull)actionType completion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
@@ -1139,7 +1138,6 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setLocationWithLatitude:(double)latitude longitude:(double)longitude;
 - (void)eventWithEventName:(NSString * _Nonnull)eventName;
 - (void)eventWithAttrWithEventName:(NSString * _Nonnull)eventName value:(AdBrixRmAttrModel * _Nonnull)value;
-- (void)eventForUnityWithAttrWithEventName:(NSString * _Nonnull)eventName value:(AdBrixRmAttrModel * _Nonnull)value;
 - (void)commonSignUpWithChannel:(enum AdBrixRmSignUpChannel)channel;
 - (void)commonSignUpWithAttrWithChannel:(enum AdBrixRmSignUpChannel)channel commonAttr:(AdBrixRmAttrModel * _Nullable)commonAttr;
 - (NSString * _Nonnull)getSignUpChannelByAdBrixRmSignUpChannel:(enum AdBrixRmSignUpChannel)channel SWIFT_WARN_UNUSED_RESULT;
@@ -1160,6 +1158,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (NSString * _Nonnull)getPaymentMethod:(NSInteger)method SWIFT_WARN_UNUSED_RESULT;
 - (enum AdbrixRmPaymentMethod)convertPayment:(NSInteger)code SWIFT_WARN_UNUSED_RESULT;
 - (AdBrixRmCommerceProductModel * _Nonnull)createCommerceProductDataWithAttrWithProductId:(NSString * _Nonnull)productId productName:(NSString * _Nonnull)productName price:(double)price quantity:(NSInteger)quantity discount:(double)discount currencyString:(NSString * _Nullable)currencyString category:(AdBrixRmCommerceProductCategoryModel * _Nullable)category productAttrsMap:(AdBrixRmAttrModel * _Nullable)productAttrsMap SWIFT_WARN_UNUSED_RESULT;
+- (AdBrixRmAttrModel * _Nonnull)createAttrModelWithDictionary:(NSDictionary<NSString *, NSString *> * _Nonnull)dictionary SWIFT_WARN_UNUSED_RESULT;
 - (AdBrixRmCommerceProductCategoryModel * _Nonnull)createCommerceProductCategoryDataWithCategory:(NSString * _Nonnull)category category2:(NSString * _Nonnull)category2 category3:(NSString * _Nonnull)category3 category4:(NSString * _Nonnull)category4 category5:(NSString * _Nonnull)category5 SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getCurrencyStringByAdBrixCurrencyType:(enum AdBrixRmCurrencyType)currency SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getCurrencyString:(NSInteger)currency SWIFT_WARN_UNUSED_RESULT;
@@ -1201,7 +1200,6 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)deleteUserDataAndStopSDK:(NSString * _Nonnull)userId :(void (^ _Nonnull)(enum Completion))completion;
 - (void)restartSDK:(NSString * _Nonnull)userId :(void (^ _Nonnull)(enum Completion))completion;
 - (void)setRegistrationIdWithDeviceToken:(NSData * _Nonnull)deviceToken SWIFT_AVAILABILITY(ios,introduced=10.0);
-- (void)setRegistrationIdForUnityWithDeviceToken:(NSString * _Nonnull)deviceToken SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)setPushEnableToPushEnable:(BOOL)toPushEnable SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)fetchActionHistoryByUserIdWithToken:(NSString * _Nullable)token actionType:(NSArray<NSString *> * _Nonnull)actionType completion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
 - (void)fetchActionHistoryByAdidWithToken:(NSString * _Nullable)token actionType:(NSArray<NSString *> * _Nonnull)actionType completion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
@@ -1928,7 +1926,6 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setLocationWithLatitude:(double)latitude longitude:(double)longitude;
 - (void)eventWithEventName:(NSString * _Nonnull)eventName;
 - (void)eventWithAttrWithEventName:(NSString * _Nonnull)eventName value:(AdBrixRmAttrModel * _Nonnull)value;
-- (void)eventForUnityWithAttrWithEventName:(NSString * _Nonnull)eventName value:(AdBrixRmAttrModel * _Nonnull)value;
 - (void)commonSignUpWithChannel:(enum AdBrixRmSignUpChannel)channel;
 - (void)commonSignUpWithAttrWithChannel:(enum AdBrixRmSignUpChannel)channel commonAttr:(AdBrixRmAttrModel * _Nullable)commonAttr;
 - (NSString * _Nonnull)getSignUpChannelByAdBrixRmSignUpChannel:(enum AdBrixRmSignUpChannel)channel SWIFT_WARN_UNUSED_RESULT;
@@ -1949,6 +1946,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (NSString * _Nonnull)getPaymentMethod:(NSInteger)method SWIFT_WARN_UNUSED_RESULT;
 - (enum AdbrixRmPaymentMethod)convertPayment:(NSInteger)code SWIFT_WARN_UNUSED_RESULT;
 - (AdBrixRmCommerceProductModel * _Nonnull)createCommerceProductDataWithAttrWithProductId:(NSString * _Nonnull)productId productName:(NSString * _Nonnull)productName price:(double)price quantity:(NSInteger)quantity discount:(double)discount currencyString:(NSString * _Nullable)currencyString category:(AdBrixRmCommerceProductCategoryModel * _Nullable)category productAttrsMap:(AdBrixRmAttrModel * _Nullable)productAttrsMap SWIFT_WARN_UNUSED_RESULT;
+- (AdBrixRmAttrModel * _Nonnull)createAttrModelWithDictionary:(NSDictionary<NSString *, NSString *> * _Nonnull)dictionary SWIFT_WARN_UNUSED_RESULT;
 - (AdBrixRmCommerceProductCategoryModel * _Nonnull)createCommerceProductCategoryDataWithCategory:(NSString * _Nonnull)category category2:(NSString * _Nonnull)category2 category3:(NSString * _Nonnull)category3 category4:(NSString * _Nonnull)category4 category5:(NSString * _Nonnull)category5 SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getCurrencyStringByAdBrixCurrencyType:(enum AdBrixRmCurrencyType)currency SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getCurrencyString:(NSInteger)currency SWIFT_WARN_UNUSED_RESULT;
@@ -1990,7 +1988,6 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)deleteUserDataAndStopSDK:(NSString * _Nonnull)userId :(void (^ _Nonnull)(enum Completion))completion;
 - (void)restartSDK:(NSString * _Nonnull)userId :(void (^ _Nonnull)(enum Completion))completion;
 - (void)setRegistrationIdWithDeviceToken:(NSData * _Nonnull)deviceToken SWIFT_AVAILABILITY(ios,introduced=10.0);
-- (void)setRegistrationIdForUnityWithDeviceToken:(NSString * _Nonnull)deviceToken SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)setPushEnableToPushEnable:(BOOL)toPushEnable SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)fetchActionHistoryByUserIdWithToken:(NSString * _Nullable)token actionType:(NSArray<NSString *> * _Nonnull)actionType completion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
 - (void)fetchActionHistoryByAdidWithToken:(NSString * _Nullable)token actionType:(NSArray<NSString *> * _Nonnull)actionType completion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;

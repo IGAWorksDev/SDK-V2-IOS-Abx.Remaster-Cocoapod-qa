@@ -143,7 +143,6 @@ import os
   public var delegateDeeplink: AdBrixRmKit.AdBrixRMDeeplinkDelegate?
   public var delegateLocalPush: AdBrixRmKit.AdBrixRmPushLocalDelegate?
   public var delegateRemotePush: AdBrixRmKit.AdBrixRmPushRemoteDelegate?
-  public var delegateLog: AdBrixRmKit.AdBrixRMLogDelegate?
   public var delegateInAppMessageClick: AdBrixRmKit.AdBrixRMInAppMessageClickDelegate?
   public var delegateInAppMessageAutoFetch: AdBrixRmKit.DfnInAppMessageAutoFetchDelegate?
   @objc public func stopGettingIDFA()
@@ -169,7 +168,6 @@ import os
   @objc public func setLocation(latitude: Swift.Double, longitude: Swift.Double)
   @objc public func event(eventName: Swift.String)
   @objc public func eventWithAttr(eventName: Swift.String, value: AdBrixRmKit.AdBrixRmAttrModel)
-  @objc public func eventForUnityWithAttr(eventName: Swift.String, value: AdBrixRmKit.AdBrixRmAttrModel)
   @objc public func commonSignUp(channel: AdBrixRmKit.AdBrixRM.AdBrixRmSignUpChannel)
   @objc public func commonSignUpWithAttr(channel: AdBrixRmKit.AdBrixRM.AdBrixRmSignUpChannel, commonAttr: AdBrixRmKit.AdBrixRmAttrModel?)
   @objc public func getSignUpChannelByAdBrixRmSignUpChannel(_ channel: AdBrixRmKit.AdBrixRM.AdBrixRmSignUpChannel) -> Swift.String
@@ -190,6 +188,7 @@ import os
   @objc public func getPaymentMethod(_ method: Swift.Int) -> Swift.String
   @objc public func convertPayment(_ code: Swift.Int) -> AdBrixRmKit.AdBrixRM.AdbrixRmPaymentMethod
   @objc public func createCommerceProductDataWithAttr(productId: Swift.String, productName: Swift.String, price: Swift.Double, quantity: Swift.Int, discount: Swift.Double, currencyString: Swift.String?, category: AdBrixRmKit.AdBrixRmCommerceProductCategoryModel?, productAttrsMap: AdBrixRmKit.AdBrixRmAttrModel?) -> AdBrixRmKit.AdBrixRmCommerceProductModel
+  @objc public func createAttrModel(dictionary: [Swift.String : Swift.String]) -> AdBrixRmKit.AdBrixRmAttrModel
   @objc public func createCommerceProductCategoryData(category: Swift.String, category2: Swift.String = "", category3: Swift.String = "", category4: Swift.String = "", category5: Swift.String = "") -> AdBrixRmKit.AdBrixRmCommerceProductCategoryModel
   @objc public func getCurrencyStringByAdBrixCurrencyType(_ currency: AdBrixRmKit.AdBrixRM.AdBrixRmCurrencyType) -> Swift.String
   @objc public func getCurrencyString(_ currency: Swift.Int) -> Swift.String
@@ -232,8 +231,6 @@ import os
   @objc public func restartSDK(_ userId: Swift.String, _ completion: @escaping (AdBrixRmKit.Completion) -> ())
   @available(iOS 10.0, *)
   @objc public func setRegistrationId(deviceToken: Foundation.Data)
-  @available(iOS 10.0, *)
-  @objc public func setRegistrationIdForUnity(deviceToken: Swift.String)
   @available(iOS 10.0, *)
   @objc public func setPushEnable(toPushEnable: Swift.Bool)
   @objc public func fetchActionHistoryByUserId(token: Swift.String?, actionType: [Swift.String], completion: @escaping (AdBrixRmKit.ActionHistoryResult) -> ())

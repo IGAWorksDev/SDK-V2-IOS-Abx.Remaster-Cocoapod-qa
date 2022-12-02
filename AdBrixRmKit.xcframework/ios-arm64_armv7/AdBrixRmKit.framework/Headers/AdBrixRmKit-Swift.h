@@ -340,6 +340,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)deepLinkOpenWithUrl:(NSURL * _Nonnull)url;
 - (void)loginWithUserId:(NSString * _Nonnull)userId;
 - (void)logout;
+- (void)getUserIdWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
 - (void)setAgeWithInt:(NSInteger)int_;
 - (void)setGenderWithAdBrixGenderType:(enum AdBrixGenderType)adBrixGenderType;
 - (enum AdBrixGenderType)convertGender:(NSInteger)code SWIFT_WARN_UNUSED_RESULT;
@@ -1128,6 +1129,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)deepLinkOpenWithUrl:(NSURL * _Nonnull)url;
 - (void)loginWithUserId:(NSString * _Nonnull)userId;
 - (void)logout;
+- (void)getUserIdWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
 - (void)setAgeWithInt:(NSInteger)int_;
 - (void)setGenderWithAdBrixGenderType:(enum AdBrixGenderType)adBrixGenderType;
 - (enum AdBrixGenderType)convertGender:(NSInteger)code SWIFT_WARN_UNUSED_RESULT;

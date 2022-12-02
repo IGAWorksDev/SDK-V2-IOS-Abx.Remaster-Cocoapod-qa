@@ -158,6 +158,7 @@ import os
   @objc public func deepLinkOpen(url: Foundation.URL)
   @objc public func login(userId: Swift.String)
   @objc public func logout()
+  @objc public func getUserId(completion: @escaping (Swift.String) -> ())
   @objc public func setAge(int: Swift.Int)
   @objc public func setGender(adBrixGenderType: AdBrixRmKit.AdBrixRM.AdBrixGenderType)
   @objc public func convertGender(_ code: Swift.Int) -> AdBrixRmKit.AdBrixRM.AdBrixGenderType

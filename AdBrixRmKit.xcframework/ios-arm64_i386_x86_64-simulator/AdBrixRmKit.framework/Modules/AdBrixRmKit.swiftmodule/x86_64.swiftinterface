@@ -451,6 +451,7 @@ import os
   @objc final public let type: Swift.String
   @objc final public let eventName: Swift.String?
   @objc final public let priority: Swift.Int64
+  final public let evtProperties: [[Swift.String : Any?]]
   @objc deinit
 }
 @objc public enum DfnInAppMessageFetchMode : Swift.Int {

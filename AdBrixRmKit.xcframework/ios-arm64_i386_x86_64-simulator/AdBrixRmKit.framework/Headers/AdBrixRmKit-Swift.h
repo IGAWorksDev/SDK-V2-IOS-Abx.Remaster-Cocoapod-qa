@@ -274,6 +274,13 @@ SWIFT_CLASS("_TtC11AdBrixRmKit19ActionHistoryResult")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class EventData;
+
+SWIFT_PROTOCOL("_TtP11AdBrixRmKit27AdBrixEventListenerDelegate_")
+@protocol AdBrixEventListenerDelegate
+- (void)didReceiveEventWithEvent:(EventData * _Nonnull)event;
+@end
+
 @class UNNotificationRequest;
 @class UNNotificationContent;
 
@@ -320,6 +327,7 @@ enum DfnInAppMessageFetchMode : NSInteger;
 @protocol AdBrixRMLogDelegate;
 @protocol AdBrixRMInAppMessageClickDelegate;
 @protocol DfnInAppMessageAutoFetchDelegate;
+@class RequestGetAttributionDataResult;
 @protocol AdBrixRMDeeplinkDelegate;
 @protocol AdBrixRMDeferredDeeplinkDelegate;
 @class DfnResult;
@@ -443,6 +451,8 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setLogDelegateWithDelegate:(id <AdBrixRMLogDelegate> _Nonnull)delegate;
 - (void)setInAppMessageClickDelegateWithDelegate:(id <AdBrixRMInAppMessageClickDelegate> _Nonnull)delegate;
 - (void)setInAppMessageAutoFetchDelegateWithDelegate:(id <DfnInAppMessageAutoFetchDelegate> _Nonnull)delegate;
+- (void)setEventListenerWithDelegate:(id <AdBrixEventListenerDelegate> _Nonnull)delegate;
+- (void)requesetGetAttributionDataWithCompletion:(void (^ _Nonnull)(RequestGetAttributionDataResult * _Nonnull))completion;
 - (void)printSdkState;
 - (void)setDeeplinkDelegateWithDelegate:(id <AdBrixRMDeeplinkDelegate> _Nonnull)delegate;
 - (void)setDeferredDeeplinkDelegateWithDelegate:(id <AdBrixRMDeferredDeeplinkDelegate> _Nonnull)delegate;
@@ -624,6 +634,13 @@ SWIFT_PROTOCOL("_TtP11AdBrixRmKit26AdBrixRmPushRemoteDelegate_")
 - (void)pushRemoteCallbackWithData:(NSDictionary<NSString *, id> * _Nullable)data state:(UIApplicationState)state;
 @end
 
+
+SWIFT_CLASS("_TtC11AdBrixRmKit16AttributionModel")
+@interface AttributionModel : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 typedef SWIFT_ENUM(NSInteger, Completion, open) {
   CompletionSuccess = 0,
   CompletionFail = 1,
@@ -764,6 +781,13 @@ SWIFT_CLASS("_TtC11AdBrixRmKit7DfnUtil")
 @end
 
 
+SWIFT_CLASS("_TtC11AdBrixRmKit9EventData")
+@interface EventData : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 @interface KakaoButton : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
@@ -773,6 +797,16 @@ SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 @property (nonatomic, readonly, copy) NSString * _Nullable scheme;
 @property (nonatomic, readonly, copy) NSString * _Nullable chatExtra;
 @property (nonatomic, readonly, copy) NSString * _Nullable chatEvent;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit31RequestGetAttributionDataResult")
+@interface RequestGetAttributionDataResult : NSObject
+@property (nonatomic, readonly) BOOL isSucceeded;
+- (AttributionModel * _Nullable)getData SWIFT_WARN_UNUSED_RESULT;
+- (NSError * _Nullable)getError SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1063,6 +1097,13 @@ SWIFT_CLASS("_TtC11AdBrixRmKit19ActionHistoryResult")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class EventData;
+
+SWIFT_PROTOCOL("_TtP11AdBrixRmKit27AdBrixEventListenerDelegate_")
+@protocol AdBrixEventListenerDelegate
+- (void)didReceiveEventWithEvent:(EventData * _Nonnull)event;
+@end
+
 @class UNNotificationRequest;
 @class UNNotificationContent;
 
@@ -1109,6 +1150,7 @@ enum DfnInAppMessageFetchMode : NSInteger;
 @protocol AdBrixRMLogDelegate;
 @protocol AdBrixRMInAppMessageClickDelegate;
 @protocol DfnInAppMessageAutoFetchDelegate;
+@class RequestGetAttributionDataResult;
 @protocol AdBrixRMDeeplinkDelegate;
 @protocol AdBrixRMDeferredDeeplinkDelegate;
 @class DfnResult;
@@ -1232,6 +1274,8 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setLogDelegateWithDelegate:(id <AdBrixRMLogDelegate> _Nonnull)delegate;
 - (void)setInAppMessageClickDelegateWithDelegate:(id <AdBrixRMInAppMessageClickDelegate> _Nonnull)delegate;
 - (void)setInAppMessageAutoFetchDelegateWithDelegate:(id <DfnInAppMessageAutoFetchDelegate> _Nonnull)delegate;
+- (void)setEventListenerWithDelegate:(id <AdBrixEventListenerDelegate> _Nonnull)delegate;
+- (void)requesetGetAttributionDataWithCompletion:(void (^ _Nonnull)(RequestGetAttributionDataResult * _Nonnull))completion;
 - (void)printSdkState;
 - (void)setDeeplinkDelegateWithDelegate:(id <AdBrixRMDeeplinkDelegate> _Nonnull)delegate;
 - (void)setDeferredDeeplinkDelegateWithDelegate:(id <AdBrixRMDeferredDeeplinkDelegate> _Nonnull)delegate;
@@ -1413,6 +1457,13 @@ SWIFT_PROTOCOL("_TtP11AdBrixRmKit26AdBrixRmPushRemoteDelegate_")
 - (void)pushRemoteCallbackWithData:(NSDictionary<NSString *, id> * _Nullable)data state:(UIApplicationState)state;
 @end
 
+
+SWIFT_CLASS("_TtC11AdBrixRmKit16AttributionModel")
+@interface AttributionModel : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 typedef SWIFT_ENUM(NSInteger, Completion, open) {
   CompletionSuccess = 0,
   CompletionFail = 1,
@@ -1553,6 +1604,13 @@ SWIFT_CLASS("_TtC11AdBrixRmKit7DfnUtil")
 @end
 
 
+SWIFT_CLASS("_TtC11AdBrixRmKit9EventData")
+@interface EventData : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 @interface KakaoButton : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
@@ -1562,6 +1620,16 @@ SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 @property (nonatomic, readonly, copy) NSString * _Nullable scheme;
 @property (nonatomic, readonly, copy) NSString * _Nullable chatExtra;
 @property (nonatomic, readonly, copy) NSString * _Nullable chatEvent;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit31RequestGetAttributionDataResult")
+@interface RequestGetAttributionDataResult : NSObject
+@property (nonatomic, readonly) BOOL isSucceeded;
+- (AttributionModel * _Nullable)getData SWIFT_WARN_UNUSED_RESULT;
+- (NSError * _Nullable)getError SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1852,6 +1920,13 @@ SWIFT_CLASS("_TtC11AdBrixRmKit19ActionHistoryResult")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class EventData;
+
+SWIFT_PROTOCOL("_TtP11AdBrixRmKit27AdBrixEventListenerDelegate_")
+@protocol AdBrixEventListenerDelegate
+- (void)didReceiveEventWithEvent:(EventData * _Nonnull)event;
+@end
+
 @class UNNotificationRequest;
 @class UNNotificationContent;
 
@@ -1898,6 +1973,7 @@ enum DfnInAppMessageFetchMode : NSInteger;
 @protocol AdBrixRMLogDelegate;
 @protocol AdBrixRMInAppMessageClickDelegate;
 @protocol DfnInAppMessageAutoFetchDelegate;
+@class RequestGetAttributionDataResult;
 @protocol AdBrixRMDeeplinkDelegate;
 @protocol AdBrixRMDeferredDeeplinkDelegate;
 @class DfnResult;
@@ -2021,6 +2097,8 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setLogDelegateWithDelegate:(id <AdBrixRMLogDelegate> _Nonnull)delegate;
 - (void)setInAppMessageClickDelegateWithDelegate:(id <AdBrixRMInAppMessageClickDelegate> _Nonnull)delegate;
 - (void)setInAppMessageAutoFetchDelegateWithDelegate:(id <DfnInAppMessageAutoFetchDelegate> _Nonnull)delegate;
+- (void)setEventListenerWithDelegate:(id <AdBrixEventListenerDelegate> _Nonnull)delegate;
+- (void)requesetGetAttributionDataWithCompletion:(void (^ _Nonnull)(RequestGetAttributionDataResult * _Nonnull))completion;
 - (void)printSdkState;
 - (void)setDeeplinkDelegateWithDelegate:(id <AdBrixRMDeeplinkDelegate> _Nonnull)delegate;
 - (void)setDeferredDeeplinkDelegateWithDelegate:(id <AdBrixRMDeferredDeeplinkDelegate> _Nonnull)delegate;
@@ -2202,6 +2280,13 @@ SWIFT_PROTOCOL("_TtP11AdBrixRmKit26AdBrixRmPushRemoteDelegate_")
 - (void)pushRemoteCallbackWithData:(NSDictionary<NSString *, id> * _Nullable)data state:(UIApplicationState)state;
 @end
 
+
+SWIFT_CLASS("_TtC11AdBrixRmKit16AttributionModel")
+@interface AttributionModel : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 typedef SWIFT_ENUM(NSInteger, Completion, open) {
   CompletionSuccess = 0,
   CompletionFail = 1,
@@ -2342,6 +2427,13 @@ SWIFT_CLASS("_TtC11AdBrixRmKit7DfnUtil")
 @end
 
 
+SWIFT_CLASS("_TtC11AdBrixRmKit9EventData")
+@interface EventData : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 @interface KakaoButton : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
@@ -2351,6 +2443,16 @@ SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 @property (nonatomic, readonly, copy) NSString * _Nullable scheme;
 @property (nonatomic, readonly, copy) NSString * _Nullable chatExtra;
 @property (nonatomic, readonly, copy) NSString * _Nullable chatEvent;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit31RequestGetAttributionDataResult")
+@interface RequestGetAttributionDataResult : NSObject
+@property (nonatomic, readonly) BOOL isSucceeded;
+- (AttributionModel * _Nullable)getData SWIFT_WARN_UNUSED_RESULT;
+- (NSError * _Nullable)getError SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

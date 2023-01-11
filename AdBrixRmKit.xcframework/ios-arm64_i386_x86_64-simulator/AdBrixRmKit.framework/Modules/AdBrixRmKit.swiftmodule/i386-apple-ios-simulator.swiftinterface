@@ -97,6 +97,9 @@ import os
   @objc public func abxPushServiceExtensionTimeWillExpire()
   @objc deinit
 }
+@objc @_hasMissingDesignatedInitializers @objcMembers public class EventData : ObjectiveC.NSObject {
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @available(iOS 10.0, *)
 @objc open class AdBrixPushService : UserNotifications.UNNotificationServiceExtension {
   @objc override dynamic public init()
@@ -114,6 +117,17 @@ import os
   @objc public func setAttrDataInt(_ key: Swift.String, _ value: Swift.Int)
   @objc public func setAttrDataBool(_ key: Swift.String, _ value: Swift.Bool)
   @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class RequestGetAttributionDataResult : ObjectiveC.NSObject {
+  @objc final public let isSucceeded: Swift.Bool
+  @objc public func getData() -> AdBrixRmKit.AttributionModel?
+  @objc public func getError() -> Swift.Error?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class AttributionModel : ObjectiveC.NSObject, Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @objc public class DfnUtil : ObjectiveC.NSObject {
   @objc public static func getLanguage() -> Swift.String
@@ -145,6 +159,7 @@ import os
   public var delegateRemotePush: AdBrixRmKit.AdBrixRmPushRemoteDelegate?
   public var delegateInAppMessageClick: AdBrixRmKit.AdBrixRMInAppMessageClickDelegate?
   public var delegateInAppMessageAutoFetch: AdBrixRmKit.DfnInAppMessageAutoFetchDelegate?
+  weak public var delegateEventListener: AdBrixRmKit.AdBrixEventListenerDelegate?
   @objc public func stopGettingIDFA()
   @objc public func startGettingIDFA()
   @objc public func initAdBrix(appKey: Swift.String, secretKey: Swift.String)
@@ -274,6 +289,8 @@ import os
   @objc public func setLogDelegate(delegate: AdBrixRmKit.AdBrixRMLogDelegate)
   @objc public func setInAppMessageClickDelegate(delegate: AdBrixRmKit.AdBrixRMInAppMessageClickDelegate)
   @objc public func setInAppMessageAutoFetchDelegate(delegate: AdBrixRmKit.DfnInAppMessageAutoFetchDelegate)
+  @objc public func setEventListener(delegate: AdBrixRmKit.AdBrixEventListenerDelegate)
+  @objc public func requesetGetAttributionData(completion: @escaping (AdBrixRmKit.RequestGetAttributionDataResult) -> ())
   @objc public func printSdkState()
   @objc public func setDeeplinkDelegate(delegate: AdBrixRmKit.AdBrixRMDeeplinkDelegate)
   @objc public func setDeferredDeeplinkDelegate(delegate: AdBrixRmKit.AdBrixRMDeferredDeeplinkDelegate)
@@ -382,6 +399,9 @@ import os
 }
 @objc public protocol DfnInAppMessageAutoFetchDelegate {
   @objc func didFetchInAppMessage(result: AdBrixRmKit.DfnInAppMessageFetchResult)
+}
+@objc public protocol AdBrixEventListenerDelegate {
+  @objc func didReceiveEvent(event: AdBrixRmKit.EventData)
 }
 @_inheritsConvenienceInitializers @objc public class AdBrixRmCommerceProductCategoryModel : ObjectiveC.NSObject {
   @objc override dynamic public init()

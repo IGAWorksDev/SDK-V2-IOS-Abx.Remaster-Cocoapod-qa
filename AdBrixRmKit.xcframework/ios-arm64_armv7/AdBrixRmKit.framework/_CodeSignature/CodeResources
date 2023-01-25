@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm.swiftmodule</key>
 		<data>
-		mTDh/dhByHsTEDNTRhAISt7gWCI=
+		CIcY4HzlBywns5YA97Js5yLxaVg=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		likDgSsmSvta+PieMDnYKRETI3g=
+		Xz15QZvqrqYL75hZOBDFAzHE/kQ=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		likDgSsmSvta+PieMDnYKRETI3g=
+		Xz15QZvqrqYL75hZOBDFAzHE/kQ=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		mTDh/dhByHsTEDNTRhAISt7gWCI=
+		CIcY4HzlBywns5YA97Js5yLxaVg=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/armv7.swiftdoc</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		mTDh/dhByHsTEDNTRhAISt7gWCI=
+		CIcY4HzlBywns5YA97Js5yLxaVg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -176,11 +176,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mTDh/dhByHsTEDNTRhAISt7gWCI=
+			CIcY4HzlBywns5YA97Js5yLxaVg=
 			</data>
 			<key>hash2</key>
 			<data>
-			BfJjmzwKM611rvHncV+G0VTNPtvxXuqHKO0wNYQLLEY=
+			w4SaKsgJ2jtimZjQAvloXxs6Z6x9NH6bU8LdFWiQViU=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -209,11 +209,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			likDgSsmSvta+PieMDnYKRETI3g=
+			Xz15QZvqrqYL75hZOBDFAzHE/kQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			TiMRUnzaJAlwstUWPlXctBWLR5FPMIGQ7UJIoKkGssY=
+			3rozTYIuk0yie7Fwn+dUMh3z9nRsdsNoDpyplwsojIQ=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64.swiftdoc</key>
@@ -242,11 +242,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			likDgSsmSvta+PieMDnYKRETI3g=
+			Xz15QZvqrqYL75hZOBDFAzHE/kQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			TiMRUnzaJAlwstUWPlXctBWLR5FPMIGQ7UJIoKkGssY=
+			3rozTYIuk0yie7Fwn+dUMh3z9nRsdsNoDpyplwsojIQ=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/armv7-apple-ios.swiftdoc</key>
@@ -275,11 +275,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mTDh/dhByHsTEDNTRhAISt7gWCI=
+			CIcY4HzlBywns5YA97Js5yLxaVg=
 			</data>
 			<key>hash2</key>
 			<data>
-			BfJjmzwKM611rvHncV+G0VTNPtvxXuqHKO0wNYQLLEY=
+			w4SaKsgJ2jtimZjQAvloXxs6Z6x9NH6bU8LdFWiQViU=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/armv7.swiftdoc</key>
@@ -308,11 +308,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mTDh/dhByHsTEDNTRhAISt7gWCI=
+			CIcY4HzlBywns5YA97Js5yLxaVg=
 			</data>
 			<key>hash2</key>
 			<data>
-			BfJjmzwKM611rvHncV+G0VTNPtvxXuqHKO0wNYQLLEY=
+			w4SaKsgJ2jtimZjQAvloXxs6Z6x9NH6bU8LdFWiQViU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

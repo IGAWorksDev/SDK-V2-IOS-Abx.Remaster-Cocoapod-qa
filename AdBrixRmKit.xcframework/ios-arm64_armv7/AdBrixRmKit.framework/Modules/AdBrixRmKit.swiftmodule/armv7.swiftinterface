@@ -271,6 +271,8 @@ import os
   @objc public func fetchInAppMessage(completion: @escaping (AdBrixRmKit.DfnInAppMessageFetchResult) -> ())
   @objc public func setInAppMessageFetchMode(mode: AdBrixRmKit.DfnInAppMessageFetchMode)
   @objc public func setInAppMessageToken(token: Swift.String)
+  @objc public func pauseInAppMessage()
+  @objc public func resumeInAppMessage()
   @objc public func setLogDelegate(delegate: AdBrixRmKit.AdBrixRMLogDelegate)
   @objc public func setInAppMessageClickDelegate(delegate: AdBrixRmKit.AdBrixRMInAppMessageClickDelegate)
   @objc public func setInAppMessageAutoFetchDelegate(delegate: AdBrixRmKit.DfnInAppMessageAutoFetchDelegate)
@@ -411,8 +413,8 @@ import os
   @objc final public let scrollableImageOption: AdBrixRmKit.DfnScrollableImageOption?
   @objc final public let numberOfButtons: Swift.Int
   @objc final public let buttonArray: [AdBrixRmKit.DfnIAMButtonInfo]
-  @objc final public let portraitImage: UIKit.UIImage?
-  @objc final public let landscapeImage: UIKit.UIImage?
+  @objc public var portraitImage: UIKit.UIImage?
+  @objc public var landscapeImage: UIKit.UIImage?
   @objc final public let portraitImageURL: Swift.String?
   @objc final public let landscapeImageURL: Swift.String?
   @objc final public let isPortraitImageDownloaded: Swift.Bool
@@ -421,10 +423,12 @@ import os
   final public let startDateTime: Swift.Int64?
   final public let endDateTime: Swift.Int64?
   @objc final public let triggers: [AdBrixRmKit.DfnIAMTrigger]?
+  @objc final public let isPortraitAvailable: Swift.Bool
+  @objc final public let isLandscapeAvailable: Swift.Bool
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class DfnStickyBannerOption : ObjectiveC.NSObject {
-  @objc final public let align: Swift.String?
+  @objc public var align: Swift.String?
   @objc final public let clickAction: AdBrixRmKit.DfnIAMClickAction
   @objc deinit
 }

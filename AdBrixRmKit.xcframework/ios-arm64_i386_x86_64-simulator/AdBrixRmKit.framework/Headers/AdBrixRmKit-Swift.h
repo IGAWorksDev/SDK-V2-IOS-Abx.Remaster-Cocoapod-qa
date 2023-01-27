@@ -440,6 +440,8 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)fetchInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageFetchResult * _Nonnull))completion;
 - (void)setInAppMessageFetchModeWithMode:(enum DfnInAppMessageFetchMode)mode;
 - (void)setInAppMessageTokenWithToken:(NSString * _Nonnull)token;
+- (void)pauseInAppMessage;
+- (void)resumeInAppMessage;
 - (void)setLogDelegateWithDelegate:(id <AdBrixRMLogDelegate> _Nonnull)delegate;
 - (void)setInAppMessageClickDelegateWithDelegate:(id <AdBrixRMInAppMessageClickDelegate> _Nonnull)delegate;
 - (void)setInAppMessageAutoFetchDelegateWithDelegate:(id <DfnInAppMessageAutoFetchDelegate> _Nonnull)delegate;
@@ -685,14 +687,16 @@ SWIFT_CLASS("_TtC11AdBrixRmKit15DfnInAppMessage")
 @property (nonatomic, readonly, strong) DfnScrollableImageOption * _Nullable scrollableImageOption;
 @property (nonatomic, readonly) NSInteger numberOfButtons;
 @property (nonatomic, readonly, copy) NSArray<DfnIAMButtonInfo *> * _Nonnull buttonArray;
-@property (nonatomic, readonly, strong) UIImage * _Nullable portraitImage;
-@property (nonatomic, readonly, strong) UIImage * _Nullable landscapeImage;
+@property (nonatomic, strong) UIImage * _Nullable portraitImage;
+@property (nonatomic, strong) UIImage * _Nullable landscapeImage;
 @property (nonatomic, readonly, copy) NSString * _Nullable portraitImageURL;
 @property (nonatomic, readonly, copy) NSString * _Nullable landscapeImageURL;
 @property (nonatomic, readonly) BOOL isPortraitImageDownloaded;
 @property (nonatomic, readonly) BOOL isLandscapeImageDownloaded;
 @property (nonatomic, readonly, strong) DfnIAMClickAction * _Nonnull imageClickAction;
 @property (nonatomic, readonly, copy) NSArray<DfnIAMTrigger *> * _Nullable triggers;
+@property (nonatomic, readonly) BOOL isPortraitAvailable;
+@property (nonatomic, readonly) BOOL isLandscapeAvailable;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -748,7 +752,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit24DfnScrollableImageOption")
 
 SWIFT_CLASS("_TtC11AdBrixRmKit21DfnStickyBannerOption")
 @interface DfnStickyBannerOption : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nullable align;
+@property (nonatomic, copy) NSString * _Nullable align;
 @property (nonatomic, readonly, strong) DfnIAMClickAction * _Nonnull clickAction;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1229,6 +1233,8 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)fetchInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageFetchResult * _Nonnull))completion;
 - (void)setInAppMessageFetchModeWithMode:(enum DfnInAppMessageFetchMode)mode;
 - (void)setInAppMessageTokenWithToken:(NSString * _Nonnull)token;
+- (void)pauseInAppMessage;
+- (void)resumeInAppMessage;
 - (void)setLogDelegateWithDelegate:(id <AdBrixRMLogDelegate> _Nonnull)delegate;
 - (void)setInAppMessageClickDelegateWithDelegate:(id <AdBrixRMInAppMessageClickDelegate> _Nonnull)delegate;
 - (void)setInAppMessageAutoFetchDelegateWithDelegate:(id <DfnInAppMessageAutoFetchDelegate> _Nonnull)delegate;
@@ -1474,14 +1480,16 @@ SWIFT_CLASS("_TtC11AdBrixRmKit15DfnInAppMessage")
 @property (nonatomic, readonly, strong) DfnScrollableImageOption * _Nullable scrollableImageOption;
 @property (nonatomic, readonly) NSInteger numberOfButtons;
 @property (nonatomic, readonly, copy) NSArray<DfnIAMButtonInfo *> * _Nonnull buttonArray;
-@property (nonatomic, readonly, strong) UIImage * _Nullable portraitImage;
-@property (nonatomic, readonly, strong) UIImage * _Nullable landscapeImage;
+@property (nonatomic, strong) UIImage * _Nullable portraitImage;
+@property (nonatomic, strong) UIImage * _Nullable landscapeImage;
 @property (nonatomic, readonly, copy) NSString * _Nullable portraitImageURL;
 @property (nonatomic, readonly, copy) NSString * _Nullable landscapeImageURL;
 @property (nonatomic, readonly) BOOL isPortraitImageDownloaded;
 @property (nonatomic, readonly) BOOL isLandscapeImageDownloaded;
 @property (nonatomic, readonly, strong) DfnIAMClickAction * _Nonnull imageClickAction;
 @property (nonatomic, readonly, copy) NSArray<DfnIAMTrigger *> * _Nullable triggers;
+@property (nonatomic, readonly) BOOL isPortraitAvailable;
+@property (nonatomic, readonly) BOOL isLandscapeAvailable;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1537,7 +1545,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit24DfnScrollableImageOption")
 
 SWIFT_CLASS("_TtC11AdBrixRmKit21DfnStickyBannerOption")
 @interface DfnStickyBannerOption : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nullable align;
+@property (nonatomic, copy) NSString * _Nullable align;
 @property (nonatomic, readonly, strong) DfnIAMClickAction * _Nonnull clickAction;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -2018,6 +2026,8 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)fetchInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageFetchResult * _Nonnull))completion;
 - (void)setInAppMessageFetchModeWithMode:(enum DfnInAppMessageFetchMode)mode;
 - (void)setInAppMessageTokenWithToken:(NSString * _Nonnull)token;
+- (void)pauseInAppMessage;
+- (void)resumeInAppMessage;
 - (void)setLogDelegateWithDelegate:(id <AdBrixRMLogDelegate> _Nonnull)delegate;
 - (void)setInAppMessageClickDelegateWithDelegate:(id <AdBrixRMInAppMessageClickDelegate> _Nonnull)delegate;
 - (void)setInAppMessageAutoFetchDelegateWithDelegate:(id <DfnInAppMessageAutoFetchDelegate> _Nonnull)delegate;
@@ -2263,14 +2273,16 @@ SWIFT_CLASS("_TtC11AdBrixRmKit15DfnInAppMessage")
 @property (nonatomic, readonly, strong) DfnScrollableImageOption * _Nullable scrollableImageOption;
 @property (nonatomic, readonly) NSInteger numberOfButtons;
 @property (nonatomic, readonly, copy) NSArray<DfnIAMButtonInfo *> * _Nonnull buttonArray;
-@property (nonatomic, readonly, strong) UIImage * _Nullable portraitImage;
-@property (nonatomic, readonly, strong) UIImage * _Nullable landscapeImage;
+@property (nonatomic, strong) UIImage * _Nullable portraitImage;
+@property (nonatomic, strong) UIImage * _Nullable landscapeImage;
 @property (nonatomic, readonly, copy) NSString * _Nullable portraitImageURL;
 @property (nonatomic, readonly, copy) NSString * _Nullable landscapeImageURL;
 @property (nonatomic, readonly) BOOL isPortraitImageDownloaded;
 @property (nonatomic, readonly) BOOL isLandscapeImageDownloaded;
 @property (nonatomic, readonly, strong) DfnIAMClickAction * _Nonnull imageClickAction;
 @property (nonatomic, readonly, copy) NSArray<DfnIAMTrigger *> * _Nullable triggers;
+@property (nonatomic, readonly) BOOL isPortraitAvailable;
+@property (nonatomic, readonly) BOOL isLandscapeAvailable;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2326,7 +2338,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit24DfnScrollableImageOption")
 
 SWIFT_CLASS("_TtC11AdBrixRmKit21DfnStickyBannerOption")
 @interface DfnStickyBannerOption : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nullable align;
+@property (nonatomic, copy) NSString * _Nullable align;
 @property (nonatomic, readonly, strong) DfnIAMClickAction * _Nonnull clickAction;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

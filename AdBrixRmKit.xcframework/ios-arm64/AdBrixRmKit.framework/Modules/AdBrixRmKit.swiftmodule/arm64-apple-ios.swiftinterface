@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name AdBrixRmKit
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name AdBrixRmKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import AdBrixRmKit
 import AdServices
@@ -9,6 +9,7 @@ import AppTrackingTransparency
 import CommonCrypto
 import CoreTelephony
 import Foundation
+import Network
 import SQLite3
 import StoreKit
 import Swift
@@ -167,6 +168,7 @@ import os
   @objc public func setUserPropertiesWithAttr(attrModel: AdBrixRmKit.AdBrixRmAttrModel)
   @objc public func clearUserProperties()
   @objc public func setKakaoId(kakaoId: Swift.String)
+  @objc public func setPhoneNumber(phoneNumber: Swift.String)
   @objc public func setUserCiWithAttr(attrModel: AdBrixRmKit.AdBrixRmAttrModel)
   @objc public func setLocation(latitude: Swift.Double, longitude: Swift.Double)
   @objc public func event(eventName: Swift.String)

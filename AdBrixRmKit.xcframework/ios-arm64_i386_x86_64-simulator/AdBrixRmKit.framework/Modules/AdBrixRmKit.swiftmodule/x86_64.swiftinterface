@@ -249,6 +249,7 @@ import os
   @objc public func deleteAllActionHistoryByAdid(token: Swift.String?, completion: @escaping (AdBrixRmKit.ActionHistoryResult) -> ())
   @objc public func deleteActionHistory(token: Swift.String?, historyId: Swift.String, timeStamp: Swift.Int64, completion: @escaping (AdBrixRmKit.ActionHistoryResult) -> ())
   @objc public func clearSyncedActionHistoryInLocalDB(completion: @escaping (AdBrixRmKit.ActionHistoryResult) -> ())
+  @objc public func clearAllActionHistoryInLocalDB()
   @available(iOS 10.0, *)
   @objc public func setAdBrixRmPushLocalDelegate(delegate: AdBrixRmKit.AdBrixRmPushLocalDelegate)
   @available(iOS 10.0, *)

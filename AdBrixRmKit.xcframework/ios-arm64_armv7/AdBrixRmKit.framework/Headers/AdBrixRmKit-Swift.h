@@ -347,7 +347,6 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setUserPropertiesWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel;
 - (void)clearUserProperties;
 - (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId;
-- (void)setPhoneNumberWithPhoneNumber:(NSString * _Nonnull)phoneNumber;
 - (void)setUserCiWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel;
 - (void)setLocationWithLatitude:(double)latitude longitude:(double)longitude;
 - (void)eventWithEventName:(NSString * _Nonnull)eventName;
@@ -1146,7 +1145,6 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setUserPropertiesWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel;
 - (void)clearUserProperties;
 - (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId;
-- (void)setPhoneNumberWithPhoneNumber:(NSString * _Nonnull)phoneNumber;
 - (void)setUserCiWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel;
 - (void)setLocationWithLatitude:(double)latitude longitude:(double)longitude;
 - (void)eventWithEventName:(NSString * _Nonnull)eventName;

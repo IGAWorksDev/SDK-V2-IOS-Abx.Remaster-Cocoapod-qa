@@ -166,7 +166,6 @@ import os
   @objc public func setUserPropertiesWithAttr(attrModel: AdBrixRmKit.AdBrixRmAttrModel)
   @objc public func clearUserProperties()
   @objc public func setKakaoId(kakaoId: Swift.String)
-  @objc public func setPhoneNumber(phoneNumber: Swift.String)
   @objc public func setUserCiWithAttr(attrModel: AdBrixRmKit.AdBrixRmAttrModel)
   @objc public func setLocation(latitude: Swift.Double, longitude: Swift.Double)
   @objc public func event(eventName: Swift.String)

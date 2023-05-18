@@ -264,6 +264,26 @@ SWIFT_CLASS("_TtC11AdBrixRmKit18AbxRemotePushModel")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+typedef SWIFT_ENUM(NSInteger, AbxSubscriptionError, open) {
+  AbxSubscriptionErrorRESULT_CODE_INVALID_TOKEN = 4001,
+  AbxSubscriptionErrorRESULT_CODE_INVALID_REQUEST = 4002,
+  AbxSubscriptionErrorRESULT_CODE_BLOCKED_ACCOUNT = 4003,
+  AbxSubscriptionErrorRESULT_CODE_UNAUTHORIZED = 4004,
+  AbxSubscriptionErrorRESULT_CODE_TERMINATED_API = 4005,
+  AbxSubscriptionErrorRESULT_CODE_RATE_LIMIT_EXCEEDED = 4006,
+  AbxSubscriptionErrorRESULT_CODE_WRONG_PROPERTY = 4007,
+  AbxSubscriptionErrorRESULT_CODE_INTERNAL_SERVER_ERROR = 5001,
+  AbxSubscriptionErrorRESULT_CODE_SERVICE_MAINTENANCE = 5002,
+  AbxSubscriptionErrorRESULT_CODE_SERVER_BUSY = 5003,
+  AbxSubscriptionErrorRESULT_CODE_PROPERTY_REQUIRED = -253,
+  AbxSubscriptionErrorRESULT_CODE_USER_ID_REQUIRED = -254,
+  AbxSubscriptionErrorRESULT_CODE_UNKNOWN_ERROR = -255,
+  AbxSubscriptionErrorRESULT_CODE_NETWORK_ERROR = -256,
+  AbxSubscriptionErrorRESULT_CODE_NO_DATA_TO_GET = -257,
+  AbxSubscriptionErrorRESULT_CODE_SDK_DISABLED = -258,
+};
+static NSString * _Nonnull const AbxSubscriptionErrorDomain = @"AdBrixRmKit.AbxSubscriptionError";
+
 @class KakaoButton;
 
 SWIFT_CLASS("_TtC11AdBrixRmKit13ActionContent")
@@ -347,6 +367,9 @@ enum AdBrixRmInviteChannel : NSInteger;
 enum AdbrixRmPaymentMethod : NSInteger;
 @class AdBrixRmCommerceProductCategoryModel;
 enum AdBrixRmCurrencyType : NSInteger;
+@class GetSubscriptionResult;
+@class SubscriptionStatus;
+@class SetSubscriptionResult;
 enum AdBrixRmSharingChannel : NSInteger;
 enum Completion : NSInteger;
 @class NSData;
@@ -388,10 +411,10 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setGenderWithAdBrixGenderType:(enum AdBrixGenderType)adBrixGenderType;
 - (enum AdBrixGenderType)convertGender:(NSInteger)code SWIFT_WARN_UNUSED_RESULT;
 - (void)setUserPropertiesWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel;
-- (void)clearUserProperties;
+- (void)clearUserProperties SWIFT_DEPRECATED;
 - (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId;
 - (void)setUserCiWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel;
-- (void)setLocationWithLatitude:(double)latitude longitude:(double)longitude;
+- (void)setLocationWithLatitude:(double)latitude longitude:(double)longitude SWIFT_DEPRECATED;
 - (void)eventWithEventName:(NSString * _Nonnull)eventName;
 - (void)eventWithAttrWithEventName:(NSString * _Nonnull)eventName value:(AdBrixRmAttrModel * _Nonnull)value;
 - (void)commonSignUpWithChannel:(enum AdBrixRmSignUpChannel)channel;
@@ -421,6 +444,8 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)commerceViewHome;
 - (void)commerceViewHomeWithAttrWithOrderAttr:(AdBrixRmAttrModel * _Nullable)orderAttr;
 - (void)commerceCategoryViewWithCategory:(AdBrixRmCommerceProductCategoryModel * _Nonnull)category productInfo:(NSArray<AdBrixRmCommerceProductModel *> * _Nonnull)productInfo;
+- (void)getSubscriptionStatusWithCompletion:(void (^ _Nonnull)(GetSubscriptionResult * _Nonnull))completion;
+- (void)setSubscriptionStatusWithStatus:(SubscriptionStatus * _Nonnull)status completion:(void (^ _Nonnull)(SetSubscriptionResult * _Nonnull))completion;
 - (void)commerceCategoryViewWithAttrWithCategory:(AdBrixRmCommerceProductCategoryModel * _Nonnull)category productInfo:(NSArray<AdBrixRmCommerceProductModel *> * _Nonnull)productInfo orderAttr:(AdBrixRmAttrModel * _Nullable)orderAttr;
 - (void)commerceProductViewWithProductInfo:(AdBrixRmCommerceProductModel * _Nonnull)productInfo;
 - (void)commerceProductViewWithAttrWithProductInfo:(AdBrixRmCommerceProductModel * _Nonnull)productInfo orderAttr:(AdBrixRmAttrModel * _Nullable)orderAttr;
@@ -457,8 +482,8 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)gameStageClearedWithAttrWithStageName:(NSString * _Nonnull)stageName gameInfoAttr:(AdBrixRmAttrModel * _Nullable)gameInfoAttr;
 - (void)gameLevelAchievedWithLevel:(NSInteger)level;
 - (void)gameLevelAchievedWithAttrWithLevel:(NSInteger)level gameInfoAttr:(AdBrixRmAttrModel * _Nullable)gameInfoAttr;
-- (void)deleteUserDataAndStopSDK:(NSString * _Nonnull)userId :(void (^ _Nonnull)(enum Completion))completion;
-- (void)restartSDK:(NSString * _Nonnull)userId :(void (^ _Nonnull)(enum Completion))completion;
+- (void)deleteUserDataAndStopSDK:(NSString * _Nonnull)userId :(void (^ _Nonnull)(enum Completion))completion SWIFT_DEPRECATED;
+- (void)restartSDK:(NSString * _Nonnull)userId :(void (^ _Nonnull)(enum Completion))completion SWIFT_DEPRECATED;
 - (void)setRegistrationIdWithDeviceToken:(NSData * _Nonnull)deviceToken;
 - (void)setPushEnableToPushEnable:(BOOL)toPushEnable;
 - (void)fetchActionHistoryByUserIdWithToken:(NSString * _Nullable)token actionType:(NSArray<NSString *> * _Nonnull)actionType completion:(void (^ _Nonnull)(ActionHistoryResult * _Nonnull))completion;
@@ -816,6 +841,13 @@ SWIFT_CLASS("_TtC11AdBrixRmKit7DfnUtil")
 @end
 
 
+SWIFT_CLASS("_TtC11AdBrixRmKit21GetSubscriptionResult")
+@interface GetSubscriptionResult : DfnResult
+@property (nonatomic, readonly, strong) SubscriptionStatus * _Nullable value;
+- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
+@end
+
+
 SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 @interface KakaoButton : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
@@ -827,6 +859,75 @@ SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 @property (nonatomic, readonly, copy) NSString * _Nullable chatEvent;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit21SetSubscriptionResult")
+@interface SetSubscriptionResult : DfnResult
+- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
+@end
+
+enum _Type : NSInteger;
+@class SubscriptionStatusBuilder;
+
+SWIFT_CLASS("_TtC11AdBrixRmKit18SubscriptionStatus")
+@interface SubscriptionStatus : NSObject
+@property (nonatomic, readonly) enum _Type informativeNotificationFlag;
+@property (nonatomic, readonly) enum _Type marketingNotificationFlag;
+@property (nonatomic, readonly) enum _Type marketingNotificationFlagForPushChannel;
+@property (nonatomic, readonly) enum _Type marketingNotificationFlagForSmsChannel;
+@property (nonatomic, readonly) enum _Type marketingNotificationFlagForKakaoChannel;
+@property (nonatomic, readonly) enum _Type marketingNotificationAtNightFlag;
+@property (nonatomic, readonly) enum _Type marketingNotificationAtNightFlagForPushChannel;
+@property (nonatomic, readonly) enum _Type marketingNotificationAtNightFlagForSmsChannel;
+@property (nonatomic, readonly) enum _Type marketingNotificationAtNightFlagForKakaoChannel;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
++ (SubscriptionStatusBuilder * _Nonnull)Builder SWIFT_WARN_UNUSED_RESULT;
+/// convenient function same as AdBrixRM.setSubscriptionStatus(status: AbxSubscriptionStatus, completion: (SetSubscriptionResult) -> ())
+/// \code
+/// // example
+/// SubscriptionStatus.builder()
+///     .setInformativeNotificationFlag(as: .UNSUBSCRIBED)
+///     .setMarketingNotificationFlag(as: .UNSUBSCRIBED)
+///     .setMarketingNotificationFlagForKakaoChannel(as: .UNSUBSCRIBED)
+///     .setMarketingNotificationFlagForSmsChannel(as: .UNSUBSCRIBED)
+///     .setMarketingNotificationFlagForPushChannel(as: .UNSUBSCRIBED)
+///     .setMarketingNotificationAtNightFlag(as: .UNSUBSCRIBED)
+///     .setMarketingNotificationAtNightFlagForSmsChannel(as: .UNSUBSCRIBED)
+///     .setMarketingNotificationAtNightFlagForKakaoChannel(as: .UNSUBSCRIBED)
+///     .setMarketingNotificationAtNightFlagForPushChannel(as: .UNSUBSCRIBED)
+///     .build()
+///     .send { result in
+///         print(result)
+///     }
+///
+/// \endcode
+- (void)sendWithCompletion:(void (^ _Nonnull)(SetSubscriptionResult * _Nonnull))completion;
+- (void)sendWithCompletionHandler:(void (^ _Nonnull)(SetSubscriptionResult * _Nonnull))completionHandler SWIFT_AVAILABILITY(ios,introduced=13.0);
+@end
+
+typedef SWIFT_ENUM(NSInteger, _Type, open) {
+  _TypeSUBSCRIBED = 0,
+  _TypeUNSUBSCRIBED = 1,
+  _TypeUNDEFINED = 2,
+};
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit25SubscriptionStatusBuilder")
+@interface SubscriptionStatusBuilder : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (SubscriptionStatusBuilder * _Nonnull)setInformativeNotificationFlagTo:(enum _Type)status;
+- (SubscriptionStatusBuilder * _Nonnull)setMarketingNotificationFlagTo:(enum _Type)status;
+- (SubscriptionStatusBuilder * _Nonnull)setMarketingNotificationFlagForPushChannelTo:(enum _Type)status;
+- (SubscriptionStatusBuilder * _Nonnull)setMarketingNotificationFlagForSmsChannelTo:(enum _Type)status;
+- (SubscriptionStatusBuilder * _Nonnull)setMarketingNotificationFlagForKakaoChannelTo:(enum _Type)status;
+- (SubscriptionStatusBuilder * _Nonnull)setMarketingNotificationAtNightFlagTo:(enum _Type)status;
+- (SubscriptionStatusBuilder * _Nonnull)setMarketingNotificationAtNightFlagForPushChannelTo:(enum _Type)status;
+- (SubscriptionStatusBuilder * _Nonnull)setMarketingNotificationAtNightFlagForSmsChannelTo:(enum _Type)status;
+- (SubscriptionStatusBuilder * _Nonnull)setMarketingNotificationAtNightFlagForKakaoChannelTo:(enum _Type)status;
+- (SubscriptionStatus * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

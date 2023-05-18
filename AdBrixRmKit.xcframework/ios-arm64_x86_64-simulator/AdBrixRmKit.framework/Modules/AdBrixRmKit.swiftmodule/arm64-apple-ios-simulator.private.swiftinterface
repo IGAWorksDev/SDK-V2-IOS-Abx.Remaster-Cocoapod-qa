@@ -40,6 +40,124 @@ import os
   @objc public func toString() -> Swift.String
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class SubscriptionStatus : ObjectiveC.NSObject {
+  @objc public var informativeNotificationFlag: AdBrixRmKit.SubscriptionStatus._Type {
+    get
+  }
+  @objc public var marketingNotificationFlag: AdBrixRmKit.SubscriptionStatus._Type {
+    get
+  }
+  @objc public var marketingNotificationFlagForPushChannel: AdBrixRmKit.SubscriptionStatus._Type {
+    get
+  }
+  @objc public var marketingNotificationFlagForSmsChannel: AdBrixRmKit.SubscriptionStatus._Type {
+    get
+  }
+  @objc public var marketingNotificationFlagForKakaoChannel: AdBrixRmKit.SubscriptionStatus._Type {
+    get
+  }
+  @objc public var marketingNotificationAtNightFlag: AdBrixRmKit.SubscriptionStatus._Type {
+    get
+  }
+  @objc public var marketingNotificationAtNightFlagForPushChannel: AdBrixRmKit.SubscriptionStatus._Type {
+    get
+  }
+  @objc public var marketingNotificationAtNightFlagForSmsChannel: AdBrixRmKit.SubscriptionStatus._Type {
+    get
+  }
+  @objc public var marketingNotificationAtNightFlagForKakaoChannel: AdBrixRmKit.SubscriptionStatus._Type {
+    get
+  }
+  public var allCases: [AdBrixRmKit.SubscriptionStatus._Type] {
+    get
+  }
+  @objc public static func Builder() -> AdBrixRmKit.SubscriptionStatusBuilder
+  @objc public func send(completion: @escaping (AdBrixRmKit.SetSubscriptionResult) -> ())
+  #if compiler(>=5.3) && $AsyncAwait
+  @objc @available(iOS 13.0, *)
+  public func send() async -> AdBrixRmKit.SetSubscriptionResult
+  #endif
+  @objc public enum _Type : Swift.Int {
+    case SUBSCRIBED
+    case UNSUBSCRIBED
+    case UNDEFINED
+    public var isSubscribed: Swift.Bool {
+      get
+    }
+    public var isUnSubscribed: Swift.Bool {
+      get
+    }
+    public var isUndefined: Swift.Bool {
+      get
+    }
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class SubscriptionStatusBuilder : ObjectiveC.NSObject {
+  @objc @discardableResult
+  public func setInformativeNotificationFlag(to status: AdBrixRmKit.SubscriptionStatus._Type) -> AdBrixRmKit.SubscriptionStatusBuilder
+  @objc @discardableResult
+  public func setMarketingNotificationFlag(to status: AdBrixRmKit.SubscriptionStatus._Type) -> AdBrixRmKit.SubscriptionStatusBuilder
+  @objc @discardableResult
+  public func setMarketingNotificationFlagForPushChannel(to status: AdBrixRmKit.SubscriptionStatus._Type) -> AdBrixRmKit.SubscriptionStatusBuilder
+  @objc @discardableResult
+  public func setMarketingNotificationFlagForSmsChannel(to status: AdBrixRmKit.SubscriptionStatus._Type) -> AdBrixRmKit.SubscriptionStatusBuilder
+  @objc @discardableResult
+  public func setMarketingNotificationFlagForKakaoChannel(to status: AdBrixRmKit.SubscriptionStatus._Type) -> AdBrixRmKit.SubscriptionStatusBuilder
+  @objc @discardableResult
+  public func setMarketingNotificationAtNightFlag(to status: AdBrixRmKit.SubscriptionStatus._Type) -> AdBrixRmKit.SubscriptionStatusBuilder
+  @objc @discardableResult
+  public func setMarketingNotificationAtNightFlagForPushChannel(to status: AdBrixRmKit.SubscriptionStatus._Type) -> AdBrixRmKit.SubscriptionStatusBuilder
+  @objc @discardableResult
+  public func setMarketingNotificationAtNightFlagForSmsChannel(to status: AdBrixRmKit.SubscriptionStatus._Type) -> AdBrixRmKit.SubscriptionStatusBuilder
+  @objc @discardableResult
+  public func setMarketingNotificationAtNightFlagForKakaoChannel(to status: AdBrixRmKit.SubscriptionStatus._Type) -> AdBrixRmKit.SubscriptionStatusBuilder
+  @objc public func build() -> AdBrixRmKit.SubscriptionStatus
+  @objc deinit
+}
+@objc public enum AbxSubscriptionError : Swift.Int, Swift.Error {
+  case RESULT_CODE_INVALID_TOKEN = 4001
+  case RESULT_CODE_INVALID_REQUEST = 4002
+  case RESULT_CODE_BLOCKED_ACCOUNT = 4003
+  case RESULT_CODE_UNAUTHORIZED = 4004
+  case RESULT_CODE_TERMINATED_API = 4005
+  case RESULT_CODE_RATE_LIMIT_EXCEEDED = 4006
+  case RESULT_CODE_WRONG_PROPERTY = 4007
+  case RESULT_CODE_INTERNAL_SERVER_ERROR = 5001
+  case RESULT_CODE_SERVICE_MAINTENANCE = 5002
+  case RESULT_CODE_SERVER_BUSY = 5003
+  case RESULT_CODE_PROPERTY_REQUIRED = -253
+  case RESULT_CODE_USER_ID_REQUIRED = -254
+  case RESULT_CODE_UNKNOWN_ERROR = -255
+  case RESULT_CODE_NETWORK_ERROR = -256
+  case RESULT_CODE_NO_DATA_TO_GET = -257
+  case RESULT_CODE_SDK_DISABLED = -258
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AdBrixRmKit.AbxSubscriptionError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GetSubscriptionResult : AdBrixRmKit.DfnResult {
+  @objc final public let value: AdBrixRmKit.SubscriptionStatus?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class SetSubscriptionResult : AdBrixRmKit.DfnResult {
+  @objc deinit
+}
 @objc @_hasMissingDesignatedInitializers @objcMembers public class ActionHistory : ObjectiveC.NSObject {
   @objc final public let historyId: Swift.String
   @objc final public let actionType: Swift.String
@@ -165,9 +283,11 @@ import os
   @objc public func setGender(adBrixGenderType: AdBrixRmKit.AdBrixRM.AdBrixGenderType)
   @objc public func convertGender(_ code: Swift.Int) -> AdBrixRmKit.AdBrixRM.AdBrixGenderType
   @objc public func setUserPropertiesWithAttr(attrModel: AdBrixRmKit.AdBrixRmAttrModel)
+  @available(*, deprecated)
   @objc public func clearUserProperties()
   @objc public func setKakaoId(kakaoId: Swift.String)
   @objc public func setUserCiWithAttr(attrModel: AdBrixRmKit.AdBrixRmAttrModel)
+  @available(*, deprecated)
   @objc public func setLocation(latitude: Swift.Double, longitude: Swift.Double)
   @objc public func event(eventName: Swift.String)
   @objc public func eventWithAttr(eventName: Swift.String, value: AdBrixRmKit.AdBrixRmAttrModel)
@@ -198,6 +318,16 @@ import os
   @objc public func commerceViewHome()
   @objc public func commerceViewHomeWithAttr(orderAttr: AdBrixRmKit.AdBrixRmAttrModel?)
   @objc public func commerceCategoryView(category: AdBrixRmKit.AdBrixRmCommerceProductCategoryModel, productInfo: [AdBrixRmKit.AdBrixRmCommerceProductModel])
+  @objc public func getSubscriptionStatus(completion: @escaping (AdBrixRmKit.GetSubscriptionResult) -> ())
+  @objc public func setSubscriptionStatus(status: AdBrixRmKit.SubscriptionStatus, completion: @escaping (AdBrixRmKit.SetSubscriptionResult) -> ())
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, *)
+  public func getSubscriptionStatus() async -> AdBrixRmKit.GetSubscriptionResult
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, *)
+  public func setSubscriptionStatus(status: AdBrixRmKit.SubscriptionStatus) async -> AdBrixRmKit.SetSubscriptionResult
+  #endif
   @objc public func commerceCategoryViewWithAttr(category: AdBrixRmKit.AdBrixRmCommerceProductCategoryModel, productInfo: [AdBrixRmKit.AdBrixRmCommerceProductModel], orderAttr: AdBrixRmKit.AdBrixRmAttrModel?)
   @objc public func commerceProductView(productInfo: AdBrixRmKit.AdBrixRmCommerceProductModel)
   @objc public func commerceProductViewWithAttr(productInfo: AdBrixRmKit.AdBrixRmCommerceProductModel, orderAttr: AdBrixRmKit.AdBrixRmAttrModel? = nil)
@@ -234,7 +364,9 @@ import os
   @objc public func gameStageClearedWithAttr(stageName: Swift.String, gameInfoAttr: AdBrixRmKit.AdBrixRmAttrModel?)
   @objc public func gameLevelAchieved(level: Swift.Int)
   @objc public func gameLevelAchievedWithAttr(level: Swift.Int, gameInfoAttr: AdBrixRmKit.AdBrixRmAttrModel? = nil)
+  @available(*, deprecated)
   @objc public func deleteUserDataAndStopSDK(_ userId: Swift.String, _ completion: @escaping (AdBrixRmKit.Completion) -> ())
+  @available(*, deprecated)
   @objc public func restartSDK(_ userId: Swift.String, _ completion: @escaping (AdBrixRmKit.Completion) -> ())
   @objc public func setRegistrationId(deviceToken: Foundation.Data)
   @objc public func setPushEnable(toPushEnable: Swift.Bool)
@@ -471,6 +603,12 @@ import os
   @objc public func getError() -> Swift.Error?
   @objc deinit
 }
+extension AdBrixRmKit.SubscriptionStatus._Type : Swift.Equatable {}
+extension AdBrixRmKit.SubscriptionStatus._Type : Swift.Hashable {}
+extension AdBrixRmKit.SubscriptionStatus._Type : Swift.RawRepresentable {}
+extension AdBrixRmKit.AbxSubscriptionError : Swift.Equatable {}
+extension AdBrixRmKit.AbxSubscriptionError : Swift.Hashable {}
+extension AdBrixRmKit.AbxSubscriptionError : Swift.RawRepresentable {}
 extension AdBrixRmKit.ActionHistoryIdType : Swift.Equatable {}
 extension AdBrixRmKit.ActionHistoryIdType : Swift.Hashable {}
 extension AdBrixRmKit.ActionHistoryIdType : Swift.RawRepresentable {}

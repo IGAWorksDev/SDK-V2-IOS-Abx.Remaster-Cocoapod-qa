@@ -976,6 +976,2630 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "SubscriptionStatus",
+        "printedName": "SubscriptionStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "informativeNotificationFlag",
+            "printedName": "informativeNotificationFlag",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_Type",
+                "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(py)informativeNotificationFlag",
+            "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC27informativeNotificationFlagAC5_TypeOvp",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_Type",
+                    "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                    "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(im)informativeNotificationFlag",
+                "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC27informativeNotificationFlagAC5_TypeOvg",
+                "moduleName": "AdBrixRmKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "marketingNotificationFlag",
+            "printedName": "marketingNotificationFlag",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_Type",
+                "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(py)marketingNotificationFlag",
+            "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC25marketingNotificationFlagAC5_TypeOvp",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_Type",
+                    "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                    "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(im)marketingNotificationFlag",
+                "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC25marketingNotificationFlagAC5_TypeOvg",
+                "moduleName": "AdBrixRmKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "marketingNotificationFlagForPushChannel",
+            "printedName": "marketingNotificationFlagForPushChannel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_Type",
+                "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(py)marketingNotificationFlagForPushChannel",
+            "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC39marketingNotificationFlagForPushChannelAC5_TypeOvp",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_Type",
+                    "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                    "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(im)marketingNotificationFlagForPushChannel",
+                "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC39marketingNotificationFlagForPushChannelAC5_TypeOvg",
+                "moduleName": "AdBrixRmKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "marketingNotificationFlagForSmsChannel",
+            "printedName": "marketingNotificationFlagForSmsChannel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_Type",
+                "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(py)marketingNotificationFlagForSmsChannel",
+            "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC38marketingNotificationFlagForSmsChannelAC5_TypeOvp",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_Type",
+                    "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                    "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(im)marketingNotificationFlagForSmsChannel",
+                "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC38marketingNotificationFlagForSmsChannelAC5_TypeOvg",
+                "moduleName": "AdBrixRmKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "marketingNotificationFlagForKakaoChannel",
+            "printedName": "marketingNotificationFlagForKakaoChannel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_Type",
+                "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(py)marketingNotificationFlagForKakaoChannel",
+            "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC40marketingNotificationFlagForKakaoChannelAC5_TypeOvp",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_Type",
+                    "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                    "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(im)marketingNotificationFlagForKakaoChannel",
+                "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC40marketingNotificationFlagForKakaoChannelAC5_TypeOvg",
+                "moduleName": "AdBrixRmKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "marketingNotificationAtNightFlag",
+            "printedName": "marketingNotificationAtNightFlag",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_Type",
+                "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(py)marketingNotificationAtNightFlag",
+            "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC32marketingNotificationAtNightFlagAC5_TypeOvp",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_Type",
+                    "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                    "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(im)marketingNotificationAtNightFlag",
+                "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC32marketingNotificationAtNightFlagAC5_TypeOvg",
+                "moduleName": "AdBrixRmKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "marketingNotificationAtNightFlagForPushChannel",
+            "printedName": "marketingNotificationAtNightFlagForPushChannel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_Type",
+                "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(py)marketingNotificationAtNightFlagForPushChannel",
+            "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC46marketingNotificationAtNightFlagForPushChannelAC5_TypeOvp",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_Type",
+                    "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                    "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(im)marketingNotificationAtNightFlagForPushChannel",
+                "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC46marketingNotificationAtNightFlagForPushChannelAC5_TypeOvg",
+                "moduleName": "AdBrixRmKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "marketingNotificationAtNightFlagForSmsChannel",
+            "printedName": "marketingNotificationAtNightFlagForSmsChannel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_Type",
+                "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(py)marketingNotificationAtNightFlagForSmsChannel",
+            "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC45marketingNotificationAtNightFlagForSmsChannelAC5_TypeOvp",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_Type",
+                    "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                    "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(im)marketingNotificationAtNightFlagForSmsChannel",
+                "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC45marketingNotificationAtNightFlagForSmsChannelAC5_TypeOvg",
+                "moduleName": "AdBrixRmKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "marketingNotificationAtNightFlagForKakaoChannel",
+            "printedName": "marketingNotificationAtNightFlagForKakaoChannel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_Type",
+                "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(py)marketingNotificationAtNightFlagForKakaoChannel",
+            "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC47marketingNotificationAtNightFlagForKakaoChannelAC5_TypeOvp",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_Type",
+                    "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                    "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(im)marketingNotificationAtNightFlagForKakaoChannel",
+                "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC47marketingNotificationAtNightFlagForKakaoChannelAC5_TypeOvg",
+                "moduleName": "AdBrixRmKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AdBrixRmKit.SubscriptionStatus._Type]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_Type",
+                    "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                    "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AdBrixRmKit18SubscriptionStatusC8allCasesSayAC5_TypeOGvp",
+            "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC8allCasesSayAC5_TypeOGvp",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AdBrixRmKit.SubscriptionStatus._Type]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "_Type",
+                        "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                        "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC8allCasesSayAC5_TypeOGvg",
+                "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC8allCasesSayAC5_TypeOGvg",
+                "moduleName": "AdBrixRmKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "Builder",
+            "printedName": "Builder()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SubscriptionStatusBuilder",
+                "printedName": "AdBrixRmKit.SubscriptionStatusBuilder",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(cm)Builder",
+            "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC7BuilderAA0efG0CyFZ",
+            "moduleName": "AdBrixRmKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.SetSubscriptionResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SetSubscriptionResult",
+                    "printedName": "AdBrixRmKit.SetSubscriptionResult",
+                    "usr": "c:@M@AdBrixRmKit@objc(cs)SetSubscriptionResult"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(im)sendWithCompletion:",
+            "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC4send10completionyyAA03SetE6ResultCc_tF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SetSubscriptionResult",
+                "printedName": "AdBrixRmKit.SetSubscriptionResult",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SetSubscriptionResult"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus(im)sendWithCompletionHandler:",
+            "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC4sendAA03SetE6ResultCyYaF",
+            "moduleName": "AdBrixRmKit",
+            "intro_iOS": "13.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "_Type",
+            "printedName": "_Type",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "SUBSCRIBED",
+                "printedName": "SUBSCRIBED",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AdBrixRmKit.SubscriptionStatus._Type.Type) -> AdBrixRmKit.SubscriptionStatus._Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "_Type",
+                        "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                        "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AdBrixRmKit.SubscriptionStatus._Type.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "_Type",
+                            "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                            "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO10SUBSCRIBEDyA2EmF",
+                "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC5_TypeO10SUBSCRIBEDyA2EmF",
+                "moduleName": "AdBrixRmKit",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 0
+              },
+              {
+                "kind": "Var",
+                "name": "UNSUBSCRIBED",
+                "printedName": "UNSUBSCRIBED",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AdBrixRmKit.SubscriptionStatus._Type.Type) -> AdBrixRmKit.SubscriptionStatus._Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "_Type",
+                        "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                        "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AdBrixRmKit.SubscriptionStatus._Type.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "_Type",
+                            "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                            "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO12UNSUBSCRIBEDyA2EmF",
+                "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC5_TypeO12UNSUBSCRIBEDyA2EmF",
+                "moduleName": "AdBrixRmKit",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 1
+              },
+              {
+                "kind": "Var",
+                "name": "UNDEFINED",
+                "printedName": "UNDEFINED",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AdBrixRmKit.SubscriptionStatus._Type.Type) -> AdBrixRmKit.SubscriptionStatus._Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "_Type",
+                        "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                        "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AdBrixRmKit.SubscriptionStatus._Type.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "_Type",
+                            "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                            "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO9UNDEFINEDyA2EmF",
+                "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC5_TypeO9UNDEFINEDyA2EmF",
+                "moduleName": "AdBrixRmKit",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 2
+              },
+              {
+                "kind": "Var",
+                "name": "isSubscribed",
+                "printedName": "isSubscribed",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO12isSubscribedSbvp",
+                "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC5_TypeO12isSubscribedSbvp",
+                "moduleName": "AdBrixRmKit",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO12isSubscribedSbvg",
+                    "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC5_TypeO12isSubscribedSbvg",
+                    "moduleName": "AdBrixRmKit",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "isUnSubscribed",
+                "printedName": "isUnSubscribed",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO14isUnSubscribedSbvp",
+                "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC5_TypeO14isUnSubscribedSbvp",
+                "moduleName": "AdBrixRmKit",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO14isUnSubscribedSbvg",
+                    "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC5_TypeO14isUnSubscribedSbvg",
+                    "moduleName": "AdBrixRmKit",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "isUndefined",
+                "printedName": "isUndefined",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO11isUndefinedSbvp",
+                "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC5_TypeO11isUndefinedSbvp",
+                "moduleName": "AdBrixRmKit",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO11isUndefinedSbvg",
+                    "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC5_TypeO11isUndefinedSbvg",
+                    "moduleName": "AdBrixRmKit",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AdBrixRmKit.SubscriptionStatus._Type?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "_Type",
+                        "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                        "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO8rawValueAESgSi_tcfc",
+                "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC5_TypeO8rawValueAESgSi_tcfc",
+                "moduleName": "AdBrixRmKit",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO8rawValueSivp",
+                "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC5_TypeO8rawValueSivp",
+                "moduleName": "AdBrixRmKit",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO8rawValueSivg",
+                    "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC5_TypeO8rawValueSivg",
+                    "moduleName": "AdBrixRmKit",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO",
+            "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC5_TypeO",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "enumRawTypeName": "Int",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus",
+        "mangledName": "$s11AdBrixRmKit18SubscriptionStatusC",
+        "moduleName": "AdBrixRmKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SubscriptionStatusBuilder",
+        "printedName": "SubscriptionStatusBuilder",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setInformativeNotificationFlag",
+            "printedName": "setInformativeNotificationFlag(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SubscriptionStatusBuilder",
+                "printedName": "AdBrixRmKit.SubscriptionStatusBuilder",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_Type",
+                "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder(im)setInformativeNotificationFlagTo:",
+            "mangledName": "$s11AdBrixRmKit25SubscriptionStatusBuilderC30setInformativeNotificationFlag2toAcA0eF0C5_TypeO_tF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMarketingNotificationFlag",
+            "printedName": "setMarketingNotificationFlag(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SubscriptionStatusBuilder",
+                "printedName": "AdBrixRmKit.SubscriptionStatusBuilder",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_Type",
+                "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder(im)setMarketingNotificationFlagTo:",
+            "mangledName": "$s11AdBrixRmKit25SubscriptionStatusBuilderC28setMarketingNotificationFlag2toAcA0eF0C5_TypeO_tF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMarketingNotificationFlagForPushChannel",
+            "printedName": "setMarketingNotificationFlagForPushChannel(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SubscriptionStatusBuilder",
+                "printedName": "AdBrixRmKit.SubscriptionStatusBuilder",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_Type",
+                "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder(im)setMarketingNotificationFlagForPushChannelTo:",
+            "mangledName": "$s11AdBrixRmKit25SubscriptionStatusBuilderC42setMarketingNotificationFlagForPushChannel2toAcA0eF0C5_TypeO_tF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMarketingNotificationFlagForSmsChannel",
+            "printedName": "setMarketingNotificationFlagForSmsChannel(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SubscriptionStatusBuilder",
+                "printedName": "AdBrixRmKit.SubscriptionStatusBuilder",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_Type",
+                "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder(im)setMarketingNotificationFlagForSmsChannelTo:",
+            "mangledName": "$s11AdBrixRmKit25SubscriptionStatusBuilderC41setMarketingNotificationFlagForSmsChannel2toAcA0eF0C5_TypeO_tF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMarketingNotificationFlagForKakaoChannel",
+            "printedName": "setMarketingNotificationFlagForKakaoChannel(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SubscriptionStatusBuilder",
+                "printedName": "AdBrixRmKit.SubscriptionStatusBuilder",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_Type",
+                "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder(im)setMarketingNotificationFlagForKakaoChannelTo:",
+            "mangledName": "$s11AdBrixRmKit25SubscriptionStatusBuilderC43setMarketingNotificationFlagForKakaoChannel2toAcA0eF0C5_TypeO_tF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMarketingNotificationAtNightFlag",
+            "printedName": "setMarketingNotificationAtNightFlag(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SubscriptionStatusBuilder",
+                "printedName": "AdBrixRmKit.SubscriptionStatusBuilder",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_Type",
+                "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder(im)setMarketingNotificationAtNightFlagTo:",
+            "mangledName": "$s11AdBrixRmKit25SubscriptionStatusBuilderC35setMarketingNotificationAtNightFlag2toAcA0eF0C5_TypeO_tF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMarketingNotificationAtNightFlagForPushChannel",
+            "printedName": "setMarketingNotificationAtNightFlagForPushChannel(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SubscriptionStatusBuilder",
+                "printedName": "AdBrixRmKit.SubscriptionStatusBuilder",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_Type",
+                "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder(im)setMarketingNotificationAtNightFlagForPushChannelTo:",
+            "mangledName": "$s11AdBrixRmKit25SubscriptionStatusBuilderC49setMarketingNotificationAtNightFlagForPushChannel2toAcA0eF0C5_TypeO_tF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMarketingNotificationAtNightFlagForSmsChannel",
+            "printedName": "setMarketingNotificationAtNightFlagForSmsChannel(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SubscriptionStatusBuilder",
+                "printedName": "AdBrixRmKit.SubscriptionStatusBuilder",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_Type",
+                "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder(im)setMarketingNotificationAtNightFlagForSmsChannelTo:",
+            "mangledName": "$s11AdBrixRmKit25SubscriptionStatusBuilderC48setMarketingNotificationAtNightFlagForSmsChannel2toAcA0eF0C5_TypeO_tF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMarketingNotificationAtNightFlagForKakaoChannel",
+            "printedName": "setMarketingNotificationAtNightFlagForKakaoChannel(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SubscriptionStatusBuilder",
+                "printedName": "AdBrixRmKit.SubscriptionStatusBuilder",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_Type",
+                "printedName": "AdBrixRmKit.SubscriptionStatus._Type",
+                "usr": "s:11AdBrixRmKit18SubscriptionStatusC5_TypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder(im)setMarketingNotificationAtNightFlagForKakaoChannelTo:",
+            "mangledName": "$s11AdBrixRmKit25SubscriptionStatusBuilderC50setMarketingNotificationAtNightFlagForKakaoChannel2toAcA0eF0C5_TypeO_tF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "build",
+            "printedName": "build()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SubscriptionStatus",
+                "printedName": "AdBrixRmKit.SubscriptionStatus",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder(im)build",
+            "mangledName": "$s11AdBrixRmKit25SubscriptionStatusBuilderC5buildAA0eF0CyF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatusBuilder",
+        "mangledName": "$s11AdBrixRmKit25SubscriptionStatusBuilderC",
+        "moduleName": "AdBrixRmKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AbxSubscriptionError",
+        "printedName": "AbxSubscriptionError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "RESULT_CODE_INVALID_TOKEN",
+            "printedName": "RESULT_CODE_INVALID_TOKEN",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.AbxSubscriptionError.Type) -> AdBrixRmKit.AbxSubscriptionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbxSubscriptionError",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                    "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbxSubscriptionError",
+                        "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                        "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError@AbxSubscriptionErrorRESULT_CODE_INVALID_TOKEN",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO25RESULT_CODE_INVALID_TOKENyA2CmF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "RESULT_CODE_INVALID_REQUEST",
+            "printedName": "RESULT_CODE_INVALID_REQUEST",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.AbxSubscriptionError.Type) -> AdBrixRmKit.AbxSubscriptionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbxSubscriptionError",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                    "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbxSubscriptionError",
+                        "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                        "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError@AbxSubscriptionErrorRESULT_CODE_INVALID_REQUEST",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO27RESULT_CODE_INVALID_REQUESTyA2CmF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "RESULT_CODE_BLOCKED_ACCOUNT",
+            "printedName": "RESULT_CODE_BLOCKED_ACCOUNT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.AbxSubscriptionError.Type) -> AdBrixRmKit.AbxSubscriptionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbxSubscriptionError",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                    "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbxSubscriptionError",
+                        "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                        "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError@AbxSubscriptionErrorRESULT_CODE_BLOCKED_ACCOUNT",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO27RESULT_CODE_BLOCKED_ACCOUNTyA2CmF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "RESULT_CODE_UNAUTHORIZED",
+            "printedName": "RESULT_CODE_UNAUTHORIZED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.AbxSubscriptionError.Type) -> AdBrixRmKit.AbxSubscriptionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbxSubscriptionError",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                    "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbxSubscriptionError",
+                        "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                        "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError@AbxSubscriptionErrorRESULT_CODE_UNAUTHORIZED",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO24RESULT_CODE_UNAUTHORIZEDyA2CmF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "RESULT_CODE_TERMINATED_API",
+            "printedName": "RESULT_CODE_TERMINATED_API",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.AbxSubscriptionError.Type) -> AdBrixRmKit.AbxSubscriptionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbxSubscriptionError",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                    "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbxSubscriptionError",
+                        "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                        "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError@AbxSubscriptionErrorRESULT_CODE_TERMINATED_API",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO26RESULT_CODE_TERMINATED_APIyA2CmF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "RESULT_CODE_RATE_LIMIT_EXCEEDED",
+            "printedName": "RESULT_CODE_RATE_LIMIT_EXCEEDED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.AbxSubscriptionError.Type) -> AdBrixRmKit.AbxSubscriptionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbxSubscriptionError",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                    "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbxSubscriptionError",
+                        "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                        "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError@AbxSubscriptionErrorRESULT_CODE_RATE_LIMIT_EXCEEDED",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO31RESULT_CODE_RATE_LIMIT_EXCEEDEDyA2CmF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "RESULT_CODE_WRONG_PROPERTY",
+            "printedName": "RESULT_CODE_WRONG_PROPERTY",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.AbxSubscriptionError.Type) -> AdBrixRmKit.AbxSubscriptionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbxSubscriptionError",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                    "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbxSubscriptionError",
+                        "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                        "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError@AbxSubscriptionErrorRESULT_CODE_WRONG_PROPERTY",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO26RESULT_CODE_WRONG_PROPERTYyA2CmF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "RESULT_CODE_INTERNAL_SERVER_ERROR",
+            "printedName": "RESULT_CODE_INTERNAL_SERVER_ERROR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.AbxSubscriptionError.Type) -> AdBrixRmKit.AbxSubscriptionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbxSubscriptionError",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                    "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbxSubscriptionError",
+                        "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                        "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError@AbxSubscriptionErrorRESULT_CODE_INTERNAL_SERVER_ERROR",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO33RESULT_CODE_INTERNAL_SERVER_ERRORyA2CmF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "RESULT_CODE_SERVICE_MAINTENANCE",
+            "printedName": "RESULT_CODE_SERVICE_MAINTENANCE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.AbxSubscriptionError.Type) -> AdBrixRmKit.AbxSubscriptionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbxSubscriptionError",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                    "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbxSubscriptionError",
+                        "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                        "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError@AbxSubscriptionErrorRESULT_CODE_SERVICE_MAINTENANCE",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO31RESULT_CODE_SERVICE_MAINTENANCEyA2CmF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "RESULT_CODE_SERVER_BUSY",
+            "printedName": "RESULT_CODE_SERVER_BUSY",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.AbxSubscriptionError.Type) -> AdBrixRmKit.AbxSubscriptionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbxSubscriptionError",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                    "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbxSubscriptionError",
+                        "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                        "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError@AbxSubscriptionErrorRESULT_CODE_SERVER_BUSY",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO23RESULT_CODE_SERVER_BUSYyA2CmF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Var",
+            "name": "RESULT_CODE_PROPERTY_REQUIRED",
+            "printedName": "RESULT_CODE_PROPERTY_REQUIRED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.AbxSubscriptionError.Type) -> AdBrixRmKit.AbxSubscriptionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbxSubscriptionError",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                    "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbxSubscriptionError",
+                        "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                        "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError@AbxSubscriptionErrorRESULT_CODE_PROPERTY_REQUIRED",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO29RESULT_CODE_PROPERTY_REQUIREDyA2CmF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Var",
+            "name": "RESULT_CODE_USER_ID_REQUIRED",
+            "printedName": "RESULT_CODE_USER_ID_REQUIRED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.AbxSubscriptionError.Type) -> AdBrixRmKit.AbxSubscriptionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbxSubscriptionError",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                    "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbxSubscriptionError",
+                        "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                        "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError@AbxSubscriptionErrorRESULT_CODE_USER_ID_REQUIRED",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO28RESULT_CODE_USER_ID_REQUIREDyA2CmF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Var",
+            "name": "RESULT_CODE_UNKNOWN_ERROR",
+            "printedName": "RESULT_CODE_UNKNOWN_ERROR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.AbxSubscriptionError.Type) -> AdBrixRmKit.AbxSubscriptionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbxSubscriptionError",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                    "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbxSubscriptionError",
+                        "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                        "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError@AbxSubscriptionErrorRESULT_CODE_UNKNOWN_ERROR",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO25RESULT_CODE_UNKNOWN_ERRORyA2CmF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Var",
+            "name": "RESULT_CODE_NETWORK_ERROR",
+            "printedName": "RESULT_CODE_NETWORK_ERROR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.AbxSubscriptionError.Type) -> AdBrixRmKit.AbxSubscriptionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbxSubscriptionError",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                    "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbxSubscriptionError",
+                        "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                        "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError@AbxSubscriptionErrorRESULT_CODE_NETWORK_ERROR",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO25RESULT_CODE_NETWORK_ERRORyA2CmF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 13
+          },
+          {
+            "kind": "Var",
+            "name": "RESULT_CODE_NO_DATA_TO_GET",
+            "printedName": "RESULT_CODE_NO_DATA_TO_GET",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.AbxSubscriptionError.Type) -> AdBrixRmKit.AbxSubscriptionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbxSubscriptionError",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                    "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbxSubscriptionError",
+                        "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                        "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError@AbxSubscriptionErrorRESULT_CODE_NO_DATA_TO_GET",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO26RESULT_CODE_NO_DATA_TO_GETyA2CmF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 14
+          },
+          {
+            "kind": "Var",
+            "name": "RESULT_CODE_SDK_DISABLED",
+            "printedName": "RESULT_CODE_SDK_DISABLED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.AbxSubscriptionError.Type) -> AdBrixRmKit.AbxSubscriptionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbxSubscriptionError",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                    "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AbxSubscriptionError",
+                        "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                        "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError@AbxSubscriptionErrorRESULT_CODE_SDK_DISABLED",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO24RESULT_CODE_SDK_DISABLEDyA2CmF",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 15
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AdBrixRmKit.AbxSubscriptionError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AbxSubscriptionError",
+                    "printedName": "AdBrixRmKit.AbxSubscriptionError",
+                    "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11AdBrixRmKit20AbxSubscriptionErrorO8rawValueACSgSi_tcfc",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO8rawValueACSgSi_tcfc",
+            "moduleName": "AdBrixRmKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AdBrixRmKit20AbxSubscriptionErrorO8rawValueSivp",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO8rawValueSivp",
+            "moduleName": "AdBrixRmKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AdBrixRmKit20AbxSubscriptionErrorO8rawValueSivg",
+                "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO8rawValueSivg",
+                "moduleName": "AdBrixRmKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_nsErrorDomain",
+            "printedName": "_nsErrorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AdBrixRmKit20AbxSubscriptionErrorO03_nsG6DomainSSvpZ",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO03_nsG6DomainSSvpZ",
+            "moduleName": "AdBrixRmKit",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AdBrixRmKit20AbxSubscriptionErrorO03_nsG6DomainSSvgZ",
+                "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO03_nsG6DomainSSvgZ",
+                "moduleName": "AdBrixRmKit",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AdBrixRmKit20AbxSubscriptionErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO16errorDescriptionSSSgvp",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AdBrixRmKit20AbxSubscriptionErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO16errorDescriptionSSSgvg",
+                "moduleName": "AdBrixRmKit",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@AdBrixRmKit@E@AbxSubscriptionError",
+        "mangledName": "$s11AdBrixRmKit20AbxSubscriptionErrorO",
+        "moduleName": "AdBrixRmKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_BridgedNSError",
+            "printedName": "_BridgedNSError",
+            "usr": "s:10Foundation15_BridgedNSErrorP",
+            "mangledName": "$s10Foundation15_BridgedNSErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeableError",
+            "printedName": "_ObjectiveCBridgeableError",
+            "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
+            "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GetSubscriptionResult",
+        "printedName": "GetSubscriptionResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AdBrixRmKit.SubscriptionStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SubscriptionStatus",
+                    "printedName": "AdBrixRmKit.SubscriptionStatus",
+                    "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)GetSubscriptionResult(py)value",
+            "mangledName": "$s11AdBrixRmKit21GetSubscriptionResultC5valueAA0F6StatusCSgvp",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AdBrixRmKit.SubscriptionStatus?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SubscriptionStatus",
+                        "printedName": "AdBrixRmKit.SubscriptionStatus",
+                        "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)GetSubscriptionResult(im)value",
+                "mangledName": "$s11AdBrixRmKit21GetSubscriptionResultC5valueAA0F6StatusCSgvg",
+                "moduleName": "AdBrixRmKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(isSuccess:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GetSubscriptionResult",
+                "printedName": "AdBrixRmKit.GetSubscriptionResult",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)GetSubscriptionResult"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)GetSubscriptionResult(im)initWithIsSuccess:error:",
+            "mangledName": "$s11AdBrixRmKit21GetSubscriptionResultC9isSuccess5errorACSb_s5Error_pSgtcfc",
+            "moduleName": "AdBrixRmKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithIsSuccess:error:",
+            "declAttributes": [
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AdBrixRmKit@objc(cs)GetSubscriptionResult",
+        "mangledName": "$s11AdBrixRmKit21GetSubscriptionResultC",
+        "moduleName": "AdBrixRmKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@AdBrixRmKit@objc(cs)DfnResult",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "AdBrixRmKit.DfnResult",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SetSubscriptionResult",
+        "printedName": "SetSubscriptionResult",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(isSuccess:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SetSubscriptionResult",
+                "printedName": "AdBrixRmKit.SetSubscriptionResult",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SetSubscriptionResult"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)SetSubscriptionResult(im)initWithIsSuccess:error:",
+            "mangledName": "$s11AdBrixRmKit21SetSubscriptionResultC9isSuccess5errorACSb_s5Error_pSgtcfc",
+            "moduleName": "AdBrixRmKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithIsSuccess:error:",
+            "declAttributes": [
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AdBrixRmKit@objc(cs)SetSubscriptionResult",
+        "mangledName": "$s11AdBrixRmKit21SetSubscriptionResultC",
+        "moduleName": "AdBrixRmKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@AdBrixRmKit@objc(cs)DfnResult",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "AdBrixRmKit.DfnResult",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AdBrixRmKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AdBrixRmKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -4312,6 +6936,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AdBrixRmKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "CommonCrypto",
         "printedName": "CommonCrypto",
         "declKind": "Import",
@@ -4343,6 +6977,16 @@
         "printedName": "SQLite3",
         "declKind": "Import",
         "moduleName": "AdBrixRmKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AdBrixRmKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -5469,8 +8113,8 @@
             "mangledName": "$s11AdBrixRmKit9DfnResultC9isSuccessSbvp",
             "moduleName": "AdBrixRmKit",
             "declAttributes": [
-              "Final",
               "HasStorage",
+              "Final",
               "AccessControl",
               "ObjC"
             ],
@@ -5527,8 +8171,8 @@
             "mangledName": "$s11AdBrixRmKit9DfnResultC5errors5Error_pSgvp",
             "moduleName": "AdBrixRmKit",
             "declAttributes": [
-              "Final",
               "HasStorage",
+              "Final",
               "AccessControl",
               "ObjC"
             ],
@@ -5805,6 +8449,26 @@
         "printedName": "Network",
         "declKind": "Import",
         "moduleName": "AdBrixRmKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AdBrixRmKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AdBrixRmKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -7076,9 +9740,11 @@
             "usr": "c:@M@AdBrixRmKit@objc(cs)AdBrixRM(im)clearUserProperties",
             "mangledName": "$s11AdBrixRmKit0aB2RMC19clearUserPropertiesyyF",
             "moduleName": "AdBrixRmKit",
+            "deprecated": true,
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "Available"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7165,10 +9831,12 @@
             "usr": "c:@M@AdBrixRmKit@objc(cs)AdBrixRM(im)setLocationWithLatitude:longitude:",
             "mangledName": "$s11AdBrixRmKit0aB2RMC11setLocation8latitude9longitudeySd_SdtF",
             "moduleName": "AdBrixRmKit",
+            "deprecated": true,
             "objc_name": "setLocationWithLatitude:longitude:",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "Available"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -8260,6 +10928,144 @@
             "declAttributes": [
               "AccessControl",
               "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSubscriptionStatus",
+            "printedName": "getSubscriptionStatus(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.GetSubscriptionResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GetSubscriptionResult",
+                    "printedName": "AdBrixRmKit.GetSubscriptionResult",
+                    "usr": "c:@M@AdBrixRmKit@objc(cs)GetSubscriptionResult"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)AdBrixRM(im)getSubscriptionStatusWithCompletion:",
+            "mangledName": "$s11AdBrixRmKit0aB2RMC21getSubscriptionStatus10completionyyAA03GetG6ResultCc_tF",
+            "moduleName": "AdBrixRmKit",
+            "objc_name": "getSubscriptionStatusWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSubscriptionStatus",
+            "printedName": "setSubscriptionStatus(status:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SubscriptionStatus",
+                "printedName": "AdBrixRmKit.SubscriptionStatus",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdBrixRmKit.SetSubscriptionResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SetSubscriptionResult",
+                    "printedName": "AdBrixRmKit.SetSubscriptionResult",
+                    "usr": "c:@M@AdBrixRmKit@objc(cs)SetSubscriptionResult"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)AdBrixRM(im)setSubscriptionStatusWithStatus:completion:",
+            "mangledName": "$s11AdBrixRmKit0aB2RMC21setSubscriptionStatus6status10completionyAA0gH0C_yAA03SetG6ResultCctF",
+            "moduleName": "AdBrixRmKit",
+            "objc_name": "setSubscriptionStatusWithStatus:completion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSubscriptionStatus",
+            "printedName": "getSubscriptionStatus()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GetSubscriptionResult",
+                "printedName": "AdBrixRmKit.GetSubscriptionResult",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)GetSubscriptionResult"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11AdBrixRmKit0aB2RMC21getSubscriptionStatusAA03GetG6ResultCyYaF",
+            "mangledName": "$s11AdBrixRmKit0aB2RMC21getSubscriptionStatusAA03GetG6ResultCyYaF",
+            "moduleName": "AdBrixRmKit",
+            "intro_iOS": "13",
+            "declAttributes": [
+              "AccessControl",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSubscriptionStatus",
+            "printedName": "setSubscriptionStatus(status:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SetSubscriptionResult",
+                "printedName": "AdBrixRmKit.SetSubscriptionResult",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SetSubscriptionResult"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SubscriptionStatus",
+                "printedName": "AdBrixRmKit.SubscriptionStatus",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)SubscriptionStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11AdBrixRmKit0aB2RMC21setSubscriptionStatus6statusAA03SetG6ResultCAA0gH0C_tYaF",
+            "mangledName": "$s11AdBrixRmKit0aB2RMC21setSubscriptionStatus6statusAA03SetG6ResultCAA0gH0C_tYaF",
+            "moduleName": "AdBrixRmKit",
+            "intro_iOS": "13",
+            "declAttributes": [
+              "AccessControl",
+              "Available"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9774,9 +12580,11 @@
             "usr": "c:@M@AdBrixRmKit@objc(cs)AdBrixRM(im)deleteUserDataAndStopSDK::",
             "mangledName": "$s11AdBrixRmKit0aB2RMC24deleteUserDataAndStopSDKyySS_yAA10CompletionOctF",
             "moduleName": "AdBrixRmKit",
+            "deprecated": true,
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "Available"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9819,9 +12627,11 @@
             "usr": "c:@M@AdBrixRmKit@objc(cs)AdBrixRM(im)restartSDK::",
             "mangledName": "$s11AdBrixRmKit0aB2RMC10restartSDKyySS_yAA10CompletionOctF",
             "moduleName": "AdBrixRmKit",
+            "deprecated": true,
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "Available"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -20858,6 +23668,272 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3967,
+      "length": 12,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3993,
+      "length": 9,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3967,
+      "length": 12,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3993,
+      "length": 9,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7343,
+      "length": 4,
+      "value": "4001"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7387,
+      "length": 4,
+      "value": "4002"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7431,
+      "length": 4,
+      "value": "4003"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7472,
+      "length": 4,
+      "value": "4004"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7515,
+      "length": 4,
+      "value": "4005"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7563,
+      "length": 4,
+      "value": "4006"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7606,
+      "length": 4,
+      "value": "4007"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7656,
+      "length": 4,
+      "value": "5001"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7704,
+      "length": 4,
+      "value": "5002"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7744,
+      "length": 4,
+      "value": "5003"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7790,
+      "length": 4,
+      "value": "253"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7835,
+      "length": 4,
+      "value": "254"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7877,
+      "length": 4,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7919,
+      "length": 4,
+      "value": "256"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7962,
+      "length": 4,
+      "value": "257"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8003,
+      "length": 4,
+      "value": "258"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7343,
+      "length": 4,
+      "value": "4001"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7387,
+      "length": 4,
+      "value": "4002"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7431,
+      "length": 4,
+      "value": "4003"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7472,
+      "length": 4,
+      "value": "4004"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7515,
+      "length": 4,
+      "value": "4005"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7563,
+      "length": 4,
+      "value": "4006"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7606,
+      "length": 4,
+      "value": "4007"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7656,
+      "length": 4,
+      "value": "5001"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7704,
+      "length": 4,
+      "value": "5002"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7744,
+      "length": 4,
+      "value": "5003"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7790,
+      "length": 1,
+      "value": "253"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7835,
+      "length": 1,
+      "value": "254"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7877,
+      "length": 1,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7919,
+      "length": 1,
+      "value": "256"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7962,
+      "length": 1,
+      "value": "257"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8003,
+      "length": 1,
+      "value": "258"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 9566,
+      "length": 21,
+      "value": "\"AdBrixRmKit.GetSubscriptionResult\""
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 9851,
+      "length": 21,
+      "value": "\"AdBrixRmKit.SetSubscriptionResult\""
+    },
+    {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/Network\/ApiConnectionManager.swift",
       "kind": "IntegerLiteral",
       "offset": 554,
@@ -20883,7 +23959,7 @@
       "kind": "StringLiteral",
       "offset": 227,
       "length": 9,
-      "value": "\"2.4.0.3\""
+      "value": "\"2.4.0.4\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
@@ -22134,91 +25210,147 @@
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11062,
+      "offset": 11063,
+      "length": 52,
+      "value": "\"https:\/\/ap2.sdk-qa.dfinery.io\/api\/v1\/users\/profile\""
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 11164,
+      "length": 49,
+      "value": "\"https:\/\/ap2.sdk.dfinery.io\/api\/v1\/users\/profile\""
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 11267,
+      "length": 52,
+      "value": "\"https:\/\/ap1.sdk-qa.dfinery.io\/api\/v1\/users\/profile\""
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 11374,
+      "length": 49,
+      "value": "\"https:\/\/ap1.sdk.dfinery.io\/api\/v1\/users\/profile\""
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 11476,
+      "length": 59,
+      "value": "\"https:\/\/ap2.sdk-qa.dfinery.io\/api\/v1\/users\/profile\/update\""
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 11584,
+      "length": 56,
+      "value": "\"https:\/\/ap2.sdk.dfinery.io\/api\/v1\/users\/profile\/update\""
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 11694,
+      "length": 59,
+      "value": "\"https:\/\/ap1.sdk-qa.dfinery.io\/api\/v1\/users\/profile\/update\""
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 11808,
+      "length": 56,
+      "value": "\"https:\/\/ap1.sdk.dfinery.io\/api\/v1\/users\/profile\/update\""
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 12073,
       "length": 35,
       "value": "\"https:\/\/web-api.ap2.gf.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11143,
+      "offset": 12154,
       "length": 39,
       "value": "\"https:\/\/web-api-dev.ap2.gf.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11235,
+      "offset": 12246,
       "length": 35,
       "value": "\"https:\/\/web-api.ap1.gf.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11322,
+      "offset": 12333,
       "length": 39,
       "value": "\"https:\/\/web-api-dev.ap1.gf.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11485,
+      "offset": 12496,
       "length": 28,
       "value": "\"\/api\/v6\/actionhistory\/List\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11620,
+      "offset": 12631,
       "length": 36,
       "value": "\"\/api\/v6\/actionhistory\/%@\/device\/%@\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11767,
+      "offset": 12778,
       "length": 34,
       "value": "\"\/api\/v6\/actionhistory\/%@\/user\/%@\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11865,
+      "offset": 12876,
       "length": 31,
       "value": "\"\/api\/v6\/deferred-deeplink2\/%@\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11962,
+      "offset": 12973,
       "length": 23,
       "value": "\"\/api\/v6\/event\/bulk\/%@\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12030,
+      "offset": 13041,
       "length": 20,
       "value": "\"\/api\/v6\/drworks\/%@\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12090,
+      "offset": 13101,
       "length": 55,
       "value": "\"https:\/\/static.adbrix.io\/prod\/skan\/%@\/conversion.json\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12179,
+      "offset": 13190,
       "length": 54,
       "value": "\"https:\/\/static.adbrix.io\/dev\/skan\/%@\/conversion.json\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12322,
+      "offset": 13333,
       "length": 17,
       "value": "\"\/api\/v1\/dfn\/ids\""
     },
@@ -26390,1008 +29522,1008 @@
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 20419,
+      "offset": 20470,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 21641,
+      "offset": 21692,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "StringLiteral",
-      "offset": 25235,
+      "offset": 25286,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "StringLiteral",
-      "offset": 25260,
+      "offset": 25311,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "StringLiteral",
-      "offset": 25285,
+      "offset": 25336,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "StringLiteral",
-      "offset": 25310,
+      "offset": 25361,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 78237,
+      "offset": 79694,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 78270,
+      "offset": 79727,
       "length": 2,
       "value": "30"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78303,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78237,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78270,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78303,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78467,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78480,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78490,
-      "length": 3,
-      "value": "120"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78467,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78480,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78490,
-      "length": 3,
-      "value": "120"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78881,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78892,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78903,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78913,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78926,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78937,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78881,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78892,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78903,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78913,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78926,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 78937,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79103,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79128,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79154,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79103,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79128,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79154,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79406,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79465,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79524,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79583,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79642,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79701,
-      "length": 1,
-      "value": "6"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
       "offset": 79760,
-      "length": 1,
-      "value": "7"
+      "length": 2,
+      "value": "60"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 79819,
-      "length": 1,
-      "value": "8"
+      "offset": 79694,
+      "length": 2,
+      "value": "10"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 79878,
-      "length": 1,
-      "value": "9"
+      "offset": 79727,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 79760,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 79924,
+      "length": 2,
+      "value": "30"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
       "offset": 79937,
       "length": 2,
-      "value": "10"
+      "value": "60"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 79997,
+      "offset": 79947,
+      "length": 3,
+      "value": "120"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 79924,
       "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80057,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80117,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79406,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79465,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79524,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79583,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79642,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79701,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79760,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79819,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79878,
-      "length": 1,
-      "value": "9"
+      "value": "30"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
       "offset": 79937,
       "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 79947,
+      "length": 3,
+      "value": "120"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80338,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80349,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80360,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80370,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80383,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80394,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80338,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80349,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80360,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80370,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80383,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80394,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80560,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80585,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80611,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80560,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80585,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80611,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80863,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80922,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 80981,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 81040,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 81099,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 81158,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 81217,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 81276,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 81335,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 81394,
+      "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 79997,
+      "offset": 81454,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 80057,
+      "offset": 81514,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 80117,
+      "offset": 81574,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 82144,
+      "offset": 80863,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 82203,
+      "offset": 80922,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 82262,
+      "offset": 80981,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 82321,
+      "offset": 81040,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 82380,
+      "offset": 81099,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 82439,
+      "offset": 81158,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 82498,
+      "offset": 81217,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 82557,
+      "offset": 81276,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 82616,
+      "offset": 81335,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 82675,
+      "offset": 81394,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 82144,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82203,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82262,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82321,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82380,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82439,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82498,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82557,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82616,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82675,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 84276,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 84298,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 84320,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 84342,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 84364,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 84386,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 84408,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 84430,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 84452,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 84474,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 84497,
+      "offset": 81454,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84520,
+      "offset": 81514,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84543,
+      "offset": 81574,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84566,
+      "offset": 83601,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83660,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83719,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83778,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83837,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83896,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83955,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84014,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84073,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84132,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83601,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83660,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83719,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83778,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83837,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83896,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83955,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84014,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84073,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84132,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85733,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85755,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85777,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85799,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85821,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85843,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85865,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85887,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85909,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85931,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85954,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85977,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 86000,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 86023,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84276,
+      "offset": 85733,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84298,
+      "offset": 85755,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84320,
+      "offset": 85777,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84342,
+      "offset": 85799,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84364,
+      "offset": 85821,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84386,
+      "offset": 85843,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84408,
+      "offset": 85865,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84430,
+      "offset": 85887,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84452,
+      "offset": 85909,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84474,
+      "offset": 85931,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84497,
+      "offset": 85954,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84520,
+      "offset": 85977,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84543,
+      "offset": 86000,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84566,
+      "offset": 86023,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85870,
+      "offset": 87327,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85910,
+      "offset": 87367,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85950,
+      "offset": 87407,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85990,
+      "offset": 87447,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85870,
+      "offset": 87327,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85910,
+      "offset": 87367,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85950,
+      "offset": 87407,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85990,
+      "offset": 87447,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 86663,
+      "offset": 88120,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 86715,
+      "offset": 88172,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 86767,
+      "offset": 88224,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 86819,
+      "offset": 88276,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 86871,
+      "offset": 88328,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 86923,
+      "offset": 88380,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 86975,
+      "offset": 88432,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 87027,
+      "offset": 88484,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 87079,
+      "offset": 88536,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 87131,
+      "offset": 88588,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 87184,
+      "offset": 88641,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 86663,
+      "offset": 88120,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 86715,
+      "offset": 88172,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 86767,
+      "offset": 88224,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 86819,
+      "offset": 88276,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 86871,
+      "offset": 88328,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 86923,
+      "offset": 88380,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 86975,
+      "offset": 88432,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 87027,
+      "offset": 88484,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 87079,
+      "offset": 88536,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 87131,
+      "offset": 88588,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 87184,
+      "offset": 88641,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "Dictionary",
-      "offset": 88842,
+      "offset": 90299,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "Dictionary",
-      "offset": 88878,
+      "offset": 90335,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "Dictionary",
-      "offset": 89766,
+      "offset": 91223,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "Dictionary",
-      "offset": 89802,
+      "offset": 91259,
       "length": 3,
       "value": "[]"
     },
@@ -27405,7 +30537,7 @@
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "StringLiteral",
-      "offset": 93207,
+      "offset": 94664,
       "length": 20,
       "value": "\"AdBrixRmKit.OsPushEnableObserver\""
     },

@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/AdBrixRmKit-Swift.h</key>
 		<data>
-		OnF7RhxzKfrtmgD/SeJHgzBH4WQ=
+		U3JTGalMp44kTGAtxq69t2hnpvA=
 		</data>
 		<key>Headers/AdBrixRmKit.h</key>
 		<data>
@@ -26,23 +26,23 @@
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		m1QzTBz1rps7FQWqFXzMgYILOlE=
+		5zwIuowb4gSaMIN+k74jcv3p0y8=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		/wLfAedshcstkoqJygBmtq7nrRE=
+		1AyW6oJcvGzJnBT7OtOs0HVWV+0=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		u+MGtqleyZepDSIFrbItVZ8pZxo=
+		lXz4NL+N1CGBrUQz3wrpMDueEjo=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		/wLfAedshcstkoqJygBmtq7nrRE=
+		1AyW6oJcvGzJnBT7OtOs0HVWV+0=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		DIY8/jdhjaFZYItlvwud3cwouWE=
+		ZBRX4h1sQa104bCVskwgN8oJkFg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,7 +62,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OFYDsAwm5V6J6YN1PSZ5EAK20bDF1Phq7TVH5besJps=
+			TZpjBFkVqmsASP6NCxH035NAqtbLVT0SmgDM9Y4wG0U=
 			</data>
 		</dict>
 		<key>Headers/AdBrixRmKit.h</key>
@@ -83,35 +83,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2G7sj0s5V9LeNJiw6GRBerY2JD4LjqkIrZmcQ1QkrGE=
+			j99W7GDcBGiSKf8oeGBA+HrGFx5nk0+txXACL0nE9eM=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nSuDeBYmRs5LLvIe95p/ZHPdPVNuQ7Wm/W1QeXa6vSU=
+			T4gJ+btWzy/nPA63R63uO4+3CWgm3oHtpupJ08QLzkA=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qV1taX4GwFCEA+BbHzB5FBvOzQ1Eb5khYgSs2eM29Cw=
+			lkSBZrekyuvu09ysUc0M1L8mN1tyI5HOo24UeKkX3WA=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nSuDeBYmRs5LLvIe95p/ZHPdPVNuQ7Wm/W1QeXa6vSU=
+			T4gJ+btWzy/nPA63R63uO4+3CWgm3oHtpupJ08QLzkA=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bAKN8e3uDVfG2OXYugCCneictaGKaq+VjCZBP9lHI+8=
+			aRp45kYoHWeJ6/8JHx1wNe0XNHgXa5aOfrzqnAXYLc0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

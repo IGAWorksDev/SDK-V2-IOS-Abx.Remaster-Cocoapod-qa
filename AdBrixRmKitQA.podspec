@@ -21,6 +21,6 @@ You can test it before AdBrixRmKit is released
   spec.author       = { "oliver-igaw" => "oliver.lee@igaworks.com" }
   spec.source       = { :git => 'https://github.com/IGAWorksDev/SDK-V2-IOS-Abx.Remaster-Cocoapod-qa.git', :tag => spec.version.to_s }
 
-  spec.platform     = :ios, "9.0"
+  spec.platform     = :ios, "11.0"
   spec.ios.vendored_frameworks = 'AdBrixRmKit.xcframework'
 end

@@ -444,7 +444,95 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)commerceViewHome;
 - (void)commerceViewHomeWithAttrWithOrderAttr:(AdBrixRmAttrModel * _Nullable)orderAttr;
 - (void)commerceCategoryViewWithCategory:(AdBrixRmCommerceProductCategoryModel * _Nonnull)category productInfo:(NSArray<AdBrixRmCommerceProductModel *> * _Nonnull)productInfo;
+/// Retrieves the subscription status and returns the result in the form of a <code>GetSubscriptionResult</code> object.
+/// <ul>
+///   <li>
+///     GetSubscriptionResult:
+///     <ul>
+///       <li>
+///         isSuccess: Bool
+///       </li>
+///       <li>
+///         value: SubscriptionStatus?
+///       </li>
+///       <li>
+///         error: Error?
+///       </li>
+///     </ul>
+///   </li>
+/// </ul>
+/// <hr/>
+/// <ul>
+///   <li>
+///     Example:
+///   </li>
+/// </ul>
+/// \code
+/// getSubscriptionStatus { result in
+///    if result.isSuccess {
+///        if let status = result.value {
+///            //handle SubscriptionStatus
+///            print(value.marketingNotificationFlag.isSubscribed)
+///        }
+///    } else {
+///        if let error = result.error {
+///            //handle error
+///            print(error.localizedDescription)
+///        }
+///    }
+/// }
+///
+/// \endcode<ul>
+///   <li>
+///     Notice:
+///     userId must be set before calling this function.
+///     value returns nil when SubscriptionStatus never set before
+///   </li>
+/// </ul>
 - (void)getSubscriptionStatusWithCompletion:(void (^ _Nonnull)(GetSubscriptionResult * _Nonnull))completion;
+/// Set subscription status of current user and returns the result in the form of a <code>SetSubscriptionResult</code> object.
+/// <hr/>
+/// Example:
+/// \code
+/// let status = SubscriptionStatus.Builder()
+///    .setInformativeNotificationFlag(to: .SUBSCRIBED)
+///    .setMarketingNotificationFlag(to: .UNSUBSCRIBED)
+///    .setMarketingNotificationFlagForKakaoChannel(to: .UNSUBSCRIBED)
+///    .setMarketingNotificationFlagForSmsChannel(to: .SUBSCRIBED)
+///    .setMarketingNotificationFlagForPushChannel(to: .UNSUBSCRIBED)
+///    .setMarketingNotificationAtNightFlag(to: .UNSUBSCRIBED)
+///    .setMarketingNotificationAtNightFlagForSmsChannel(to: .UNSUBSCRIBED)
+///    .setMarketingNotificationAtNightFlagForKakaoChannel(to: .UNSUBSCRIBED)
+///    .setMarketingNotificationAtNightFlagForPushChannel(to: .UNSUBSCRIBED)
+///    .build()
+///
+/// AdBrixRm.setSubscriptionStatus(status: status) { result in
+///    if result.isSuccess {
+///        print("success")
+///    } else {
+///        print(result.error?.localizedDescription)
+///    }
+/// }
+///
+/// \endcodeor
+/// \code
+/// SubscriptionStatus.Builder()
+///     .setInformativeNotificationFlag(to: .SUBSCRIBED)
+///     .setMarketingNotificationFlag(to: .SUBSCRIBED)
+///     .setMarketingNotificationFlagForPushChannel(to: .SUBSCRIBED)
+///     .build()
+///     .send { result in
+///     if result.isSuccess {
+///        print("success")
+///     } else {
+///        print(result.error?.localizedDescription)
+///     }
+///
+///
+/// \endcode\param status SubscriptionStatus made by SubscriptionStatus.Builder().build()
+///
+/// \param completion SetSubscriptionResult - isSuccess: Bool, error: Error?
+///
 - (void)setSubscriptionStatusWithStatus:(SubscriptionStatus * _Nonnull)status completion:(void (^ _Nonnull)(SetSubscriptionResult * _Nonnull))completion;
 - (void)commerceCategoryViewWithAttrWithCategory:(AdBrixRmCommerceProductCategoryModel * _Nonnull)category productInfo:(NSArray<AdBrixRmCommerceProductModel *> * _Nonnull)productInfo orderAttr:(AdBrixRmAttrModel * _Nullable)orderAttr;
 - (void)commerceProductViewWithProductInfo:(AdBrixRmCommerceProductModel * _Nonnull)productInfo;
@@ -888,15 +976,15 @@ SWIFT_CLASS("_TtC11AdBrixRmKit18SubscriptionStatus")
 /// \code
 /// // example
 /// SubscriptionStatus.builder()
-///     .setInformativeNotificationFlag(as: .UNSUBSCRIBED)
-///     .setMarketingNotificationFlag(as: .UNSUBSCRIBED)
-///     .setMarketingNotificationFlagForKakaoChannel(as: .UNSUBSCRIBED)
-///     .setMarketingNotificationFlagForSmsChannel(as: .UNSUBSCRIBED)
-///     .setMarketingNotificationFlagForPushChannel(as: .UNSUBSCRIBED)
-///     .setMarketingNotificationAtNightFlag(as: .UNSUBSCRIBED)
-///     .setMarketingNotificationAtNightFlagForSmsChannel(as: .UNSUBSCRIBED)
-///     .setMarketingNotificationAtNightFlagForKakaoChannel(as: .UNSUBSCRIBED)
-///     .setMarketingNotificationAtNightFlagForPushChannel(as: .UNSUBSCRIBED)
+///     .setInformativeNotificationFlag(to: .UNSUBSCRIBED)
+///     .setMarketingNotificationFlag(to: .UNSUBSCRIBED)
+///     .setMarketingNotificationFlagForKakaoChannel(to: .UNSUBSCRIBED)
+///     .setMarketingNotificationFlagForSmsChannel(to: .UNSUBSCRIBED)
+///     .setMarketingNotificationFlagForPushChannel(to: .UNSUBSCRIBED)
+///     .setMarketingNotificationAtNightFlag(to: .UNSUBSCRIBED)
+///     .setMarketingNotificationAtNightFlagForSmsChannel(to: .UNSUBSCRIBED)
+///     .setMarketingNotificationAtNightFlagForKakaoChannel(to: .UNSUBSCRIBED)
+///     .setMarketingNotificationAtNightFlagForPushChannel(to: .UNSUBSCRIBED)
 ///     .build()
 ///     .send { result in
 ///         print(result)

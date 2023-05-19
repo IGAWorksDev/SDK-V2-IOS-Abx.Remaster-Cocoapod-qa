@@ -320,14 +320,6 @@ extension AdBrixRmKit.AbxSubscriptionError : Foundation.LocalizedError {
   @objc public func commerceCategoryView(category: AdBrixRmKit.AdBrixRmCommerceProductCategoryModel, productInfo: [AdBrixRmKit.AdBrixRmCommerceProductModel])
   @objc public func getSubscriptionStatus(completion: @escaping (AdBrixRmKit.GetSubscriptionResult) -> ())
   @objc public func setSubscriptionStatus(status: AdBrixRmKit.SubscriptionStatus, completion: @escaping (AdBrixRmKit.SetSubscriptionResult) -> ())
-  #if compiler(>=5.3) && $AsyncAwait
-  @available(iOS 13, *)
-  public func getSubscriptionStatus() async -> AdBrixRmKit.GetSubscriptionResult
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  @available(iOS 13, *)
-  public func setSubscriptionStatus(status: AdBrixRmKit.SubscriptionStatus) async -> AdBrixRmKit.SetSubscriptionResult
-  #endif
   @objc public func commerceCategoryViewWithAttr(category: AdBrixRmKit.AdBrixRmCommerceProductCategoryModel, productInfo: [AdBrixRmKit.AdBrixRmCommerceProductModel], orderAttr: AdBrixRmKit.AdBrixRmAttrModel?)
   @objc public func commerceProductView(productInfo: AdBrixRmKit.AdBrixRmCommerceProductModel)
   @objc public func commerceProductViewWithAttr(productInfo: AdBrixRmKit.AdBrixRmCommerceProductModel, orderAttr: AdBrixRmKit.AdBrixRmAttrModel? = nil)
@@ -408,6 +400,14 @@ extension AdBrixRmKit.AbxSubscriptionError : Foundation.LocalizedError {
   @objc public func setDeviceId(_ device_id: Swift.String)
   @objc public func flushAllEvents(completion: ((AdBrixRmKit.DfnResult) -> ())? = nil)
   @objc public func getSDKVersion() -> Swift.String
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, *)
+  public func getSubscriptionStatus() async -> AdBrixRmKit.GetSubscriptionResult
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, *)
+  public func setSubscriptionStatus(status: AdBrixRmKit.SubscriptionStatus) async -> AdBrixRmKit.SetSubscriptionResult
+  #endif
   @objc public enum AdBrixEventUploadCountInterval : Swift.Int {
     case MIN = 10, NORMAL = 30, MAX = 60
     public init?(rawValue: Swift.Int)

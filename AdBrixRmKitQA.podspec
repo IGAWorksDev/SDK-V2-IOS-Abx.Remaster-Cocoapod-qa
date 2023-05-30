@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "AdBrixRmKitQA"
-  spec.version      = "2.4.0.4-2"
+  spec.version      = "2.4.0.5-ci"
   spec.summary      = "The preview version of AdBrixRmKit"
   spec.homepage     = "https://github.com/IGAWorksDev/SDK-V2-IOS-Abx.Remaster-Cocoapod-qa"
 

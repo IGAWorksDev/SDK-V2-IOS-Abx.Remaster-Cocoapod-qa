@@ -300,6 +300,8 @@ extension AdBrixRmKit.UserProfileServerError : Foundation.LocalizedError {
   @objc public func setKakaoId(kakaoId: Swift.String)
   @objc public func setPhoneNumber(number: Swift.String, completion: @escaping (AdBrixRmKit.SetCiProfileResult) -> ())
   @objc public func setKakaoId(kakaoId: Swift.String, completion: @escaping (AdBrixRmKit.SetCiProfileResult) -> ())
+  @objc public func getKakaoId(completion: @escaping (AdBrixRmKit.GetCiProfileResult) -> ())
+  @objc public func getPhoneNumber(completion: @escaping (AdBrixRmKit.GetCiProfileResult) -> ())
   @objc public func setUserCiWithAttr(attrModel: AdBrixRmKit.AdBrixRmAttrModel)
   @available(*, deprecated)
   @objc public func setLocation(latitude: Swift.Double, longitude: Swift.Double)

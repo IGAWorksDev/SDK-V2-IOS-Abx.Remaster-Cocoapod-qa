@@ -342,6 +342,7 @@ enum AdBrixEventUploadTimeInterval : NSInteger;
 enum AdBrixGenderType : NSInteger;
 @class AdBrixRmAttrModel;
 @class SetCiProfileResult;
+@class GetCiProfileResult;
 enum AdBrixRmSignUpChannel : NSInteger;
 enum AdBrixRmInviteChannel : NSInteger;
 @class AdBrixRmCommerceProductModel;
@@ -396,6 +397,10 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId;
 - (void)setPhoneNumberWithNumber:(NSString * _Nonnull)number completion:(void (^ _Nonnull)(SetCiProfileResult * _Nonnull))completion;
 - (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId completion:(void (^ _Nonnull)(SetCiProfileResult * _Nonnull))completion;
+/// test only! runs in DEBUG
+- (void)getKakaoIdWithCompletion:(void (^ _Nonnull)(GetCiProfileResult * _Nonnull))completion;
+/// test only! runs in DEBUG
+- (void)getPhoneNumberWithCompletion:(void (^ _Nonnull)(GetCiProfileResult * _Nonnull))completion;
 - (void)setUserCiWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel;
 - (void)setLocationWithLatitude:(double)latitude longitude:(double)longitude SWIFT_DEPRECATED;
 - (void)eventWithEventName:(NSString * _Nonnull)eventName;
@@ -1396,6 +1401,7 @@ enum AdBrixEventUploadTimeInterval : NSInteger;
 enum AdBrixGenderType : NSInteger;
 @class AdBrixRmAttrModel;
 @class SetCiProfileResult;
+@class GetCiProfileResult;
 enum AdBrixRmSignUpChannel : NSInteger;
 enum AdBrixRmInviteChannel : NSInteger;
 @class AdBrixRmCommerceProductModel;
@@ -1450,6 +1456,10 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId;
 - (void)setPhoneNumberWithNumber:(NSString * _Nonnull)number completion:(void (^ _Nonnull)(SetCiProfileResult * _Nonnull))completion;
 - (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId completion:(void (^ _Nonnull)(SetCiProfileResult * _Nonnull))completion;
+/// test only! runs in DEBUG
+- (void)getKakaoIdWithCompletion:(void (^ _Nonnull)(GetCiProfileResult * _Nonnull))completion;
+/// test only! runs in DEBUG
+- (void)getPhoneNumberWithCompletion:(void (^ _Nonnull)(GetCiProfileResult * _Nonnull))completion;
 - (void)setUserCiWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel;
 - (void)setLocationWithLatitude:(double)latitude longitude:(double)longitude SWIFT_DEPRECATED;
 - (void)eventWithEventName:(NSString * _Nonnull)eventName;

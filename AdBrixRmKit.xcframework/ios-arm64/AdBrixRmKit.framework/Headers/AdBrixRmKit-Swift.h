@@ -342,7 +342,6 @@ enum AdBrixEventUploadTimeInterval : NSInteger;
 enum AdBrixGenderType : NSInteger;
 @class AdBrixRmAttrModel;
 @class SetCiProfileResult;
-@class GetCiProfileResult;
 enum AdBrixRmSignUpChannel : NSInteger;
 enum AdBrixRmInviteChannel : NSInteger;
 @class AdBrixRmCommerceProductModel;
@@ -394,14 +393,10 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (enum AdBrixGenderType)convertGender:(NSInteger)code SWIFT_WARN_UNUSED_RESULT;
 - (void)setUserPropertiesWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel;
 - (void)clearUserProperties SWIFT_DEPRECATED;
-- (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId;
+- (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId SWIFT_DEPRECATED_MSG("use setKakaoId(kakaoId:completion:) instead");
 - (void)setPhoneNumberWithNumber:(NSString * _Nonnull)number completion:(void (^ _Nonnull)(SetCiProfileResult * _Nonnull))completion;
 - (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId completion:(void (^ _Nonnull)(SetCiProfileResult * _Nonnull))completion;
-/// test only! runs in DEBUG
-- (void)getKakaoIdWithCompletion:(void (^ _Nonnull)(GetCiProfileResult * _Nonnull))completion;
-/// test only! runs in DEBUG
-- (void)getPhoneNumberWithCompletion:(void (^ _Nonnull)(GetCiProfileResult * _Nonnull))completion;
-- (void)setUserCiWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel;
+- (void)setUserCiWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel SWIFT_DEPRECATED;
 - (void)setLocationWithLatitude:(double)latitude longitude:(double)longitude SWIFT_DEPRECATED;
 - (void)eventWithEventName:(NSString * _Nonnull)eventName;
 - (void)eventWithAttrWithEventName:(NSString * _Nonnull)eventName value:(AdBrixRmAttrModel * _Nonnull)value;

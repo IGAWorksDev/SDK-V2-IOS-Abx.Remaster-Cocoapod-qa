@@ -297,11 +297,11 @@ extension AdBrixRmKit.UserProfileServerError : Foundation.LocalizedError {
   @objc public func setUserPropertiesWithAttr(attrModel: AdBrixRmKit.AdBrixRmAttrModel)
   @available(*, deprecated)
   @objc public func clearUserProperties()
+  @available(*, deprecated, message: "use setKakaoId(kakaoId:completion:) instead")
   @objc public func setKakaoId(kakaoId: Swift.String)
   @objc public func setPhoneNumber(number: Swift.String, completion: @escaping (AdBrixRmKit.SetCiProfileResult) -> ())
   @objc public func setKakaoId(kakaoId: Swift.String, completion: @escaping (AdBrixRmKit.SetCiProfileResult) -> ())
-  @objc public func getKakaoId(completion: @escaping (AdBrixRmKit.GetCiProfileResult) -> ())
-  @objc public func getPhoneNumber(completion: @escaping (AdBrixRmKit.GetCiProfileResult) -> ())
+  @available(*, deprecated)
   @objc public func setUserCiWithAttr(attrModel: AdBrixRmKit.AdBrixRmAttrModel)
   @available(*, deprecated)
   @objc public func setLocation(latitude: Swift.Double, longitude: Swift.Double)
@@ -423,6 +423,14 @@ extension AdBrixRmKit.UserProfileServerError : Foundation.LocalizedError {
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, *)
   public func setSubscriptionStatus(status: AdBrixRmKit.SubscriptionStatus) async -> AdBrixRmKit.SetSubscriptionResult
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, *)
+  public func setKakaoId(kakaoId: Swift.String) async -> AdBrixRmKit.SetCiProfileResult
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, *)
+  public func setPhoneNumber(number: Swift.String) async -> AdBrixRmKit.SetCiProfileResult
   #endif
   @objc public enum AdBrixEventUploadCountInterval : Swift.Int {
     case MIN = 10, NORMAL = 30, MAX = 60

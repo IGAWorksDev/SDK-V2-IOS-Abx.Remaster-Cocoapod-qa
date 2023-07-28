@@ -581,7 +581,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)getAllInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageResult * _Nonnull))completion;
 - (void)openInAppMessageWithCampaignId:(NSString * _Nonnull)campaignId completion:(void (^ _Nonnull)(enum Completion))completion;
 - (void)fetchInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageFetchResult * _Nonnull))completion;
-- (void)setInAppMessageFetchModeWithMode:(enum DfnInAppMessageFetchMode)mode;
+- (void)setInAppMessageFetchModeWithMode:(enum DfnInAppMessageFetchMode)mode SWIFT_DEPRECATED;
 - (void)setInAppMessageTokenWithToken:(NSString * _Nonnull)token;
 - (void)pauseInAppMessage;
 - (void)resumeInAppMessage;
@@ -769,6 +769,15 @@ SWIFT_PROTOCOL("_TtP11AdBrixRmKit26AdBrixRmPushRemoteDelegate_")
 - (void)pushRemoteCallbackWithData:(NSDictionary<NSString *, id> * _Nullable)data state:(enum UIApplicationState)state;
 @end
 
+
+SWIFT_CLASS("_TtC11AdBrixRmKit8CIResult")
+@interface CIResult : NSObject
+@property (nonatomic, readonly) BOOL isSuccess;
+@property (nonatomic, readonly, copy) NSString * _Nullable resultMessage;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 typedef SWIFT_ENUM(NSInteger, Completion, open) {
   CompletionSuccess = 0,
   CompletionFail = 1,
@@ -912,22 +921,19 @@ SWIFT_CLASS("_TtC11AdBrixRmKit7DfnUtil")
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit21GetAllCiProfileResult")
-@interface GetAllCiProfileResult : DfnResult
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
+@interface GetAllCiProfileResult : CIResult
 @end
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit18GetCiProfileResult")
-@interface GetCiProfileResult : DfnResult
+@interface GetCiProfileResult : CIResult
 @property (nonatomic, readonly, copy) NSString * _Nullable value;
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
 @end
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit21GetSubscriptionResult")
-@interface GetSubscriptionResult : DfnResult
+@interface GetSubscriptionResult : CIResult
 @property (nonatomic, readonly, strong) SubscriptionStatus * _Nullable value;
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
 @end
 
 
@@ -946,14 +952,12 @@ SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit18SetCiProfileResult")
-@interface SetCiProfileResult : DfnResult
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
+@interface SetCiProfileResult : CIResult
 @end
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit21SetSubscriptionResult")
-@interface SetSubscriptionResult : DfnResult
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
+@interface SetSubscriptionResult : CIResult
 @end
 
 enum _Type : NSInteger;
@@ -1635,7 +1639,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)getAllInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageResult * _Nonnull))completion;
 - (void)openInAppMessageWithCampaignId:(NSString * _Nonnull)campaignId completion:(void (^ _Nonnull)(enum Completion))completion;
 - (void)fetchInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageFetchResult * _Nonnull))completion;
-- (void)setInAppMessageFetchModeWithMode:(enum DfnInAppMessageFetchMode)mode;
+- (void)setInAppMessageFetchModeWithMode:(enum DfnInAppMessageFetchMode)mode SWIFT_DEPRECATED;
 - (void)setInAppMessageTokenWithToken:(NSString * _Nonnull)token;
 - (void)pauseInAppMessage;
 - (void)resumeInAppMessage;
@@ -1823,6 +1827,15 @@ SWIFT_PROTOCOL("_TtP11AdBrixRmKit26AdBrixRmPushRemoteDelegate_")
 - (void)pushRemoteCallbackWithData:(NSDictionary<NSString *, id> * _Nullable)data state:(enum UIApplicationState)state;
 @end
 
+
+SWIFT_CLASS("_TtC11AdBrixRmKit8CIResult")
+@interface CIResult : NSObject
+@property (nonatomic, readonly) BOOL isSuccess;
+@property (nonatomic, readonly, copy) NSString * _Nullable resultMessage;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 typedef SWIFT_ENUM(NSInteger, Completion, open) {
   CompletionSuccess = 0,
   CompletionFail = 1,
@@ -1966,22 +1979,19 @@ SWIFT_CLASS("_TtC11AdBrixRmKit7DfnUtil")
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit21GetAllCiProfileResult")
-@interface GetAllCiProfileResult : DfnResult
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
+@interface GetAllCiProfileResult : CIResult
 @end
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit18GetCiProfileResult")
-@interface GetCiProfileResult : DfnResult
+@interface GetCiProfileResult : CIResult
 @property (nonatomic, readonly, copy) NSString * _Nullable value;
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
 @end
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit21GetSubscriptionResult")
-@interface GetSubscriptionResult : DfnResult
+@interface GetSubscriptionResult : CIResult
 @property (nonatomic, readonly, strong) SubscriptionStatus * _Nullable value;
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
 @end
 
 
@@ -2000,14 +2010,12 @@ SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit18SetCiProfileResult")
-@interface SetCiProfileResult : DfnResult
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
+@interface SetCiProfileResult : CIResult
 @end
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit21SetSubscriptionResult")
-@interface SetSubscriptionResult : DfnResult
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
+@interface SetSubscriptionResult : CIResult
 @end
 
 enum _Type : NSInteger;

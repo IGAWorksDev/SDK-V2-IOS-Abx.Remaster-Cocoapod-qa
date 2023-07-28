@@ -152,11 +152,11 @@ extension AdBrixRmKit.UserProfileServerError : Foundation.LocalizedError {
     get
   }
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GetSubscriptionResult : AdBrixRmKit.DfnResult {
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GetSubscriptionResult : AdBrixRmKit.CIResult {
   @objc final public let value: AdBrixRmKit.SubscriptionStatus?
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class SetSubscriptionResult : AdBrixRmKit.DfnResult {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class SetSubscriptionResult : AdBrixRmKit.CIResult {
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class ActionHistory : ObjectiveC.NSObject {
@@ -236,15 +236,15 @@ extension AdBrixRmKit.UserProfileServerError : Foundation.LocalizedError {
   @objc public func setAttrDataBool(_ key: Swift.String, _ value: Swift.Bool)
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GetCiProfileResult : AdBrixRmKit.DfnResult {
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GetCiProfileResult : AdBrixRmKit.CIResult {
   @objc final public let value: Swift.String?
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GetAllCiProfileResult : AdBrixRmKit.DfnResult {
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GetAllCiProfileResult : AdBrixRmKit.CIResult {
   final public let value: [Swift.String : Any?]?
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class SetCiProfileResult : AdBrixRmKit.DfnResult {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class SetCiProfileResult : AdBrixRmKit.CIResult {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class DfnUtil : ObjectiveC.NSObject {
@@ -266,6 +266,13 @@ extension AdBrixRmKit.UserProfileServerError : Foundation.LocalizedError {
   @objc final public let isSuccess: Swift.Bool
   @objc final public let error: Swift.Error?
   @objc public init(isSuccess: Swift.Bool, error: Swift.Error?)
+  @objc deinit
+}
+@objc @objcMembers public class CIResult : ObjectiveC.NSObject {
+  @objc final public let isSuccess: Swift.Bool
+  final public let resultCode: Swift.Int?
+  @objc final public let resultMessage: Swift.String?
+  public init(isSuccess: Swift.Bool, resultCode: Swift.Int?, resultMessage: Swift.String?)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class AdBrixRM : ObjectiveC.NSObject {
@@ -403,6 +410,7 @@ extension AdBrixRmKit.UserProfileServerError : Foundation.LocalizedError {
   @objc public func getAllInAppMessage(completion: @escaping (AdBrixRmKit.DfnInAppMessageResult) -> ())
   @objc public func openInAppMessage(campaignId: Swift.String, completion: @escaping (AdBrixRmKit.Completion) -> ())
   @objc public func fetchInAppMessage(completion: @escaping (AdBrixRmKit.DfnInAppMessageFetchResult) -> ())
+  @available(*, deprecated)
   @objc public func setInAppMessageFetchMode(mode: AdBrixRmKit.DfnInAppMessageFetchMode)
   @objc public func setInAppMessageToken(token: Swift.String)
   @objc public func pauseInAppMessage()

@@ -394,7 +394,39 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setUserPropertiesWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel;
 - (void)clearUserProperties SWIFT_DEPRECATED;
 - (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId SWIFT_DEPRECATED_MSG("use setKakaoId(kakaoId:completion:) instead");
+/// This function is used to set a phone number for a user. ex) 821012345678
+/// \param number The phone number to set for the user. This must conform to the E.164 standard but without “+”. An example of an E.164 formatted number without “+” could be “821012345678”. For more information on E.164, refer to <a href="https://en.wikipedia.org/wiki/E.164">E.164 - Wikipedia</a>
+///
+/// \param completion A closure that is called when the operation is complete. It passes a <code>SetCiProfileResult</code> object that describes the result of the operation.
+/// <ul>
+///   <li>
+///     <code>isSuccess</code>: A Boolean value indicating whether the operation was successful.
+///   </li>
+///   <li>
+///     <code>resultCode</code>: A result code from server
+///   </li>
+///   <li>
+///     <code>resultMessage</code>: A result message from server
+///   </li>
+/// </ul>
+///
 - (void)setPhoneNumberWithNumber:(NSString * _Nonnull)number completion:(void (^ _Nonnull)(SetCiProfileResult * _Nonnull))completion;
+/// This function is used to set a Kakao ID for a user. KakaoId must be a 10-digit ID from Kakao Sync API
+/// \param kakaoId The Kakao ID to set for the user. This must be a 10-digit ID obtained from the Kakao Sync API.
+///
+/// \param completion A closure that is called when the operation is complete. It passes a <code>SetCiProfileResult</code> object that describes the result of the operation.
+/// <ul>
+///   <li>
+///     <code>isSuccess</code>: A Boolean value indicating whether the operation was successful.
+///   </li>
+///   <li>
+///     <code>resultCode</code>: A result code from server
+///   </li>
+///   <li>
+///     <code>resultMessage</code>: A result message from server
+///   </li>
+/// </ul>
+///
 - (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId completion:(void (^ _Nonnull)(SetCiProfileResult * _Nonnull))completion;
 - (void)setUserCiWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel SWIFT_DEPRECATED;
 - (void)setLocationWithLatitude:(double)latitude longitude:(double)longitude SWIFT_DEPRECATED;
@@ -1452,7 +1484,39 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setUserPropertiesWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel;
 - (void)clearUserProperties SWIFT_DEPRECATED;
 - (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId SWIFT_DEPRECATED_MSG("use setKakaoId(kakaoId:completion:) instead");
+/// This function is used to set a phone number for a user. ex) 821012345678
+/// \param number The phone number to set for the user. This must conform to the E.164 standard but without “+”. An example of an E.164 formatted number without “+” could be “821012345678”. For more information on E.164, refer to <a href="https://en.wikipedia.org/wiki/E.164">E.164 - Wikipedia</a>
+///
+/// \param completion A closure that is called when the operation is complete. It passes a <code>SetCiProfileResult</code> object that describes the result of the operation.
+/// <ul>
+///   <li>
+///     <code>isSuccess</code>: A Boolean value indicating whether the operation was successful.
+///   </li>
+///   <li>
+///     <code>resultCode</code>: A result code from server
+///   </li>
+///   <li>
+///     <code>resultMessage</code>: A result message from server
+///   </li>
+/// </ul>
+///
 - (void)setPhoneNumberWithNumber:(NSString * _Nonnull)number completion:(void (^ _Nonnull)(SetCiProfileResult * _Nonnull))completion;
+/// This function is used to set a Kakao ID for a user. KakaoId must be a 10-digit ID from Kakao Sync API
+/// \param kakaoId The Kakao ID to set for the user. This must be a 10-digit ID obtained from the Kakao Sync API.
+///
+/// \param completion A closure that is called when the operation is complete. It passes a <code>SetCiProfileResult</code> object that describes the result of the operation.
+/// <ul>
+///   <li>
+///     <code>isSuccess</code>: A Boolean value indicating whether the operation was successful.
+///   </li>
+///   <li>
+///     <code>resultCode</code>: A result code from server
+///   </li>
+///   <li>
+///     <code>resultMessage</code>: A result message from server
+///   </li>
+/// </ul>
+///
 - (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId completion:(void (^ _Nonnull)(SetCiProfileResult * _Nonnull))completion;
 - (void)setUserCiWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel SWIFT_DEPRECATED;
 - (void)setLocationWithLatitude:(double)latitude longitude:(double)longitude SWIFT_DEPRECATED;

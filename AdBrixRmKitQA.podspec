@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "AdBrixRmKitQA"
-  spec.version      = "2.4.0.6-2"
+  spec.version      = "2.4.0.6-3"
   spec.summary      = "The preview version of AdBrixRmKit"
   spec.homepage     = "https://github.com/IGAWorksDev/SDK-V2-IOS-Abx.Remaster-Cocoapod-qa"
 
@@ -25,7 +25,7 @@ You can test it before AdBrixRmKit is released
                         https://www.dfinery.io/
                         LICENSE
                     }
-  spec.author       = { "oliver-igaw" => "oliver.lee@igaworks.com" }
+  spec.author       = { "jimmy.kang" => "jimmy.kang@igaworks.com" }
   spec.source       = { :git => 'https://github.com/IGAWorksDev/SDK-V2-IOS-Abx.Remaster-Cocoapod-qa.git', :tag => spec.version.to_s }
 
   spec.platform     = :ios, "11.0"

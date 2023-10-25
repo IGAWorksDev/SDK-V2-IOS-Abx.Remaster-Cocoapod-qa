@@ -24238,13 +24238,6 @@
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageWindowController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1090,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageWindowController.swift",
-      "kind": "BooleanLiteral",
       "offset": 1008,
       "length": 5,
       "value": "false"

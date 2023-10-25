@@ -17,6 +17,7 @@ import Swift
 import SystemConfiguration
 import UIKit
 import UserNotifications
+import WebKit
 import _Concurrency
 import _StringProcessing
 import iAd
@@ -272,6 +273,9 @@ extension AdBrixRmKit.UserProfileServerError : Foundation.LocalizedError {
   @objc final public let isSuccess: Swift.Bool
   final public let resultCode: Swift.Int?
   @objc final public let resultMessage: Swift.String?
+  @objc public var resultCodeObjc: Foundation.NSNumber? {
+    @objc get
+  }
   public init(isSuccess: Swift.Bool, resultCode: Swift.Int?, resultMessage: Swift.String?)
   @objc deinit
 }
@@ -407,11 +411,11 @@ extension AdBrixRmKit.UserProfileServerError : Foundation.LocalizedError {
   @objc public func openPush(_ abxRemotePushModel: AdBrixRmKit.AbxRemotePushModel)
   @objc public func didReceiveAbxPush(_ request: UserNotifications.UNNotificationRequest, withContentHandler contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void)
   @objc public func abxPushServiceExtensionTimeWillExpire()
+  @objc public func getSelfServeInAppMessages(completion: @escaping ([AdBrixRmKit.SelfServeInAppMessage]) -> ())
+  @available(*, deprecated)
   @objc public func getAllInAppMessage(completion: @escaping (AdBrixRmKit.DfnInAppMessageResult) -> ())
   @objc public func openInAppMessage(campaignId: Swift.String, completion: @escaping (AdBrixRmKit.Completion) -> ())
   @objc public func fetchInAppMessage(completion: @escaping (AdBrixRmKit.DfnInAppMessageFetchResult) -> ())
-  @available(*, deprecated)
-  @objc public func setInAppMessageFetchMode(mode: AdBrixRmKit.DfnInAppMessageFetchMode)
   @objc public func setInAppMessageToken(token: Swift.String)
   @objc public func pauseInAppMessage()
   @objc public func resumeInAppMessage()
@@ -555,58 +559,15 @@ extension AdBrixRmKit.UserProfileServerError : Foundation.LocalizedError {
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class DfnInAppMessage : ObjectiveC.NSObject {
   @objc final public let campaignId: Swift.String
+  @objc final public let identifier: Swift.String
+  @objc final public let position: Swift.String?
   final public let extAttr: [Swift.String : Any?]?
   @objc final public let type: Swift.String
-  @objc final public let layout: Swift.String
+  @objc final public let html: Swift.String
   @objc final public let bgColor: Swift.String
   @objc final public let overlayColor: Swift.String
-  @objc final public let titleText: Swift.String?
-  @objc final public let titleTextColor: Swift.String?
-  @objc final public let bodyText: Swift.String?
-  @objc final public let bodyTextColor: Swift.String?
-  @objc final public let textAlign: Swift.String?
-  @objc final public let defaultCloseButtonColor: Swift.String
-  @objc final public let defaultCloseButtonBgColor: Swift.String
-  @objc final public let stickyBannerOption: AdBrixRmKit.DfnStickyBannerOption?
-  @objc final public let scrollableImageOption: AdBrixRmKit.DfnScrollableImageOption?
-  @objc final public let numberOfButtons: Swift.Int
-  @objc final public let buttonArray: [AdBrixRmKit.DfnIAMButtonInfo]
-  @objc public var portraitImage: UIKit.UIImage?
-  @objc public var landscapeImage: UIKit.UIImage?
-  @objc final public let portraitImageURL: Swift.String?
-  @objc final public let landscapeImageURL: Swift.String?
-  @objc final public let isPortraitImageDownloaded: Swift.Bool
-  @objc final public let isLandscapeImageDownloaded: Swift.Bool
-  @objc final public let imageClickAction: AdBrixRmKit.DfnIAMClickAction
   final public let startDateTime: Swift.Int64?
   final public let endDateTime: Swift.Int64?
-  @objc final public let triggers: [AdBrixRmKit.DfnIAMTrigger]?
-  @objc final public let isPortraitAvailable: Swift.Bool
-  @objc final public let isLandscapeAvailable: Swift.Bool
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers @objcMembers public class DfnStickyBannerOption : ObjectiveC.NSObject {
-  @objc public var align: Swift.String?
-  @objc final public let clickAction: AdBrixRmKit.DfnIAMClickAction
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers @objcMembers public class DfnScrollableImageOption : ObjectiveC.NSObject {
-  @objc final public let align: Swift.String?
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers @objcMembers public class DfnIAMClickAction : ObjectiveC.NSObject {
-  @objc final public let actionId: Swift.String?
-  @objc final public let actionType: Swift.String?
-  @objc final public let actionArg: Swift.String?
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers @objcMembers public class DfnIAMButtonInfo : ObjectiveC.NSObject {
-  @objc final public let buttonId: Swift.String?
-  @objc final public let text: Swift.String?
-  @objc final public let clickAction: AdBrixRmKit.DfnIAMClickAction
-  @objc final public let textColor: Swift.String?
-  @objc final public let bgColor: Swift.String?
-  @objc final public let borderColor: Swift.String?
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class DfnIAMTrigger : ObjectiveC.NSObject {
@@ -616,13 +577,10 @@ extension AdBrixRmKit.UserProfileServerError : Foundation.LocalizedError {
   final public let evtProperties: [[Swift.String : Any?]]
   @objc deinit
 }
-@objc public enum DfnInAppMessageFetchMode : Swift.Int {
-  case UserIdMode = 0, AdidMode
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
+@objc @_hasMissingDesignatedInitializers @objcMembers public class SelfServeInAppMessage : ObjectiveC.NSObject {
+  @objc final public let campaignId: Swift.String
+  final public let extAttr: [Swift.String : Any?]
+  @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class DfnInAppMessageResult : ObjectiveC.NSObject {
   @objc final public let isSucceeded: Swift.Bool
@@ -674,6 +632,3 @@ extension AdBrixRmKit.AdBrixRM.AdbrixRmPaymentMethod : Swift.RawRepresentable {}
 extension AdBrixRmKit.AdBrixRM.AdBrixRmSharingChannel : Swift.Equatable {}
 extension AdBrixRmKit.AdBrixRM.AdBrixRmSharingChannel : Swift.Hashable {}
 extension AdBrixRmKit.AdBrixRM.AdBrixRmSharingChannel : Swift.RawRepresentable {}
-extension AdBrixRmKit.DfnInAppMessageFetchMode : Swift.Equatable {}
-extension AdBrixRmKit.DfnInAppMessageFetchMode : Swift.Hashable {}
-extension AdBrixRmKit.DfnInAppMessageFetchMode : Swift.RawRepresentable {}

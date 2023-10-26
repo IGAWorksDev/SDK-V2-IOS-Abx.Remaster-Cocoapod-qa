@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		/WBwHl970zZi7REvEZrtBxfwkn4=
+		GJUDxlGHQMa3k6xpcfenwSVa0Rc=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		zfg2DsFL8CauJLFWc3/hoG90koM=
+		p+qi7ICjpNWJ9LMWMQykHkazFYM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,7 +83,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Idf9Zi8l0k14IQix0cZ7MDfEm1a99lkAucxjydCKFgw=
+			Fb2AJy0GxC3mlOnzALC6MqCNqdfmgcRTurbYWv63wgU=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -111,7 +111,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BkkQt1J2pUkeZI2dPylcDR1nF8LGUCty0ZeR4SPcFvU=
+			jWO5ZiEOnMCqyH0JDHZJDft2YhHtRMAFPToz0hMf6Jc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

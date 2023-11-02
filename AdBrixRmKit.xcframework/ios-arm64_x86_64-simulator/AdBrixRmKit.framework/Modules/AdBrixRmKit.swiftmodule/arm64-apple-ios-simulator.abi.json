@@ -22483,7 +22483,7 @@
       "kind": "StringLiteral",
       "offset": 227,
       "length": 9,
-      "value": "\"2.4.0.6\""
+      "value": "\"2.5.0.0\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",

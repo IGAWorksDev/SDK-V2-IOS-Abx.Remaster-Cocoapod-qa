@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		iEwCGLWtlVbA2E9dq5kC3lDD5Mk=
+		KQUrS4M24KjDSHbBaNP5vLuwQKw=
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -42,11 +42,15 @@
 		</data>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		GGxjnYseRVAwLPMex5WubjYxTEE=
+		UNb19w8+tgW2t/nfKkwD42Ynrek=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		fhfBWkqdXq+iydQ1pWJ6O6kzdiA=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		6PyG/Sn5jh81qqGDYJ701GSxHBw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -83,7 +87,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			E2of3dYO2foT0I0GRueos4nYeuNLOXXV/t8UTKQXJJo=
+			wLdnvfSQYWLrE6XLRI2GGI3Vtnv7JUVnfJoMKpWFHsg=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRmKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -111,7 +115,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LB2IVcfYo8yzbxHVAxzxEaTmsNdm73WLpe//cLTx0h8=
+			OTl6r3Jt6AZ1p542wIVWFQri41PBAEY1EoDw0Yp47lw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -119,6 +123,13 @@
 			<key>hash2</key>
 			<data>
 			QwqWpabCySZQme43XniAcwRHQ8P+RqwKGJ+aL4rCqTE=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3I1+H5p9p/M4HzB0a1kgbuYs4iW2n+O8u2YjT4RZvjU=
 			</data>
 		</dict>
 	</dict>

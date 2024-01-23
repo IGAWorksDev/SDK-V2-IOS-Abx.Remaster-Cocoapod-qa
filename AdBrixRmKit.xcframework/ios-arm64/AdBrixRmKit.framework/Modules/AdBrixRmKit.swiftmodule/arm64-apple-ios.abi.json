@@ -22483,7 +22483,7 @@
       "kind": "StringLiteral",
       "offset": 227,
       "length": 9,
-      "value": "\"2.6.0.0\""
+      "value": "\"2.6.0.1\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
@@ -27416,56 +27416,56 @@
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Component\/AutoEvent\/SessionAutoEventGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 10692,
+      "offset": 10757,
       "length": 12,
       "value": "\"first_open\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Component\/AutoEvent\/SessionAutoEventGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 10731,
+      "offset": 10796,
       "length": 15,
       "value": "\"deeplink_open\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Component\/AutoEvent\/SessionAutoEventGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 10769,
+      "offset": 10834,
       "length": 11,
       "value": "\"push_open\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Component\/AutoEvent\/SessionAutoEventGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 10804,
+      "offset": 10869,
       "length": 12,
       "value": "\"basic_open\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Component\/AutoEvent\/SessionAutoEventGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 10692,
+      "offset": 10757,
       "length": 12,
       "value": "\"first_open\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Component\/AutoEvent\/SessionAutoEventGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 10731,
+      "offset": 10796,
       "length": 15,
       "value": "\"deeplink_open\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Component\/AutoEvent\/SessionAutoEventGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 10769,
+      "offset": 10834,
       "length": 11,
       "value": "\"push_open\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Component\/AutoEvent\/SessionAutoEventGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 10804,
+      "offset": 10869,
       "length": 12,
       "value": "\"basic_open\""
     },

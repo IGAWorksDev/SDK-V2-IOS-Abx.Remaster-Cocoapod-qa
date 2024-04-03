@@ -8132,13 +8132,6 @@
       },
       {
         "kind": "Import",
-        "name": "iAd",
-        "printedName": "iAd",
-        "declKind": "Import",
-        "moduleName": "AdBrixRmKit"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -22483,7 +22476,7 @@
       "kind": "StringLiteral",
       "offset": 227,
       "length": 9,
-      "value": "\"2.6.0.3\""
+      "value": "\"2.6.0.4\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
@@ -22880,1001 +22873,994 @@
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3292,
-      "length": 24,
-      "value": "\"abx:searchads_response\""
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 3354,
+      "offset": 3289,
       "length": 32,
       "value": "\"abx:apple_searchads_attr_token\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3435,
+      "offset": 3370,
       "length": 32,
       "value": "\"abx:market_install_btn_clicked\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3507,
+      "offset": 3442,
       "length": 23,
       "value": "\"abx:app_install_start\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3574,
+      "offset": 3509,
       "length": 27,
       "value": "\"abx:app_install_completed\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3638,
+      "offset": 3573,
       "length": 20,
       "value": "\"abx:app_first_open\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3693,
+      "offset": 3628,
       "length": 13,
       "value": "\"abx:is_skip\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3739,
+      "offset": 3674,
       "length": 11,
       "value": "\"abx:level\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3788,
+      "offset": 3723,
       "length": 11,
       "value": "\"abx:stage\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3834,
+      "offset": 3769,
       "length": 14,
       "value": "\"abx:prev_ver\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3883,
+      "offset": 3818,
       "length": 14,
       "value": "\"abx:curr_ver\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3927,
+      "offset": 3862,
       "length": 13,
       "value": "\"abx:item_id\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3973,
+      "offset": 3908,
       "length": 16,
       "value": "\"abx:product_id\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4024,
+      "offset": 3959,
       "length": 18,
       "value": "\"abx:product_name\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4070,
+      "offset": 4005,
       "length": 11,
       "value": "\"abx:price\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4112,
+      "offset": 4047,
       "length": 14,
       "value": "\"abx:quantity\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4157,
+      "offset": 4092,
       "length": 14,
       "value": "\"abx:discount\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4199,
+      "offset": 4134,
       "length": 11,
       "value": "\"abx:sales\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4241,
+      "offset": 4176,
       "length": 14,
       "value": "\"abx:currency\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4286,
+      "offset": 4221,
       "length": 14,
       "value": "\"abx:category\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4328,
+      "offset": 4263,
       "length": 11,
       "value": "\"abx:items\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4370,
+      "offset": 4305,
       "length": 14,
       "value": "\"abx:order_id\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4422,
+      "offset": 4357,
       "length": 21,
       "value": "\"abx:delivery_charge\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4480,
+      "offset": 4415,
       "length": 20,
       "value": "\"abx:penalty_charge\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4530,
+      "offset": 4465,
       "length": 13,
       "value": "\"abx:keyword\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4581,
+      "offset": 4516,
       "length": 21,
       "value": "\"abx:sharing_channel\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4639,
+      "offset": 4574,
       "length": 20,
       "value": "\"abx:payment_method\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4694,
+      "offset": 4629,
       "length": 18,
       "value": "\"abx:sign_channel\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4749,
+      "offset": 4684,
       "length": 20,
       "value": "\"abx:invite_channel\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4803,
+      "offset": 4738,
       "length": 17,
       "value": "\"abx:order_sales\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4853,
+      "offset": 4788,
       "length": 20,
       "value": "\"abx:event_order_no\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4908,
+      "offset": 4843,
       "length": 22,
       "value": "\"abx:session_order_no\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4958,
+      "offset": 4893,
       "length": 15,
       "value": "\"abx:open_type\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5005,
+      "offset": 4940,
       "length": 15,
       "value": "\"abx:prev_adid\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5062,
+      "offset": 4997,
       "length": 9,
       "value": "\"push_id\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5114,
+      "offset": 5049,
       "length": 11,
       "value": "\"push_info\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5163,
+      "offset": 5098,
       "length": 5,
       "value": "\"aps\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5215,
+      "offset": 5150,
       "length": 16,
       "value": "\"deep_link_json\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5277,
+      "offset": 5212,
       "length": 15,
       "value": "\"deep_link_url\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5332,
+      "offset": 5267,
       "length": 7,
       "value": "\"alert\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5386,
+      "offset": 5321,
       "length": 14,
       "value": "\"custom_alert\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5440,
+      "offset": 5375,
       "length": 7,
       "value": "\"title\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5490,
+      "offset": 5425,
       "length": 10,
       "value": "\"subtitle\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5539,
+      "offset": 5474,
       "length": 6,
       "value": "\"body\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5595,
+      "offset": 5530,
       "length": 17,
       "value": "\"notification_id\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5657,
+      "offset": 5592,
       "length": 5,
       "value": "\"img\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5711,
+      "offset": 5646,
       "length": 11,
       "value": "\"gen_sound\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5770,
+      "offset": 5705,
       "length": 10,
       "value": "\"gen_vibe\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5832,
+      "offset": 5767,
       "length": 20,
       "value": "\"abx:gf:campaign_id\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5898,
+      "offset": 5833,
       "length": 19,
       "value": "\"abx:gf:cycle_time\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5960,
+      "offset": 5895,
       "length": 16,
       "value": "\"abx:gf:step_id\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6032,
+      "offset": 5967,
       "length": 29,
       "value": "\"abx:gf:campaign_revision_no\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6118,
+      "offset": 6053,
       "length": 11,
       "value": "\"histories\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6192,
+      "offset": 6127,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6260,
+      "offset": 6195,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6331,
+      "offset": 6266,
       "length": 14,
       "value": "\"action_group\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6406,
+      "offset": 6341,
       "length": 10,
       "value": "\"contents\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6478,
+      "offset": 6413,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6553,
+      "offset": 6488,
       "length": 13,
       "value": "\"campaign_id\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6639,
+      "offset": 6574,
       "length": 22,
       "value": "\"campaign_revision_no\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6721,
+      "offset": 6656,
       "length": 9,
       "value": "\"step_id\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6793,
+      "offset": 6728,
       "length": 12,
       "value": "\"cycle_time\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6865,
+      "offset": 6800,
       "length": 9,
       "value": "\"is_read\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6935,
+      "offset": 6870,
       "length": 20,
       "value": "\"minutes_to_refresh\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7003,
+      "offset": 6938,
       "length": 17,
       "value": "\"lookback_window\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7063,
+      "offset": 6998,
       "length": 15,
       "value": "\"start_session\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7114,
+      "offset": 7049,
       "length": 13,
       "value": "\"end_session\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7161,
+      "offset": 7096,
       "length": 11,
       "value": "\"firstopen\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7212,
+      "offset": 7147,
       "length": 18,
       "value": "\"daily_first_open\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7268,
+      "offset": 7203,
       "length": 15,
       "value": "\"deeplink_open\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7316,
+      "offset": 7251,
       "length": 10,
       "value": "\"set_push\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7360,
+      "offset": 7295,
       "length": 11,
       "value": "\"open_push\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7408,
+      "offset": 7343,
       "length": 14,
       "value": "\"adid_changed\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "Array",
-      "offset": 7472,
+      "offset": 7407,
       "length": 44,
       "value": "[\"age\", \"gender\", \"user_id\", \"user_id_hash\"]"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "Array",
-      "offset": 7550,
+      "offset": 7485,
       "length": 12,
       "value": "[\"kakao_id\"]"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7602,
+      "offset": 7537,
       "length": 22,
       "value": "\"abx:deeplink_payload\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7661,
+      "offset": 7596,
       "length": 20,
       "value": "\"abx:deeplink_adkey\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7716,
+      "offset": 7651,
       "length": 9,
       "value": "\"abx_tid\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7777,
+      "offset": 7712,
       "length": 16,
       "value": "\"abx_tracker_id\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7845,
+      "offset": 7780,
       "length": 20,
       "value": "\"abx:abx_tracker_id\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7911,
+      "offset": 7846,
       "length": 29,
       "value": "\"is_used_abx_universial_link\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7983,
+      "offset": 7918,
       "length": 20,
       "value": "\".adtouch.adbrix.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8047,
+      "offset": 7982,
       "length": 26,
       "value": "\".adtouch-stage.adbrix.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8115,
+      "offset": 8050,
       "length": 23,
       "value": "\".adtouch-qa.adbrix.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8180,
+      "offset": 8115,
       "length": 25,
       "value": "\".ap2.adtouch.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8248,
+      "offset": 8183,
       "length": 31,
       "value": "\".ap2.adtouch-stage.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8320,
+      "offset": 8255,
       "length": 28,
       "value": "\".ap2.adtouch-qa.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8390,
+      "offset": 8325,
       "length": 25,
       "value": "\".ap1.adtouch.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8458,
+      "offset": 8393,
       "length": 31,
       "value": "\".ap1.adtouch-stage.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8530,
+      "offset": 8465,
       "length": 28,
       "value": "\".ap1.adtouch-qa.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8593,
+      "offset": 8528,
       "length": 13,
       "value": "\"SPECIAL_KEY\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8637,
+      "offset": 8572,
       "length": 14,
       "value": "\"COMMERCE_KEY\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8687,
+      "offset": 8622,
       "length": 10,
       "value": "\"abx:page\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8750,
+      "offset": 8685,
       "length": 19,
       "value": "\"abx:gf:event_type\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8820,
+      "offset": 8755,
       "length": 18,
       "value": "\"abx:gf:action_id\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8899,
+      "offset": 8834,
       "length": 28,
       "value": "\"abx:gf:is_image_downloaded\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8978,
+      "offset": 8913,
       "length": 18,
       "value": "\"abx:gf:image_url\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9048,
+      "offset": 8983,
       "length": 19,
       "value": "\"abx:gf:image_size\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 9108,
+      "offset": 9043,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 9159,
+      "offset": 9094,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9212,
+      "offset": 9147,
       "length": 22,
       "value": "\"abx_data_registry_v1\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9275,
+      "offset": 9210,
       "length": 30,
       "value": "\"https:\/\/ap2.event.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9342,
+      "offset": 9277,
       "length": 36,
       "value": "\"https:\/\/ap2.event-stage.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9413,
+      "offset": 9348,
       "length": 33,
       "value": "\"https:\/\/ap2.event-qa.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9488,
+      "offset": 9423,
       "length": 30,
       "value": "\"https:\/\/ap1.event.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9561,
+      "offset": 9496,
       "length": 36,
       "value": "\"https:\/\/ap1.event-stage.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9638,
+      "offset": 9573,
       "length": 33,
       "value": "\"https:\/\/ap1.event-qa.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 9751,
+      "offset": 9686,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 9781,
+      "offset": 9716,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9813,
+      "offset": 9748,
       "length": 5,
       "value": "\"ap1\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9849,
+      "offset": 9784,
       "length": 5,
       "value": "\"ap2\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9896,
+      "offset": 9831,
       "length": 24,
       "value": "\"https:\/\/gdpr.adbrix.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9956,
+      "offset": 9891,
       "length": 27,
       "value": "\"https:\/\/gdpr-qa.adbrix.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10026,
+      "offset": 9961,
       "length": 25,
       "value": "\"https:\/\/gdpr.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10093,
+      "offset": 10028,
       "length": 28,
       "value": "\"https:\/\/gdpr-qa.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10173,
+      "offset": 10108,
       "length": 24,
       "value": "\"\/api\/opengdpr_requests\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10244,
+      "offset": 10179,
       "length": 57,
       "value": "\"https:\/\/static.adbrix.io\/prod\/sdk.config\/%@\/config.json\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10342,
+      "offset": 10277,
       "length": 56,
       "value": "\"https:\/\/static.adbrix.io\/dev\/sdk.config\/%@\/config.json\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10510,
+      "offset": 10445,
       "length": 64,
       "value": "\"https:\/\/iam-api.gf.adbrix.io\/api\/v7\/inappmessage\/campaigns\/get\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10620,
+      "offset": 10555,
       "length": 68,
       "value": "\"https:\/\/iam-api-dev.gf.adbrix.io\/api\/v7\/inappmessage\/campaigns\/get\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10741,
+      "offset": 10676,
       "length": 69,
       "value": "\"https:\/\/iam-api.ap1.gf.dfinery.io\/api\/v7\/inappmessage\/campaigns\/get\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10862,
+      "offset": 10797,
       "length": 73,
       "value": "\"https:\/\/iam-api-dev.ap1.gf.dfinery.io\/api\/v7\/inappmessage\/campaigns\/get\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11057,
+      "offset": 10992,
       "length": 31,
       "value": "\"https:\/\/ap2.sdk-qa.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11131,
+      "offset": 11066,
       "length": 28,
       "value": "\"https:\/\/ap2.sdk.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11207,
+      "offset": 11142,
       "length": 31,
       "value": "\"https:\/\/ap1.sdk-qa.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11287,
+      "offset": 11222,
       "length": 28,
       "value": "\"https:\/\/ap1.sdk.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11361,
+      "offset": 11296,
       "length": 23,
       "value": "\"\/api\/v1\/users\/profile\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11428,
+      "offset": 11363,
       "length": 30,
       "value": "\"\/api\/v1\/users\/profile\/update\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11505,
+      "offset": 11440,
       "length": 18,
       "value": "\"\/api\/v1\/users\/ci\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11565,
+      "offset": 11500,
       "length": 25,
       "value": "\"\/api\/v1\/users\/ci\/update\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12035,
+      "offset": 11970,
       "length": 35,
       "value": "\"https:\/\/web-api.ap2.gf.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12116,
+      "offset": 12051,
       "length": 39,
       "value": "\"https:\/\/web-api-dev.ap2.gf.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12208,
+      "offset": 12143,
       "length": 35,
       "value": "\"https:\/\/web-api.ap1.gf.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12295,
+      "offset": 12230,
       "length": 39,
       "value": "\"https:\/\/web-api-dev.ap1.gf.dfinery.io\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12458,
+      "offset": 12393,
       "length": 28,
       "value": "\"\/api\/v6\/actionhistory\/List\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12593,
+      "offset": 12528,
       "length": 36,
       "value": "\"\/api\/v6\/actionhistory\/%@\/device\/%@\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12740,
+      "offset": 12675,
       "length": 34,
       "value": "\"\/api\/v6\/actionhistory\/%@\/user\/%@\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12838,
+      "offset": 12773,
       "length": 31,
       "value": "\"\/api\/v6\/deferred-deeplink2\/%@\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12935,
+      "offset": 12870,
       "length": 23,
       "value": "\"\/api\/v6\/event\/bulk\/%@\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13003,
+      "offset": 12938,
       "length": 20,
       "value": "\"\/api\/v6\/drworks\/%@\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13063,
+      "offset": 12998,
       "length": 55,
       "value": "\"https:\/\/static.adbrix.io\/prod\/skan\/%@\/conversion.json\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13152,
+      "offset": 13087,
       "length": 54,
       "value": "\"https:\/\/static.adbrix.io\/dev\/skan\/%@\/conversion.json\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13295,
+      "offset": 13230,
       "length": 17,
       "value": "\"\/api\/v1\/dfn\/ids\""
     },
@@ -26709,14 +26695,14 @@
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Component\/AutoEvent\/FirstOpenAutoEventGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 338,
+      "offset": 327,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Component\/AutoEvent\/FirstOpenAutoEventGenerator.swift",
       "kind": "Dictionary",
-      "offset": 390,
+      "offset": 379,
       "length": 3,
       "value": "[]"
     },
